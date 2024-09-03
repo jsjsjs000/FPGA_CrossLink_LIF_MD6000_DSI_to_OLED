@@ -1,0 +1,35 @@
+#
+# Logical Preferences generated for Lattice by Synplify map202303lat, Build 132R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w" 200.0 MHz;
+#FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o" 200.0 MHz;
+#FREQUENCY NET "int_pll_inst/clk_pixel_o_c" 200.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "int_pll_inst/clk_pixel_o_c" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o";
+#BLOCK PATH FROM CLKNET "int_pll_inst/clk_pixel_o_c" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o" TO CLKNET "int_pll_inst/clk_pixel_o_c";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w" TO CLKNET "int_pll_inst/clk_pixel_o_c";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o";
+#BLOCK PATH FROM CLKNET "int_pll_inst/clk_pixel_o_c" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o";
+#BLOCK PATH FROM CLKNET "int_pll_inst/clk_pixel_o_c" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o" TO CLKNET "int_pll_inst/clk_pixel_o_c";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w" TO CLKNET "int_pll_inst/clk_pixel_o_c";
+#BLOCK PATH FROM CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_hs_w" TO CLKNET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/clk_byte_o";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

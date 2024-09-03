@@ -1,0 +1,173 @@
+i int_pll_inst.CLKOS2_i
+m 0 0
+u 2 2
+p {t:int_pll_inst.PLLInst_0.CLKOS2}{t:int_pll_inst.CLKOS2_inferred_clock.I[0]}{t:int_pll_inst.CLKOS2_inferred_clock.OUT[0]}{p:int_pll_inst.CLKOS2}{t:int_pll_inst.CLKOS2}{t:mipi2parallel_inst.clk_pixel_i}{p:mipi2parallel_inst.clk_pixel_i}{t:mipi2parallel_inst.b2p_reset_pixel_n_meta_r.C}
+e ckid0_0 {t:mipi2parallel_inst.b2p_reset_pixel_n_meta_r.C} dffr
+c ckid0_0 {t:int_pll_inst.PLLInst_0.CLKOS2} EHXPLLM Clock source is constant
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o_i
+m 0 0
+u 2 2
+p {t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy.HSBYTECLKD}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o_inferred_clock.I[0]}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o_inferred_clock.OUT[0]}{p:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o}{p:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.clk_byte_o}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.clk_byte_o}{p:mipi2parallel_inst.rx_dphy_inst.clk_byte_o}{t:mipi2parallel_inst.rx_dphy_inst.clk_byte_o}{t:mipi2parallel_inst.rx_reset_byte_n_meta_r.C}
+e ckid0_1 {t:mipi2parallel_inst.rx_reset_byte_n_meta_r.C} dffr
+c ckid0_1 {t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy.HSBYTECLKD} MIPIDPHYA Unsupported/too complex instance on clock path
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_hs_o_i
+m 0 0
+u 2 2
+p {t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy.CLKHSBYTE}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_hs_o_inferred_clock.I[0]}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_hs_o_inferred_clock.OUT[0]}{p:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_hs_o}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_hs_o}{p:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.clk_byte_hs_o}{t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.clk_byte_hs_o}{p:mipi2parallel_inst.rx_dphy_inst.clk_byte_hs_o}{t:mipi2parallel_inst.rx_dphy_inst.clk_byte_hs_o}{p:mipi2parallel_inst.clk_byte_hs_o}{t:mipi2parallel_inst.clk_byte_hs_o}{t:mipi2parallel_inst.clk_byte_fr_i}{p:mipi2parallel_inst.clk_byte_fr_i}{t:mipi2parallel_inst.rx_reset_byte_fr_n_meta_r.C}
+e ckid0_2 {t:mipi2parallel_inst.rx_reset_byte_fr_n_meta_r.C} dffr
+c ckid0_2 {t:mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy.CLKHSBYTE} MIPIDPHYA Unsupported/too complex instance on clock path
+i int_pll_inst.CLKOP
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sot_det_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sot_det_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sot_det_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sot_det_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sote_det_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sote_det_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sote_det_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.d_sote_det_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[4]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[5]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[6]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd0_o_1[7]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[4]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[5]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[6]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd1_o_1[7]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[4]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[5]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[6]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd2_o_1[7]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[0]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[1]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[2]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[3]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[4]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[5]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[6]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.bd3_o_1[7]
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_clk_rx_p_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_clk_rx_n_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d0_rx_p_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d0_rx_n_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d1_rx_p_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d1_rx_n_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d2_rx_p_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d2_rx_n_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d3_rx_p_o
+m 0 0
+u 0 0
+i mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.lp_d3_rx_n_o
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

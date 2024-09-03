@@ -1,0 +1,324 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : syn_results
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : syn_results
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v" (library work)
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":25:36:25:48|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":31:40:31:52|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":38:43:38:55|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":46:46:46:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":55:37:55:49|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":63:39:63:51|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":75:17:75:29|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":88:44:88:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":96:44:96:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":104:48:104:60|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":113:48:113:60|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":122:48:122:60|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":131:48:131:60|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":140:40:140:52|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":147:40:147:52|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":154:44:154:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":162:44:162:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":170:44:170:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":178:44:178:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":186:53:186:65|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":196:53:196:65|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":206:57:206:69|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":217:57:217:69|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":228:57:228:69|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":239:57:239:69|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":250:49:250:61|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":259:49:259:61|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":268:31:268:43|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":272:31:272:43|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":278:33:278:45|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":283:51:283:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":292:51:292:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":301:51:301:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":310:51:310:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":319:46:319:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":327:46:327:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":335:46:335:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":343:46:343:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":351:38:351:50|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":357:32:357:44|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":362:45:362:57|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":369:42:369:54|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":378:45:378:57|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":388:48:388:60|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":399:51:399:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":411:54:411:66|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":424:122:424:134|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":448:43:448:55|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":455:207:455:219|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":496:57:496:69|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":506:78:506:90|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":521:35:521:47|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":527:39:527:51|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":534:42:534:54|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":542:45:542:57|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":551:35:551:47|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":557:38:557:50|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":564:41:564:53|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":572:44:572:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":581:31:581:43|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":586:38:586:50|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":592:35:592:47|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":598:51:598:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":607:51:607:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":616:51:616:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":625:51:625:63|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":634:38:634:50|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":640:35:640:47|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":646:38:646:50|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":653:41:653:53|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":661:44:661:56|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":670:47:670:59|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":677:29:677:41|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":682:72:682:84|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":694:56:694:68|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":703:77:703:89|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":716:61:716:73|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":726:66:726:78|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":737:37:737:49|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":741:29:741:41|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":745:29:745:41|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":749:37:749:49|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":755:40:755:52|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":762:43:762:55|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":770:46:770:58|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":779:64:779:76|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":794:36:794:48|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":800:94:800:106|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":825:39:825:51|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":832:42:832:54|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":840:45:840:57|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":853:42:853:54|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":859:42:859:54|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":866:26:866:38|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":872:27:872:39|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":876:31:876:43|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":881:30:881:42|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":888:26:888:38|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":892:47:892:59|User defined pragma syn_black_box detected
+
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":902:31:902:43|User defined pragma syn_black_box detected
+
+
+Only the first 100 messages of id 'CG100' are reported. To see all messages use 'report_messages -log C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\syn_results\synlog\int_pll_compiler.srr -id CG100' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CG100} -count unlimited' in the Tcl shell.
+@I::"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module int_pll
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":745:7:745:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":984:7:984:13|Synthesizing module EHXPLLM in library work.
+Running optimization stage 1 on EHXPLLM .......
+Finished optimization stage 1 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":8:7:8:13|Synthesizing module int_pll in library work.
+Running optimization stage 1 on int_pll .......
+@W: CL168 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on int_pll .......
+Finished optimization stage 2 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on EHXPLLM .......
+Finished optimization stage 2 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\syn_results\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:44:37 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : syn_results
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+File C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\int_pll\syn_results\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:44:37 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\syn_results\synwork\int_pll_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:44:37 2024
+
+###########################################################]

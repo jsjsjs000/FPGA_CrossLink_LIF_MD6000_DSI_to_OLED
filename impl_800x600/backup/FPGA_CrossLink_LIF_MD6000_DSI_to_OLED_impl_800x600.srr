@@ -1,0 +1,82 @@
+#Build: Synplify Pro (R) U-2023.03L-SP1, Build 153R, Aug 10 2023
+#install: C:\lscc\diamond\3.13\synpbase
+#OS: Windows 10 or later
+#Hostname: 2119PC2
+
+# Tue Sep  3 10:27:57 2024
+
+#Implementation: impl_800x600
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_800x600
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_800x600
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\b2p\b2p.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\b2p\b2p.v":36:12:36:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\b2p\b2p.v":42:12:42:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v":142:12:142:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v":148:12:148:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v" (library work)
+@W: CG100 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v":47:13:47:25|User defined pragma syn_black_box detected
+
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\ip_cores.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\ip_cores.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\ip_cores.v":3:13:3:24|Read directive translate_on.
+@W: CG274 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\ip_cores.v":5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\mipi2parallel_top.v" (library work)
+@I:"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\mipi2parallel_top.v":"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\synthesis_directives.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\i2c_target_top.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\mipi2parallel.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\testbench\mipi2parallel_MD_tb.v" (library work)
+@E: Can't open file ../source/verilog/synthesis_directives.v
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep  3 10:27:58 2024
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep  3 10:27:58 2024
+
+###########################################################]

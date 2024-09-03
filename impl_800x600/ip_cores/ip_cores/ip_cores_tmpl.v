@@ -1,0 +1,22 @@
+//Verilog instantiation template
+
+ip_cores _inst (.b2p_dt_i(), .b2p_p_odd_o(), .b2p_payload_i(), .b2p_pd_o(), 
+         .b2p_wc_i(), .b2p_clk_byte_i(), .b2p_clk_pixel_i(), .b2p_de_o(), 
+         .b2p_hsync_o(), .b2p_lp_av_en_i(), .b2p_payload_en_i(), .b2p_reset_byte_n_i(), 
+         .b2p_reset_pixel_n_i(), .b2p_sp_en_i(), .b2p_vsync_o(), .rx_dphy_bd_o(), 
+         .rx_dphy_dt_o(), .rx_dphy_ecc_o(), .rx_dphy_lp_hs_state_clk_o(), 
+         .rx_dphy_lp_hs_state_d_o(), .rx_dphy_payload_o(), .rx_dphy_ref_dt_i(), 
+         .rx_dphy_vc_o(), .rx_dphy_wc_o(), .rx_dphy_cd_d0_o(), .rx_dphy_clk_byte_fr_i(), 
+         .rx_dphy_clk_byte_hs_o(), .rx_dphy_clk_byte_o(), .rx_dphy_clk_lp_ctrl_i(), 
+         .rx_dphy_clk_n_i(), .rx_dphy_clk_p_i(), .rx_dphy_d0_n_io(), .rx_dphy_d0_p_io(), 
+         .rx_dphy_d1_n_i(), .rx_dphy_d1_p_i(), .rx_dphy_d2_n_i(), .rx_dphy_d2_p_i(), 
+         .rx_dphy_d3_n_i(), .rx_dphy_d3_p_i(), .rx_dphy_hs_d_en_o(), .rx_dphy_hs_sync_o(), 
+         .rx_dphy_lp_av_en_o(), .rx_dphy_lp_d0_rx_n_o(), .rx_dphy_lp_d0_rx_p_o(), 
+         .rx_dphy_lp_d0_tx_en_i(), .rx_dphy_lp_d0_tx_n_i(), .rx_dphy_lp_d0_tx_p_i(), 
+         .rx_dphy_lp_d1_rx_n_o(), .rx_dphy_lp_d1_rx_p_o(), .rx_dphy_lp_d2_rx_n_o(), 
+         .rx_dphy_lp_d2_rx_p_o(), .rx_dphy_lp_d3_rx_n_o(), .rx_dphy_lp_d3_rx_p_o(), 
+         .rx_dphy_lp_en_o(), .rx_dphy_payload_en_o(), .rx_dphy_pd_dphy_i(), 
+         .rx_dphy_pll_lock_i(), .rx_dphy_reset_byte_fr_n_i(), .rx_dphy_reset_byte_n_i(), 
+         .rx_dphy_reset_lp_n_i(), .rx_dphy_reset_n_i(), .rx_dphy_sp_en_o(), 
+         .rx_dphy_term_clk_en_o(), .int_pll_CLKI(), .int_pll_CLKOP(), 
+         .int_pll_CLKOS(), .int_pll_CLKOS2(), .int_pll_LOCK(), .int_pll_RST());

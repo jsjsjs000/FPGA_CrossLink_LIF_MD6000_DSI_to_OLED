@@ -1,0 +1,865 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/simulation
+vb2p
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v
+Z1 !s125 LATTICE_CONN
+Z2 !s110 1708377857
+!i10b 1
+!s100 dEg;o;f@Rki5G]1ejjIVU2
+I89B4fERFYl8jHRfcdLgZk2
+R0
+Z3 w1708377583
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v
+!i122 161
+L0 15 50
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1708377857.000000
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -O0
+Z8 tCvgOpt 0
+vb2p_byte2pixel
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v
+R1
+R2
+!i10b 1
+!s100 J8MA?:X==lh5K;=Q<jQ>B3
+IYhmSKW4[ff=A9@^;TdlI<1
+R0
+R3
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v
+!i122 160
+L0 8 63
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vbus_driver
+Z9 2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v
+Z10 !s110 1708376699
+!i10b 1
+!s100 <Lb0C67eEPcP_ViPW9_[R2
+I3Q5:48<GiTF`Y:gzO3:[l0
+R0
+Z11 w1701918765
+F../testbench/verilog/tb_include/bus_driver.v
+Z12 F../testbench/verilog/tb_include/dsi_model.v
+!i122 151
+L0 1 63
+R4
+R5
+r1
+!s85 0
+31
+Z13 !s108 1708376699.000000
+Z14 !s107 ../testbench/verilog/tb_include/parallel_byte_checker_dsi.v|../testbench/verilog/tb_include/i2c_tasks.v|../testbench/verilog/tb_include/vsync_hsync_checker.v|../testbench/verilog/tb_include/clk_driver.v|../testbench/verilog/tb_include/bus_driver.v|../testbench/verilog/tb_include/csi2_model.v|../testbench/verilog/tb_include/dsi_model.v|../testbench/verilog/simulation_directives.v|../source/verilog/synthesis_directives.v|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vbyte2pixel
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v
+Z16 !s110 1708375759
+!i10b 1
+!s100 zNWgg7LM=BNgoEjhYeSzk3
+IFeL75em6O9CY;EcSPG>j@1
+R0
+w1582331148
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v
+!i122 149
+L0 60 577
+R4
+R5
+r1
+!s85 0
+31
+!s108 1708375759.000000
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vcapture_ctrl
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v
+Z17 !s110 1708375757
+!i10b 1
+!s100 J48AXSkh<nkj]R?fiifI=2
+I=FKSU]Ej8c;mZ22>VfD2X3
+R0
+Z18 w1636750304
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v
+!i122 129
+L0 67 563
+R4
+R5
+r1
+!s85 0
+31
+Z19 !s108 1708375757.000000
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vclk_driver
+R9
+R10
+!i10b 1
+!s100 OhXO^;Ez=a16M?WS>85i23
+IFli>7bK>D12lA_@KVRAgc3
+R0
+R11
+F../testbench/verilog/tb_include/clk_driver.v
+R12
+!i122 151
+L0 1 17
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!s101 -O0
+!i113 1
+R7
+R8
+vcsi2_model
+R9
+R10
+!i10b 1
+!s100 R8GF7;=n9Y@o@Ak<;jn]?0
+IajIELOIz5d38R7Va?_zba1
+R0
+R11
+F../testbench/verilog/tb_include/csi2_model.v
+R12
+!i122 151
+L0 4 1221
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!s101 -O0
+!i113 1
+R7
+R8
+vdphy_rx_wrap
+Z20 2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v
+R17
+!i10b 1
+!s100 AWm]aL7X;>8<eC4AjGmXZ0
+IE`oSO3e6^34OoT8JWz<jL2
+R0
+R18
+Z21 8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v
+Z22 FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v
+!i122 136
+L0 74 288
+R4
+R5
+r1
+!s85 0
+31
+R19
+Z23 !s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vdsi_model
+R9
+R10
+!i10b 1
+!s100 ;9@g]Q[TjIzXK0jG@a<@V0
+IcdAQY:Z[o=O5l>I8GGf162
+R0
+R11
+8../testbench/verilog/tb_include/dsi_model.v
+R12
+!i122 151
+L0 8 1368
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!s101 -O0
+!i113 1
+R7
+R8
+vea6265f
+R20
+R17
+!i10b 1
+!s100 EX;B=E@ElGSbHzhUBC36`0
+I1I3jO?8K6bgmKkcI1APXe2
+R0
+R18
+R21
+R22
+!i122 136
+L0 411 116
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+vfaeb128
+R20
+Z25 !s110 1708375758
+!i10b 1
+!s100 F?fc9T0YUBY[@33MeTN392
+Im;_a_fL`d>PoCDhj2Do3M0
+R0
+R18
+R21
+R22
+!i122 136
+L0 1043 66
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+vi2c_s
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v
+R1
+R2
+!i10b 1
+!s100 [OdonH=gBn@K7ZQl_eYg21
+IIg0ag=bU`m^LbkdRPCmhX3
+R0
+Z26 w1708377667
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v
+!i122 159
+L0 8 74
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vi2c_target
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v
+R25
+!i10b 1
+!s100 9MIjmm7HSL18RmF758I]N1
+IURbA=oL@C;8aVWl9n=CU60
+R0
+w1701771975
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v
+!i122 146
+L0 42 364
+R4
+R5
+r1
+!s85 0
+31
+Z27 !s108 1708375758.000000
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vint_pll
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v
+R25
+!i10b 1
+!s100 75[VJ57SKOT7IPU0g[OD_2
+I3k]:@^6YS[N@9E2T3QVO^3
+R0
+w1702633302
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v
+!i122 140
+L0 8 79
+R4
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vipk
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v
+R1
+R2
+!i10b 1
+!s100 i@m1B<JKn?8K7J7Qeicd42
+IoW=j3mU7ZV7EEmNLHf4=J0
+R0
+R26
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v
+!i122 162
+L0 11 143
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vje25865
+Z28 2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v
+R17
+!i10b 1
+!s100 O8lajiz4:63<J4kce8h[M2
+IZAa[LAR<93cQf@?Y?kSmP0
+R0
+R18
+Z29 8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v
+Z30 FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v
+!i122 133
+L0 293 49
+R4
+R5
+r1
+!s85 0
+31
+R19
+Z31 !s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v|
+Z32 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vmipi2parallel
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v
+R16
+!i10b 1
+!s100 mboH@B[<6Y9`^U2CX02Sn0
+I89N2GO@KlB?SGZ?AUi:SI1
+R0
+w1702631523
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v
+!i122 147
+L0 49 274
+R4
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/synthesis_directives.v|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vmipi2parallel_MD_tb
+R9
+R10
+!i10b 1
+!s100 ]]C<UY:PbzHVRQkgG9^D63
+ITl:f@]6PE:F__Gg;M1z=E1
+R0
+w1708376683
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v
+Z33 8../testbench/verilog/tb_include/vsync_hsync_checker.v
+Z34 F../testbench/verilog/tb_include/vsync_hsync_checker.v
+F../testbench/verilog/tb_include/i2c_tasks.v
+F../testbench/verilog/tb_include/parallel_byte_checker_dsi.v
+!i122 151
+L0 105 2266
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!s101 -O0
+!i113 1
+R7
+R8
+nmipi2parallel_@m@d_tb
+vmipi2parallel_top
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v
+!s110 1708376645
+!i10b 1
+!s100 V9lZ`TI[IkAFIAA?bAAHO0
+IUlSG0GKDiNCBdS=ZhSM373
+R0
+w1708376421
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v
+!i122 150
+L0 49 205
+R4
+R5
+r1
+!s85 0
+31
+!s108 1708376645.000000
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/synthesis_directives.v|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vnr7bafa
+R20
+R25
+!i10b 1
+!s100 cbLide@3TZ@]>N01>SjOP0
+IF629<hf]^RFIgHRhL^A9a0
+R0
+R18
+R21
+R22
+!i122 136
+L0 1163 170
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+voh337fd
+Z35 2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v
+R17
+!i10b 1
+!s100 7LVK^Z[LT:BVKYEBk6nz@0
+I`5QM?>YN<L9UQ_?JG_7o92
+R0
+R18
+Z36 8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v
+Z37 FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v
+!i122 131
+L0 254 113
+R4
+R5
+r1
+!s85 0
+31
+R19
+Z38 !s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v|
+Z39 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vpfd713e
+R20
+R25
+!i10b 1
+!s100 dbJF^0EOJDnE]XSRDb=]41
+Ik4HgAgzIAQASl93ckRN1o0
+R0
+R18
+R21
+R22
+!i122 136
+L0 1387 240
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v
+R1
+R2
+!i10b 1
+!s100 RVSW=9C3oFTzHO1lZXN902
+ISL0mnO037cRe@@Q;:SmWH3
+R0
+Z40 w1708377421
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v
+!i122 158
+L0 8 223
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_capture_ctrl
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v
+R1
+R2
+!i10b 1
+!s100 ?<;<k@aWmF20Koh_4Gm[D2
+Ic7C[3TMz_ZAUmfdiFT]:P3
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v
+!i122 152
+L0 8 64
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_dphy_rx
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v
+R2
+!i10b 1
+!s100 dYB]UGXGI6n3nXM8QzJZD1
+I=DNW`l`IV7BN[F`[Ma8_03
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v
+!i122 157
+L0 53 403
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_dphy_rx_wrap
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v
+R1
+R2
+!i10b 1
+!s100 NDggngiUiRM3zj;YK`jTQ1
+Iz34IYF8ci1]96PaZ:B`840
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v
+!i122 156
+L0 8 76
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_dphy_wrapper
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v
+R2
+!i10b 1
+!s100 8Th4=zUjWg]i5kD>gMNaA0
+IoN`_C;^FIdzZjYEdP3<O^3
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v
+!i122 155
+L0 75 416
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_rx_global_ctrl
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v
+R1
+R2
+!i10b 1
+!s100 :e:gD^7oj;8C3XmWTmM=Z2
+IT5lQ9SbBK>^[=JT@S0m2Y0
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v
+!i122 153
+L0 8 97
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_dphy_soft_dphy_rx
+2C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v
+R1
+R2
+!i10b 1
+!s100 E@Qjl9;HMSJ_6C1OJ3:k60
+Ih[hj<b4gf:kldgIZekHfg3
+R0
+R40
+8C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v
+FC:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v
+!i122 154
+L0 8 85
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vrx_global_ctrl
+R35
+R17
+!i10b 1
+!s100 l?X<BhChCmGZb1Acz0X1M3
+IcLdBMd1Vmoc36d:WTNTc@0
+R0
+R18
+R36
+R37
+!i122 131
+L0 63 132
+R4
+R5
+r1
+!s85 0
+31
+R19
+R38
+R39
+!s101 -O0
+!i113 1
+R7
+R8
+vsoft_dphy_rx
+R28
+R17
+!i10b 1
+!s100 k]CbG50iKoegM:Je^ngcQ2
+IVC1Qf[C7?`f:UKJIBOLk:0
+R0
+R18
+R29
+R30
+!i122 133
+L0 52 88
+R4
+R5
+r1
+!s85 0
+31
+R19
+R31
+R32
+!s101 -O0
+!i113 1
+R7
+R8
+vtw433a
+R20
+R25
+!i10b 1
+!s100 1aidLkQN<mWVR8?F0HiJR1
+IzmifG8URZdVlffOFjEeG71
+R0
+R18
+R21
+R22
+!i122 136
+L0 1681 243
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+vvsync_hsync_checker
+R9
+R10
+!i10b 1
+!s100 h2F;]F9BUhn`9fNjiAGQ43
+IQ@Y?S]`Y]z1Y0^6mj`^?^3
+R0
+w1701320273
+R33
+R34
+!i122 151
+L0 5 120
+R4
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!s101 -O0
+!i113 1
+R7
+R8
+vzkf4a2e
+R20
+R25
+!i10b 1
+!s100 UgbO>LEWTC;L]9S;g^ihh3
+InH_g`Elih7A^_RolX267S1
+R0
+R18
+R21
+R22
+!i122 136
+L0 576 407
+R4
+R5
+r1
+!s85 0
+31
+R19
+R23
+R24
+!s101 -O0
+!i113 1
+R7
+R8
+vzxcd2d7
+R28
+R17
+!i10b 1
+!s100 f?<d]SM3jbLIEd=8;<aCd3
+IBE<oQZ[>7GVT:TGV:5;gJ0
+R0
+R18
+R29
+R30
+!i122 133
+L0 185 63
+R4
+R5
+r1
+!s85 0
+31
+R19
+R31
+R32
+!s101 -O0
+!i113 1
+R7
+R8

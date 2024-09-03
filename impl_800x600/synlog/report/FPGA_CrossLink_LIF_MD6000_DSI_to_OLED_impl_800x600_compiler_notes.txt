@@ -1,0 +1,28 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG334 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\b2p\b2p.v":36:12:36:24|Read directive translate_off.
+@N: CG333 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\b2p\b2p.v":42:12:42:23|Read directive translate_on.
+@N: CG334 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v":142:12:142:24|Read directive translate_off.
+@N: CG333 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v":148:12:148:23|Read directive translate_on.
+@N: CG334 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\ip_cores.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\ip_cores.v":3:13:3:24|Read directive translate_on.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":745:7:745:9|Synthesizing module VLO in library work.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":984:7:984:13|Synthesizing module EHXPLLM in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.v":8:7:8:13|Synthesizing module int_pll in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Synthesizing module rx_dphy_dphy_rx_wrap in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":75:7:75:26|Synthesizing module rx_dphy_dphy_wrapper in library work.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":1226:7:1226:15|Synthesizing module MIPIDPHYA in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Synthesizing module rx_dphy_rx_global_ctrl in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":53:7:53:21|Synthesizing module rx_dphy_dphy_rx in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Synthesizing module rx_dphy_capture_ctrl in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy.v":8:7:8:13|Synthesizing module rx_dphy in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Synthesizing module b2p_byte2pixel in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\b2p\b2p.v":15:7:15:9|Synthesizing module b2p in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":3:7:3:19|Synthesizing module mipi2parallel in library work.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":268:7:268:9|Synthesizing module GSR in library work.
+@N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":677:7:677:9|Synthesizing module PUR in library work.
+@N: CG364 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel_top.v":3:7:3:23|Synthesizing module mipi2parallel_top in library work.
+@N: CL159 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":90:26:90:34|Input reset_n_i is unused.
+@N|Running in 64-bit mode
+

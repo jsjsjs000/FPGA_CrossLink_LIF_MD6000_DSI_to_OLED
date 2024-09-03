@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
+<ispXCF version="3.12">
+	<Comment></Comment>
+	<Chain>
+		<Comm>Slave SPI</Comm>
+		<Device>
+			<SelectedProg value="TRUE"/>
+			<Pos>1</Pos>
+			<Vendor>Cypress</Vendor>
+			<Family>LIFMD</Family>
+			<Name>LIF-MD6000</Name>
+			<Package>All</Package>
+			<Bypass>
+				<InstrLen>8</InstrLen>
+				<InstrVal>11111111</InstrVal>
+				<BScanLen>1</BScanLen>
+				<BScanVal>0</BScanVal>
+			</Bypass>
+			<File>C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.bit</File>
+			<FileTime>09/03/24 12:31:09</FileTime>
+			<JedecChecksum>0x12B2</JedecChecksum>
+			<Operation>SPI Flash Erase,Program,Verify</Operation>
+			<Option>
+				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<Usercode>0x00000000</Usercode>
+				<AccessMode>SPI Flash Programming</AccessMode>
+			</Option>
+			<FPGALoader>
+			<CPLDDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Lattice</Vendor>
+					<Family>LIFMD</Family>
+					<Name>LIF-MD6000</Name>
+					<IDCode>0x012c0043</IDCode>
+					<Package>All</Package>
+					<PON>LIF-MD6000</PON>
+					<Bypass>
+						<InstrLen>8</InstrLen>
+						<InstrVal>11111111</InstrVal>
+						<BScanLen>1</BScanLen>
+						<BScanVal>0</BScanVal>
+					</Bypass>
+					<Operation>Bypass</Operation>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<IOState>HighZ</IOState>
+						<PreloadLength>39</PreloadLength>
+						<IOVectorData>0xFFFFFFFFFF</IOVectorData>
+						<AccessMode>JTAG</AccessMode>
+					</Option>
+				</Device>
+			</CPLDDevice>
+			<FlashDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Cypress</Vendor>
+					<Family>SPI Serial Flash</Family>
+					<Name>S25FS128S</Name>
+					<IDCode>0x18</IDCode>
+					<Package>16-lead SOIC</Package>
+					<Operation>SPI Flash Erase,Program,Verify</Operation>
+					<File>C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.bit</File>
+					<AddressBase>0x00000000</AddressBase>
+					<EndAddress>0x00020000</EndAddress>
+					<DeviceSize>128</DeviceSize>
+					<DataSize>163523</DataSize>
+					<NumberOfDevices>1</NumberOfDevices>
+					<ReInitialize value="FALSE"/>
+				</Device>
+			</FlashDevice>
+			<FPGADevice>
+				<Device>
+					<Pos>1</Pos>
+					<Name></Name>
+					<File>C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.bit</File>
+					<LocalChainList>
+						<LocalDevice index="-99"
+							name="Unknown"
+							file="C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.bit"/>
+					</LocalChainList>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+					</Option>
+				</Device>
+			</FPGADevice>
+			</FPGALoader>
+		</Device>
+	</Chain>
+	<ProjectOptions>
+		<Program>SEQUENTIAL</Program>
+		<Process>ENTIRED CHAIN</Process>
+		<OperationOverride>No Override</OperationOverride>
+		<StartTAP>TLR</StartTAP>
+		<EndTAP>TLR</EndTAP>
+		<DisableCheckBoard value="TRUE"/>
+		<VerifyUsercode value="FALSE"/>
+		<TCKDelay>1</TCKDelay>
+	</ProjectOptions>
+	<CableOptions>
+		<CableName>USB2</CableName>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>Lattice HW-USBN-2B Ch A Location 0000 Serial VER00001A</USBID>
+	</CableOptions>
+</ispXCF>

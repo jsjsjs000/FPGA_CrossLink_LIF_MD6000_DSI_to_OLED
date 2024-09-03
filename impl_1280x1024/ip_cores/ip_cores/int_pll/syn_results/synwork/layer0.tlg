@@ -1,0 +1,28 @@
+Selecting top level module int_pll
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":745:7:745:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v":984:7:984:13|Synthesizing module EHXPLLM in library work.
+Running optimization stage 1 on EHXPLLM .......
+Finished optimization stage 1 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":8:7:8:13|Synthesizing module int_pll in library work.
+Running optimization stage 1 on int_pll .......
+@W: CL168 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on int_pll .......
+Finished optimization stage 2 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on EHXPLLM .......
+Finished optimization stage 2 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\syn_results\synwork\layer0.duruntime
+
+

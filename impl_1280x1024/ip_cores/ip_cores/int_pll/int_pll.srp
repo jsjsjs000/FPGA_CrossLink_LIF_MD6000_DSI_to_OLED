@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.13.0.56.2
+Tue Sep 03 12:49:14 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n int_pll -lang verilog -synth synplify -bus_exp 7 -bb -arch sn5w00 -type pll -fin 24 -fclkop 108 -fclkop_tol 10.0 -fclkos 108 -fclkos_tol 2.0 -phases 0 -fclkos2 108 -fclkos2_tol 0.0 -phases2 0 -phase_cntl STATIC -rst -lock -sticky -fb_mode 1 -fdc C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/int_pll/int_pll.fdc 
+    Circuit name     : int_pll
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+	Inputs       : CLKI, RST
+	Outputs      : CLKOP, CLKOS, CLKOS2, LOCK
+    I/O buffer       : not inserted
+    EDIF output      : int_pll.edn
+    Verilog output   : int_pll.v
+    Verilog template : int_pll_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : int_pll.srp
+    Element Usage    :
+        EHXPLLM : 1
+    Estimated Resource Usage:

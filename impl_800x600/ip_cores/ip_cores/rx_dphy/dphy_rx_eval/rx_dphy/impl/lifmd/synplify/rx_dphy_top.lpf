@@ -1,0 +1,9 @@
+BLOCK ASYNCPATHS ;
+BLOCK RESETPATHS ;
+FREQUENCY PORT "clk_p_i"                                        40.0000 MHz;
+FREQUENCY PORT "clk_n_i"                                        40.0000 MHz;
+FREQUENCY NET "clk_byte_fr_i_c"                                     10.0000 MHz; 
+FREQUENCY NET "clk_byte_o_c"                         				10.0000 MHz;
+SYSCONFIG SLAVE_SPI_PORT=DISABLE;
+IOBUF ALLPORTS IO_TYPE=LVCMOS25 ;
+ # GSR_NET NET "reset_n_i_c";

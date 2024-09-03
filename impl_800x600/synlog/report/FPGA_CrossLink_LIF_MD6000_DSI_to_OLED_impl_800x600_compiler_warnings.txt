@@ -1,0 +1,30 @@
+@W: CG100 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v":47:13:47:25|User defined pragma syn_black_box detected
+@W: CG274 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\ip_cores.v":5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used
+@W: CL168 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CG146 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_dphy_rx_wrap
+@W: CG146 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Creating black box for empty module rx_dphy_rx_global_ctrl
+@W: CG146 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_capture_ctrl
+@W: CS263 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":388:29:388:45|Port-width mismatch for port lp_hs_state_clk_o. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":199:31:199:51|Removing wire capture_en_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":201:31:201:44|Removing wire bd0_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":202:31:202:44|Removing wire bd1_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":203:31:203:44|Removing wire bd2_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":204:31:204:44|Removing wire bd3_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:31:206:38|Removing wire lp_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:41:206:49|Removing wire lp2_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":207:31:207:37|Removing wire payload, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":208:31:208:51|Removing wire reset_clk_hs_n_sync_w, as there is no assignment to it.
+@W: CG146 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Creating black box for empty module b2p_byte2pixel
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":51:21:51:28|Removing wire sp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":52:22:52:29|Removing wire lp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":53:24:53:34|Removing wire lp2_av_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":54:23:54:27|Removing wire dt2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":55:24:55:28|Removing wire wc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":60:20:60:24|Removing wire vc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel.v":61:21:61:26|Removing wire ecc2_w, as there is no assignment to it.
+@W: CG781 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel_top.v":105:18:105:18|Input clk_lp_ctrl_i on instance mipi2parallel_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CL169 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel_top.v":74:0:74:5|Pruning unused register ref_clk_rst_n_meta_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\source\mipi2parallel_top.v":74:0:74:5|Pruning unused register ref_clk_rst_n_sync_r. Make sure that there are no unused intermediate registers.
+@W: CL158 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":95:45:95:50|Inout d0_p_i is unused
+@W: CL158 :"C:\Users\jarsul\Desktop\fpga\impl_800x600\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":96:45:96:50|Inout d0_n_i is unused
+

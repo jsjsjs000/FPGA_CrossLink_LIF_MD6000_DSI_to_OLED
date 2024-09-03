@@ -1,0 +1,1 @@
+run_tcl -fg FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_synplify.tcl

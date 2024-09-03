@@ -1,0 +1,9 @@
+BLOCK ASYNCPATHS ;
+BLOCK RESETPATHS ;
+ ### uncomment and change path. indicate target frequencies for each clock domain 
+ ###  FREQUENCY NET "clk_pixel_i"                                        MHz;
+ ###  FREQUENCY NET "clk_byte_i"                                         MHz; 
+ ### block CDC paths. Already synchronized inside the design. Might cause psuedo-timing violation if not blocked  
+ ### BLOCK PATH FROM CLKNET "clk_byte_i" TO CLKNET "clk_pixel_i"; 
+### User-Specified Inferred GSR
+### GSR_NET NET "reset_n_i_c";

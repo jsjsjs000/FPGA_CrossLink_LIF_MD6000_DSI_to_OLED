@@ -1,0 +1,4 @@
+ipk,/,C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v
+csi2_model,/,C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v
+vsync_hsync_checker,/,C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v
+mipi2parallel_MD_tb,/,C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v

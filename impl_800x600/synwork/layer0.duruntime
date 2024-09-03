@@ -1,0 +1,39 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: mipi2parallel_top
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi2parallel
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: b2p
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: b2p_byte2pixel
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy_capture_ctrl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy_dphy_rx_Z1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy_rx_global_ctrl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rx_dphy_dphy_rx_wrap
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: int_pll
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: PUR
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: GSR
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPIDPHYA
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: EHXPLLM
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: VLO
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: VHI
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

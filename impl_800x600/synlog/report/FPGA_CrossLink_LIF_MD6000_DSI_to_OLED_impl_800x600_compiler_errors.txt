@@ -1,0 +1,2 @@
+@E: CG829 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\source\mipi2parallel_top.v":86:0:86:0|Unexpected ) after comma -- missing port in ANSI port list
+

@@ -1,0 +1,1 @@
+./synwork/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.srs,compile_only,Only compilation, no netlist editing or other optimization.

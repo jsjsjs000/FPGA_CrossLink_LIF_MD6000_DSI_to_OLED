@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell int_pll.verilog
+
+Register bits: 0 of 5600 (0%)
+PIC Latch:       0
+I/O cells:       0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLM        1       100.0
+                                GSR        1       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL             5           

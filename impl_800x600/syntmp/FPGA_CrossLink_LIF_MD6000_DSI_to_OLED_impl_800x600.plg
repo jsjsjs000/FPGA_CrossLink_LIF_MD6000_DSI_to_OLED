@@ -1,0 +1,29 @@
+@P:  Worst Slack : 4.066
+@P:  int_pll|CLKOS2_inferred_clock - Estimated Frequency : 1102.3 MHz
+@P:  int_pll|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  int_pll|CLKOS2_inferred_clock - Estimated Period : 0.907
+@P:  int_pll|CLKOS2_inferred_clock - Requested Period : 5.000
+@P:  int_pll|CLKOS2_inferred_clock - Slack : 4.093
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock - Estimated Frequency : 1102.3 MHz
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock - Estimated Period : 0.907
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock - Requested Period : 5.000
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock - Slack : 4.093
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock - Estimated Frequency : 1102.3 MHz
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock - Estimated Period : 0.907
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock - Requested Period : 5.000
+@P:  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock - Slack : 4.093
+@P:  System - Estimated Frequency : 1162.3 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 0.860
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 4.140
+@P:  Total Area : 2.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:03s

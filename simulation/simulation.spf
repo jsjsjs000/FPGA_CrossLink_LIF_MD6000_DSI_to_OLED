@@ -1,0 +1,28 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="simulation" simType="ModelSim">
+    <Source worklib="work" path="ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_capture_ctrl.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_rx_global_ctrl.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_soft_dphy_rx.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_dphy_wrapper.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy_dphy_rx.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/rx_dphy/rx_dphy.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/int_pll/int_pll.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/i2c_s/i2c_s.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/b2p/b2p_byte2pixel.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/b2p/b2p.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="ipk/ipk.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="testbench/verilog/mipi2parallel_MD_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/verilog/i2c_target_top.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/verilog/mipi2parallel.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/verilog/mipi2parallel_top.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/verilog/synthesis_directives.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="" path="ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v" type="VERILOG" langstandard="" include="none"/>
+    <SimLib value="pmi_work ovi_lifmd"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="mipi2parallel_MD_tb"/>
+</BaliSimProject>

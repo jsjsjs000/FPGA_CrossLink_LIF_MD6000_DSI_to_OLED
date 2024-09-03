@@ -1,0 +1,715 @@
+#Build: Synplify Pro (R) U-2023.03L-SP1, Build 153R, Aug 10 2023
+#install: C:\lscc\diamond\3.13\synpbase
+#OS: Windows 10 or later
+#Hostname: 2119PC2
+
+# Tue Sep  3 12:50:46 2024
+
+#Implementation: impl_1280x1024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\synthesis_directives.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":36:12:36:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":42:12:42:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":142:12:142:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":148:12:148:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v" (library work)
+@W: CG100 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v":47:13:47:25|User defined pragma syn_black_box detected
+
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":3:13:3:24|Read directive translate_on.
+@W: CG274 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v" (library work)
+Verilog syntax check successful!
+Selecting top level module mipi2parallel_top
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":745:7:745:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":984:7:984:13|Synthesizing module EHXPLLM in library work.
+Running optimization stage 1 on EHXPLLM .......
+Finished optimization stage 1 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":8:7:8:13|Synthesizing module int_pll in library work.
+Running optimization stage 1 on int_pll .......
+@W: CL168 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Synthesizing module rx_dphy_dphy_rx_wrap in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_dphy_rx_wrap
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":75:7:75:26|Synthesizing module rx_dphy_dphy_wrapper in library work.
+
+	DPHY_RX_IP=40'b0100110101001001010110000100010101001100
+	RX_GEAR=32'b00000000000000000000000000001000
+	WORD_ALIGN=16'b0100111101001110
+	NUM_RX_LANE=32'b00000000000000000000000000000100
+   Generated name = rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":1226:7:1226:15|Synthesizing module MIPIDPHYA in library work.
+Running optimization stage 1 on MIPIDPHYA .......
+Finished optimization stage 1 on MIPIDPHYA (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 1 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s .......
+Finished optimization stage 1 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Synthesizing module rx_dphy_rx_global_ctrl in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Creating black box for empty module rx_dphy_rx_global_ctrl
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":53:7:53:21|Synthesizing module rx_dphy_dphy_rx in library work.
+
+	PARSER=16'b0100111101001110
+	RX_TYPE=24'b010001000101001101001001
+	NUM_RX_LANE=32'b00000000000000000000000000000100
+	RX_GEAR=32'b00000000000000000000000000001000
+	DPHY_RX_IP=40'b0100110101001001010110000100010101001100
+	DATA_TYPE=48'b010100100100011101000010001110000011100000111000
+	RX_CLK_MODE=56'b01001000010100110101111101001111010011100100110001011001
+	TX_WAIT_TIME=72'b010011000100010101010011010100110101111100110001001101010100110101010011
+	LANE_ALIGN=16'b0100111101001110
+	WORD_ALIGN=16'b0100111101001110
+	BYTECLK_MHZ=32'b00000000000000000000000000011011
+	SETTLE_CYC=32'b00000000000000000000000000000010
+	FIFO_TYPE=24'b010011000101010101010100
+	DT=6'b111110
+   Generated name = rx_dphy_dphy_rx_Z1
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Synthesizing module rx_dphy_capture_ctrl in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_capture_ctrl
+
+@W: CS263 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":388:29:388:45|Port-width mismatch for port lp_hs_state_clk_o. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":199:31:199:51|Removing wire capture_en_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":201:31:201:44|Removing wire bd0_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":202:31:202:44|Removing wire bd1_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":203:31:203:44|Removing wire bd2_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":204:31:204:44|Removing wire bd3_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:31:206:38|Removing wire lp_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:41:206:49|Removing wire lp2_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":207:31:207:37|Removing wire payload, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":208:31:208:51|Removing wire reset_clk_hs_n_sync_w, as there is no assignment to it.
+Running optimization stage 1 on rx_dphy_dphy_rx_Z1 .......
+Finished optimization stage 1 on rx_dphy_dphy_rx_Z1 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":8:7:8:13|Synthesizing module rx_dphy in library work.
+Running optimization stage 1 on rx_dphy .......
+Finished optimization stage 1 on rx_dphy (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Synthesizing module b2p_byte2pixel in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Creating black box for empty module b2p_byte2pixel
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":15:7:15:9|Synthesizing module b2p in library work.
+Running optimization stage 1 on b2p .......
+Finished optimization stage 1 on b2p (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":49:7:49:19|Synthesizing module mipi2parallel in library work.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":97:21:97:28|Removing wire sp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":98:22:98:29|Removing wire lp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":99:24:99:34|Removing wire lp2_av_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":100:23:100:27|Removing wire dt2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":101:24:101:28|Removing wire wc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":106:20:106:24|Removing wire vc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":107:21:107:26|Removing wire ecc2_w, as there is no assignment to it.
+Running optimization stage 1 on mipi2parallel .......
+Finished optimization stage 1 on mipi2parallel (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":268:7:268:9|Synthesizing module GSR in library work.
+Running optimization stage 1 on GSR .......
+Finished optimization stage 1 on GSR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":677:7:677:9|Synthesizing module PUR in library work.
+Running optimization stage 1 on PUR .......
+Finished optimization stage 1 on PUR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":49:7:49:23|Synthesizing module mipi2parallel_top in library work.
+@W: CG781 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":163:18:163:18|Input clk_lp_ctrl_i on instance mipi2parallel_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":105:12:105:22|Removing wire i2c_reg_0_w, as there is no assignment to it.
+Running optimization stage 1 on mipi2parallel_top .......
+@W: CL169 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":132:0:132:5|Pruning unused register ref_clk_rst_n_meta_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":132:0:132:5|Pruning unused register ref_clk_rst_n_sync_r. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on mipi2parallel_top (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on mipi2parallel_top .......
+@W: CL156 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":105:12:105:22|*Input i2c_reg_0_w[0] to expression [and] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Finished optimization stage 2 on mipi2parallel_top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on PUR .......
+Finished optimization stage 2 on PUR (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on GSR .......
+Finished optimization stage 2 on GSR (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on mipi2parallel .......
+Finished optimization stage 2 on mipi2parallel (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on b2p .......
+Finished optimization stage 2 on b2p (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy .......
+Finished optimization stage 2 on rx_dphy (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy_dphy_rx_Z1 .......
+@W: CL158 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":95:45:95:50|Inout d0_p_i is unused
+@W: CL158 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":96:45:96:50|Inout d0_n_i is unused
+Finished optimization stage 2 on rx_dphy_dphy_rx_Z1 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on MIPIDPHYA .......
+Finished optimization stage 2 on MIPIDPHYA (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s .......
+@N: CL159 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":90:26:90:34|Input reset_n_i is unused.
+Finished optimization stage 2 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on int_pll .......
+Finished optimization stage 2 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on EHXPLLM .......
+Finished optimization stage 2 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:50:52 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:50:53 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:07s realtime, 0h:00m:06s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:50:53 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 12:50:54 2024
+
+###########################################################]
+Premap Report
+
+# Tue Sep  3 12:50:54 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 136MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_scck.rpt 
+See clock summary report "C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 136MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 136MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":163:0:163:5|Sequential instance mipi2parallel_inst.b2p_reset_pixel_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":163:0:163:5|Sequential instance mipi2parallel_inst.b2p_reset_pixel_n_sync_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":140:0:140:5|Sequential instance mipi2parallel_inst.rx_reset_byte_fr_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":140:0:140:5|Sequential instance mipi2parallel_inst.rx_reset_byte_fr_n_sync_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":151:0:151:5|Sequential instance mipi2parallel_inst.rx_reset_byte_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":151:0:151:5|Sequential instance mipi2parallel_inst.rx_reset_byte_n_sync_r is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+mixed edge conversion for GCC is OFF
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=20 on top level netlist mipi2parallel_top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
+
+
+
+Clock Summary
+******************
+
+          Start      Requested     Requested     Clock      Clock               Clock
+Level     Clock      Frequency     Period        Type       Group               Load 
+-------------------------------------------------------------------------------------
+0 -       System     200.0 MHz     5.000         system     system_clkgroup     0    
+=====================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+           Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock      Load      Pin        Seq Example     Seq Example       Comb Example 
+-------------------------------------------------------------------------------
+System     0         -          -               -                 -            
+===============================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 198MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 198MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 200MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Sep  3 12:50:57 2024
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Sep  3 12:50:57 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Lattice Technology Mapper, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 194MB)
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 199MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 199MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 199MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 199MB peak: 199MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 199MB peak: 199MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		     4.14ns		   2 /         0
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 200MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 200MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 200MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 200MB)
+
+Writing Analyst data base C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 200MB peak: 200MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 209MB peak: 209MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 208MB peak: 209MB)
+
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":46:4:46:21|Blackbox b2p_byte2pixel is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":423:8:423:24|Blackbox rx_dphy_capture_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":349:0:349:18|Blackbox rx_dphy_rx_global_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":254:0:254:16|Blackbox rx_dphy_dphy_rx_wrap is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":171:8:171:17|Blackbox MIPIDPHYA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":59:12:59:20|Blackbox EHXPLLM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Sep  3 12:51:02 2024
+#
+
+
+Top view:               mipi2parallel_top
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 4.140
+
+                   Requested     Estimated      Requested     Estimated               Clock      Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack     Type       Group          
+----------------------------------------------------------------------------------------------------------------
+System             200.0 MHz     1162.3 MHz     5.000         0.860         4.140     system     system_clkgroup
+================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+System    System  |  5.000       4.140  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                  Starting                                                                        Arrival          
+Instance                                                                          Reference     Type                       Pin                Net                 Time        Slack
+                                                                                  Clock                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                  System        rx_dphy_rx_global_ctrl     hs_d0_en_o         hs_d_en_o           0.000       4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                  System        rx_dphy_rx_global_ctrl     hs_settle_en_o     hs_settle_en_w      0.000       4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKDRXLPN          lp_clk_rx_n         0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKDRXLPP          lp_clk_rx_p         0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKHSBYTE          clk_byte_hs_w       0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0DRXLPN           lp_d0_rx_n_o        0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0DRXLPP           lp_d0_rx_p_o        0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0ERRSYNC          d_sote_det_w[0]     0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0HSRXDATA0        bd0_w[0]            0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0HSRXDATA1        bd0_w[1]            0.000       5.000
+===================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                  Starting                                                           Required          
+Instance                                                                          Reference     Type          Pin             Net                    Time         Slack
+                                                                                  Clock                                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D0HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D1HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D2HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D3HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     CLKRXHSEN       term_clk_en_o          5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D0RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D1RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D2RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D3RXHSEN        term_d0_en_w           5.000        5.000
+int_pll_inst.PLLInst_0                                                            System        EHXPLLM       CLKFB           CLKOP                  5.000        5.000
+=======================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      0.860
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     4.140
+
+    Number of logic level(s):                1
+    Starting point:                          mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst / hs_d0_en_o
+    Ending point:                            mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy / D0HSDESEREN
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                                                       Pin             Pin               Arrival     No. of    
+Name                                                                                      Type                       Name            Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                          rx_dphy_rx_global_ctrl     hs_d0_en_o      Out     0.000     0.000 r     -         
+hs_d_en_o                                                                                 Net                        -               -       -         -           5         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.un1_hs_settle_en_i     ORCALUT4                   A               In      0.000     0.000 r     -         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.un1_hs_settle_en_i     ORCALUT4                   Z               Out     0.860     0.860 r     -         
+un1_hs_settle_en_i                                                                        Net                        -               -       -         -           4         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy             MIPIDPHYA                  D0HSDESEREN     In      0.000     0.860 r     -         
+=============================================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lif_md6000-6
+
+Register bits: 0 of 5600 (0%)
+PIC Latch:       0
+I/O cells:       30
+
+
+Details:
+EHXPLLM:        1
+GSR:            1
+IB:             2
+INV:            1
+MIPIDPHYA:      1
+OB:             28
+ORCALUT4:       1
+PUR:            1
+VHI:            7
+VLO:            7
+b2p_byte2pixel: 1
+rx_dphy_capture_ctrl: 1
+rx_dphy_dphy_rx_wrap: 1
+rx_dphy_rx_global_ctrl: 1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 69MB peak: 209MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Tue Sep  3 12:51:02 2024
+
+###########################################################]

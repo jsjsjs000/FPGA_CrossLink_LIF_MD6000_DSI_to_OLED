@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="rx_dphy_eval" device="LIF-MD6000-6KMG80I" synthesis="synplify" default_implementation="rx_dphy_eval">
+    <Implementation title="rx_dphy_eval" dir="rx_dphy_eval" description="rx_dphy_eval" default_strategy="rx_dphy_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="rx_dphy_wrap"/>
+        </Options>
+        <Source name="../../../../../rx_dphy_dphy_wrapper.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_capture_ctrl_bb.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_rx_global_ctrl_bb.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_soft_dphy_rx_bb.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_dphy_rx_wrap_bb.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_dphy_rx.v" type="Verilog"/>
+        <Source name="../../../../../rx_dphy_wrap.v" type="Verilog"/>
+        <Source name="rx_dphy_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="rx_dphy_top" file="rx_dphy_top.sty"/>
+</BaliProject>

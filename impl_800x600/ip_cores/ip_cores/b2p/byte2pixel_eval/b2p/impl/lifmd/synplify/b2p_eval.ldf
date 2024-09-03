@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="b2p_eval" device="LIF-MD6000-6KMG80I" synthesis="synplify" default_implementation="b2p_eval">
+    <Implementation title="b2p_eval" dir="b2p_eval" description="b2p_eval" default_strategy="b2p_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="b2p"/>
+        </Options>
+        <Source name="../../../../../b2p_byte2pixel_bb.v" type="Verilog"/>
+        <Source name="../../../../../b2p.v" type="Verilog"/>
+        <Source name="b2p_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="b2p_top" file="b2p_top.sty"/>
+</BaliProject>

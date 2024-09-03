@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED" device="LIF-MD6000-6KMG80I" default_implementation="impl_800x600">
+    <Options/>
+    <Implementation title="impl_800x600" dir="impl_800x600" description="impl_800x600" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="mipi2parallel_top"/>
+        <Source name="impl_800x600/ip_cores/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
+            <Options top_module="ip_cores"/>
+        </Source>
+        <Source name="impl_800x600/source/mipi2parallel_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="mipi2parallel_top"/>
+        </Source>
+        <Source name="impl_800x600/source/i2c_target_top.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="impl_800x600/source/mipi2parallel.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl_800x600/source/synthesis_directives.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl_800x600/testbench/mipi2parallel_MD_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="impl_800x600/testbench/simulation_directives.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED1.sty"/>
+</BaliProject>

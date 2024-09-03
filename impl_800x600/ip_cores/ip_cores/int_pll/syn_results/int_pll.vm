@@ -1,0 +1,118 @@
+//
+// Written by Synplify Pro 
+// Product Version "U-2023.03L-SP1"
+// Program "Synplify Pro", Mapper "map202303lat, Build 132R"
+// Tue Sep  3 11:42:11 2024
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v "
+// file 1 "\c:\lscc\diamond\3.13\synpbase\lib\lucent\pmi_def.v "
+// file 2 "\c:\lscc\diamond\3.13\synpbase\lib\vlog\hypermods.v "
+// file 3 "\c:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_objects.v "
+// file 4 "\c:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh "
+// file 5 "\c:\lscc\diamond\3.13\cae_library\synthesis\verilog\lifmd.v "
+// file 6 "\c:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v "
+// file 7 "\c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.v "
+// file 8 "\c:\lscc\diamond\3.13\synpbase\lib\nlconst.dat "
+// file 9 "\c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.fdc "
+
+`timescale 100 ps/100 ps
+(* NGD_DRC_MASK=1 *)module int_pll (
+  CLKI,
+  RST,
+  CLKOP,
+  CLKOS,
+  CLKOS2,
+  LOCK
+)
+;
+input CLKI ;
+input RST ;
+output CLKOP ;
+output CLKOS ;
+output CLKOS2 ;
+output LOCK ;
+wire CLKI ;
+wire RST ;
+wire CLKOP ;
+wire CLKOS ;
+wire CLKOS2 ;
+wire LOCK ;
+wire CLKOS3 ;
+wire INTLOCK ;
+wire CLKINTFB ;
+wire REFCLK ;
+wire GND ;
+wire VCC ;
+  VLO GND_0 (
+	.Z(GND)
+);
+  VHI VCC_0 (
+	.Z(VCC)
+);
+  PUR PUR_INST (
+	.PUR(VCC)
+);
+  GSR GSR_INST (
+	.GSR(VCC)
+);
+// @7:59
+(* FREQUENCY_PIN_CLKOS2="40.000000" , FREQUENCY_PIN_CLKOS="40.000000" , FREQUENCY_PIN_CLKOP="36.000000" , FREQUENCY_PIN_CLKI="24.000000" , ICP_CURRENT="8" , LPF_RESISTOR="16" *)  EHXPLLM PLLInst_0 (
+	.CLKI(CLKI),
+	.CLKFB(CLKOP),
+	.PHASESEL1(GND),
+	.PHASESEL0(GND),
+	.PHASEDIR(GND),
+	.PHASESTEP(GND),
+	.PHASELOADREG(GND),
+	.PLLWAKESYNC(GND),
+	.RST(RST),
+	.ENCLKOP(GND),
+	.ENCLKOS(GND),
+	.ENCLKOS2(GND),
+	.ENCLKOS3(GND),
+	.USRSTDBY(GND),
+	.CLKOP(CLKOP),
+	.CLKOS(CLKOS),
+	.CLKOS2(CLKOS2),
+	.CLKOS3(CLKOS3),
+	.LOCK(LOCK),
+	.INTLOCK(INTLOCK),
+	.REFCLK(REFCLK),
+	.CLKINTFB(CLKINTFB)
+);
+defparam PLLInst_0.CLKI_DIV = 2;
+defparam PLLInst_0.CLKFB_DIV = 3;
+defparam PLLInst_0.CLKOP_DIV = 30;
+defparam PLLInst_0.CLKOS_DIV = 27;
+defparam PLLInst_0.CLKOS2_DIV = 27;
+defparam PLLInst_0.CLKOS3_DIV = 1;
+defparam PLLInst_0.CLKOP_ENABLE = "ENABLED";
+defparam PLLInst_0.CLKOS_ENABLE = "ENABLED";
+defparam PLLInst_0.CLKOS2_ENABLE = "ENABLED";
+defparam PLLInst_0.CLKOS3_ENABLE = "DISABLED";
+defparam PLLInst_0.CLKOP_CPHASE = 29;
+defparam PLLInst_0.CLKOS_CPHASE = 26;
+defparam PLLInst_0.CLKOS2_CPHASE = 26;
+defparam PLLInst_0.CLKOS3_CPHASE = 0;
+defparam PLLInst_0.CLKOP_FPHASE = 0;
+defparam PLLInst_0.CLKOS_FPHASE = 0;
+defparam PLLInst_0.CLKOS2_FPHASE = 0;
+defparam PLLInst_0.CLKOS3_FPHASE = 0;
+defparam PLLInst_0.FEEDBK_PATH = "CLKOP";
+defparam PLLInst_0.CLKOP_TRIM_POL = "FALLING";
+defparam PLLInst_0.CLKOP_TRIM_DELAY = 0;
+defparam PLLInst_0.CLKOS_TRIM_POL = "FALLING";
+defparam PLLInst_0.CLKOS_TRIM_DELAY = 0;
+defparam PLLInst_0.OUTDIVIDER_MUXA = "DIVA";
+defparam PLLInst_0.OUTDIVIDER_MUXB = "DIVB";
+defparam PLLInst_0.OUTDIVIDER_MUXC = "DIVC";
+defparam PLLInst_0.OUTDIVIDER_MUXD = "DIVD";
+defparam PLLInst_0.PLL_LOCK_MODE = 2;
+defparam PLLInst_0.DPHASE_SOURCE = "DISABLED";
+defparam PLLInst_0.STDBY_ENABLE = "DISABLED";
+defparam PLLInst_0.PLLRST_ENA = "ENABLED";
+defparam PLLInst_0.INTFB_WAKE = "DISABLED";
+endmodule /* int_pll */
+

@@ -1,0 +1,6 @@
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/synthesis_directives.v
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/mipi2parallel.v
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/ip001/b2p/b2p.v
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/ip001/int_gpll/int_gpll.v
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/ip001/rx_dphy/rx_dphy.v
+C:/Users/wbasbas/Documents/Diamond_proj/mipidsi2parallel_bridge_wb/testbench/verilog/mipi2parallel_NX_tb.v

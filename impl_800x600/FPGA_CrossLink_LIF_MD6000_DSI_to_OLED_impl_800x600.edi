@@ -1,0 +1,3929 @@
+(edif mipi2parallel_top
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2024 9 3 22 5 47)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "U-2023.03L-SP1, mapper map202303lat, Build 132R"))
+     )
+   )
+  (library LUCENT
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell OB (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port I (direction INPUT))
+           (port O (direction OUTPUT))
+         )
+       )
+    )
+    (cell IB (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port I (direction INPUT))
+           (port O (direction OUTPUT))
+         )
+       )
+    )
+    (cell FD1S3DX (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port D (direction INPUT))
+           (port CK (direction INPUT))
+           (port CD (direction INPUT))
+           (port Q (direction OUTPUT))
+         )
+       )
+    )
+    (cell ORCALUT4 (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port A (direction INPUT))
+           (port B (direction INPUT))
+           (port C (direction INPUT))
+           (port D (direction INPUT))
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+    (cell PUR (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port PUR (direction INPUT))
+         )
+       )
+    )
+    (cell GSR (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port GSR (direction INPUT))
+         )
+       )
+    )
+    (cell INV (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port A (direction INPUT))
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+    (cell VHI (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+    (cell VLO (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell MIPIDPHYA (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port CKP (direction INOUT))
+           (port CKN (direction INOUT))
+           (port CLKHSBYTE (direction OUTPUT))
+           (port CLKRXHSEN (direction INPUT))
+           (port CLKDRXLPP (direction OUTPUT))
+           (port CLKRXLPEN (direction INPUT))
+           (port CLKDRXLPN (direction OUTPUT))
+           (port CLKCDEN (direction INPUT))
+           (port CLKDCDN (direction OUTPUT))
+           (port CLKDTXLPP (direction INPUT))
+           (port CLKTXLPEN (direction INPUT))
+           (port CLKDTXLPN (direction INPUT))
+           (port CLKTXHSEN (direction INPUT))
+           (port CLKTXHSGATE (direction INPUT))
+           (port CLKTXHSPD (direction INPUT))
+           (port CLKDRXHS (direction OUTPUT))
+           (port HSBYTECLKD (direction OUTPUT))
+           (port HSBYTECLKS (direction OUTPUT))
+           (port LBEN (direction INPUT))
+           (port PDDPHY (direction INPUT))
+           (port PDBIAS (direction INPUT))
+           (port PDCKG (direction INPUT))
+           (port CLKREF (direction INPUT))
+           (port LOCK (direction OUTPUT))
+           (port PDPLL (direction INPUT))
+           (port DP0 (direction INOUT))
+           (port DP1 (direction INOUT))
+           (port DP2 (direction INOUT))
+           (port DP3 (direction INOUT))
+           (port DN0 (direction INOUT))
+           (port DN1 (direction INOUT))
+           (port DN2 (direction INOUT))
+           (port DN3 (direction INOUT))
+           (port D0DRXLPP (direction OUTPUT))
+           (port D0RXLPEN (direction INPUT))
+           (port D0DRXLPN (direction OUTPUT))
+           (port D0DCDP (direction OUTPUT))
+           (port D0CDEN (direction INPUT))
+           (port D0DCDN (direction OUTPUT))
+           (port D0DTXLPP (direction INPUT))
+           (port D0TXLPEN (direction INPUT))
+           (port D0DTXLPN (direction INPUT))
+           (port D0RXHSEN (direction INPUT))
+           (port D0HSRXDATA15 (direction OUTPUT))
+           (port D0HSRXDATA14 (direction OUTPUT))
+           (port D0HSRXDATA13 (direction OUTPUT))
+           (port D0HSRXDATA12 (direction OUTPUT))
+           (port D0HSRXDATA11 (direction OUTPUT))
+           (port D0HSRXDATA10 (direction OUTPUT))
+           (port D0HSRXDATA9 (direction OUTPUT))
+           (port D0HSRXDATA8 (direction OUTPUT))
+           (port D0HSRXDATA7 (direction OUTPUT))
+           (port D0HSRXDATA6 (direction OUTPUT))
+           (port D0HSRXDATA5 (direction OUTPUT))
+           (port D0HSRXDATA4 (direction OUTPUT))
+           (port D0HSRXDATA3 (direction OUTPUT))
+           (port D0HSRXDATA2 (direction OUTPUT))
+           (port D0HSRXDATA1 (direction OUTPUT))
+           (port D0HSRXDATA0 (direction OUTPUT))
+           (port D0SYNC (direction OUTPUT))
+           (port D0ERRSYNC (direction OUTPUT))
+           (port D0NOSYNC (direction OUTPUT))
+           (port D0HSDESEREN (direction INPUT))
+           (port D0TXHSEN (direction INPUT))
+           (port D0HSTXDATA15 (direction INPUT))
+           (port D0HSTXDATA14 (direction INPUT))
+           (port D0HSTXDATA13 (direction INPUT))
+           (port D0HSTXDATA12 (direction INPUT))
+           (port D0HSTXDATA11 (direction INPUT))
+           (port D0HSTXDATA10 (direction INPUT))
+           (port D0HSTXDATA9 (direction INPUT))
+           (port D0HSTXDATA8 (direction INPUT))
+           (port D0HSTXDATA7 (direction INPUT))
+           (port D0HSTXDATA6 (direction INPUT))
+           (port D0HSTXDATA5 (direction INPUT))
+           (port D0HSTXDATA4 (direction INPUT))
+           (port D0HSTXDATA3 (direction INPUT))
+           (port D0HSTXDATA2 (direction INPUT))
+           (port D0HSTXDATA1 (direction INPUT))
+           (port D0HSTXDATA0 (direction INPUT))
+           (port D0HSSEREN (direction INPUT))
+           (port D0TXHSPD (direction INPUT))
+           (port D0DRXHS (direction OUTPUT))
+           (port D1DRXLPP (direction OUTPUT))
+           (port D1RXLPEN (direction INPUT))
+           (port D1DRXLPN (direction OUTPUT))
+           (port D1DCDP (direction OUTPUT))
+           (port D1CDEN (direction INPUT))
+           (port D1DCDN (direction OUTPUT))
+           (port D1DTXLPP (direction INPUT))
+           (port D1TXLPEN (direction INPUT))
+           (port D1DTXLPN (direction INPUT))
+           (port D1RXHSEN (direction INPUT))
+           (port D1HSRXDATA15 (direction OUTPUT))
+           (port D1HSRXDATA14 (direction OUTPUT))
+           (port D1HSRXDATA13 (direction OUTPUT))
+           (port D1HSRXDATA12 (direction OUTPUT))
+           (port D1HSRXDATA11 (direction OUTPUT))
+           (port D1HSRXDATA10 (direction OUTPUT))
+           (port D1HSRXDATA9 (direction OUTPUT))
+           (port D1HSRXDATA8 (direction OUTPUT))
+           (port D1HSRXDATA7 (direction OUTPUT))
+           (port D1HSRXDATA6 (direction OUTPUT))
+           (port D1HSRXDATA5 (direction OUTPUT))
+           (port D1HSRXDATA4 (direction OUTPUT))
+           (port D1HSRXDATA3 (direction OUTPUT))
+           (port D1HSRXDATA2 (direction OUTPUT))
+           (port D1HSRXDATA1 (direction OUTPUT))
+           (port D1HSRXDATA0 (direction OUTPUT))
+           (port D1SYNC (direction OUTPUT))
+           (port D1ERRSYNC (direction OUTPUT))
+           (port D1NOSYNC (direction OUTPUT))
+           (port D1HSDESEREN (direction INPUT))
+           (port D1TXHSEN (direction INPUT))
+           (port D1HSTXDATA15 (direction INPUT))
+           (port D1HSTXDATA14 (direction INPUT))
+           (port D1HSTXDATA13 (direction INPUT))
+           (port D1HSTXDATA12 (direction INPUT))
+           (port D1HSTXDATA11 (direction INPUT))
+           (port D1HSTXDATA10 (direction INPUT))
+           (port D1HSTXDATA9 (direction INPUT))
+           (port D1HSTXDATA8 (direction INPUT))
+           (port D1HSTXDATA7 (direction INPUT))
+           (port D1HSTXDATA6 (direction INPUT))
+           (port D1HSTXDATA5 (direction INPUT))
+           (port D1HSTXDATA4 (direction INPUT))
+           (port D1HSTXDATA3 (direction INPUT))
+           (port D1HSTXDATA2 (direction INPUT))
+           (port D1HSTXDATA1 (direction INPUT))
+           (port D1HSTXDATA0 (direction INPUT))
+           (port D1HSSEREN (direction INPUT))
+           (port D1TXHSPD (direction INPUT))
+           (port D1DRXHS (direction OUTPUT))
+           (port D2DRXLPP (direction OUTPUT))
+           (port D2RXLPEN (direction INPUT))
+           (port D2DRXLPN (direction OUTPUT))
+           (port D2DCDP (direction OUTPUT))
+           (port D2CDEN (direction INPUT))
+           (port D2DCDN (direction OUTPUT))
+           (port D2DTXLPP (direction INPUT))
+           (port D2TXLPEN (direction INPUT))
+           (port D2DTXLPN (direction INPUT))
+           (port D2RXHSEN (direction INPUT))
+           (port D2HSRXDATA15 (direction OUTPUT))
+           (port D2HSRXDATA14 (direction OUTPUT))
+           (port D2HSRXDATA13 (direction OUTPUT))
+           (port D2HSRXDATA12 (direction OUTPUT))
+           (port D2HSRXDATA11 (direction OUTPUT))
+           (port D2HSRXDATA10 (direction OUTPUT))
+           (port D2HSRXDATA9 (direction OUTPUT))
+           (port D2HSRXDATA8 (direction OUTPUT))
+           (port D2HSRXDATA7 (direction OUTPUT))
+           (port D2HSRXDATA6 (direction OUTPUT))
+           (port D2HSRXDATA5 (direction OUTPUT))
+           (port D2HSRXDATA4 (direction OUTPUT))
+           (port D2HSRXDATA3 (direction OUTPUT))
+           (port D2HSRXDATA2 (direction OUTPUT))
+           (port D2HSRXDATA1 (direction OUTPUT))
+           (port D2HSRXDATA0 (direction OUTPUT))
+           (port D2SYNC (direction OUTPUT))
+           (port D2ERRSYNC (direction OUTPUT))
+           (port D2NOSYNC (direction OUTPUT))
+           (port D2HSDESEREN (direction INPUT))
+           (port D2TXHSEN (direction INPUT))
+           (port D2HSTXDATA15 (direction INPUT))
+           (port D2HSTXDATA14 (direction INPUT))
+           (port D2HSTXDATA13 (direction INPUT))
+           (port D2HSTXDATA12 (direction INPUT))
+           (port D2HSTXDATA11 (direction INPUT))
+           (port D2HSTXDATA10 (direction INPUT))
+           (port D2HSTXDATA9 (direction INPUT))
+           (port D2HSTXDATA8 (direction INPUT))
+           (port D2HSTXDATA7 (direction INPUT))
+           (port D2HSTXDATA6 (direction INPUT))
+           (port D2HSTXDATA5 (direction INPUT))
+           (port D2HSTXDATA4 (direction INPUT))
+           (port D2HSTXDATA3 (direction INPUT))
+           (port D2HSTXDATA2 (direction INPUT))
+           (port D2HSTXDATA1 (direction INPUT))
+           (port D2HSTXDATA0 (direction INPUT))
+           (port D2HSSEREN (direction INPUT))
+           (port D2TXHSPD (direction INPUT))
+           (port D2DRXHS (direction OUTPUT))
+           (port D3DRXLPP (direction OUTPUT))
+           (port D3RXLPEN (direction INPUT))
+           (port D3DRXLPN (direction OUTPUT))
+           (port D3DCDP (direction OUTPUT))
+           (port D3CDEN (direction INPUT))
+           (port D3DCDN (direction OUTPUT))
+           (port D3DTXLPP (direction INPUT))
+           (port D3TXLPEN (direction INPUT))
+           (port D3DTXLPN (direction INPUT))
+           (port D3RXHSEN (direction INPUT))
+           (port D3HSRXDATA15 (direction OUTPUT))
+           (port D3HSRXDATA14 (direction OUTPUT))
+           (port D3HSRXDATA13 (direction OUTPUT))
+           (port D3HSRXDATA12 (direction OUTPUT))
+           (port D3HSRXDATA11 (direction OUTPUT))
+           (port D3HSRXDATA10 (direction OUTPUT))
+           (port D3HSRXDATA9 (direction OUTPUT))
+           (port D3HSRXDATA8 (direction OUTPUT))
+           (port D3HSRXDATA7 (direction OUTPUT))
+           (port D3HSRXDATA6 (direction OUTPUT))
+           (port D3HSRXDATA5 (direction OUTPUT))
+           (port D3HSRXDATA4 (direction OUTPUT))
+           (port D3HSRXDATA3 (direction OUTPUT))
+           (port D3HSRXDATA2 (direction OUTPUT))
+           (port D3HSRXDATA1 (direction OUTPUT))
+           (port D3HSRXDATA0 (direction OUTPUT))
+           (port D3SYNC (direction OUTPUT))
+           (port D3ERRSYNC (direction OUTPUT))
+           (port D3NOSYNC (direction OUTPUT))
+           (port D3HSDESEREN (direction INPUT))
+           (port D3TXHSEN (direction INPUT))
+           (port D3HSTXDATA15 (direction INPUT))
+           (port D3HSTXDATA14 (direction INPUT))
+           (port D3HSTXDATA13 (direction INPUT))
+           (port D3HSTXDATA12 (direction INPUT))
+           (port D3HSTXDATA11 (direction INPUT))
+           (port D3HSTXDATA10 (direction INPUT))
+           (port D3HSTXDATA9 (direction INPUT))
+           (port D3HSTXDATA8 (direction INPUT))
+           (port D3HSTXDATA7 (direction INPUT))
+           (port D3HSTXDATA6 (direction INPUT))
+           (port D3HSTXDATA5 (direction INPUT))
+           (port D3HSTXDATA4 (direction INPUT))
+           (port D3HSTXDATA3 (direction INPUT))
+           (port D3HSTXDATA2 (direction INPUT))
+           (port D3HSTXDATA1 (direction INPUT))
+           (port D3HSTXDATA0 (direction INPUT))
+           (port D3HSSEREN (direction INPUT))
+           (port D3TXHSPD (direction INPUT))
+           (port D3DRXHS (direction OUTPUT))
+         )
+        (property black_box_pad_pin (string "DP0, DN0, DP1, DN1, DP2, DN2, DP3, DN3, CKP, CKN"))
+        (property ENP_DESER (integer 1))
+        (property PLL_TST (integer 9))
+        (property CO (integer 0))
+        (property CM (integer 0))
+        (property CN (integer 0))
+        (property HS_16BIT_EN (integer 0))
+        (property HSEL (integer 0))
+        (property orig_inst_of (string "MIPIDPHYA"))
+       )
+    )
+    (cell rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename d_sote_det_w "d_sote_det_w[3:0]") 4) (direction OUTPUT))
+           (port (array (rename d_sot_det_w "d_sot_det_w[3:0]") 4) (direction OUTPUT))
+           (port (array (rename bd3_w "bd3_w[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd2_w "bd2_w[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd1_w "bd1_w[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd0_w "bd0_w[7:0]") 8) (direction OUTPUT))
+           (port (array (rename d_n_io "d_n_io[3:0]") 4) (direction INOUT))
+           (port (array (rename d_p_io "d_p_io[3:0]") 4) (direction INOUT))
+           (port lp_d3_rx_n_o (direction OUTPUT))
+           (port lp_d3_rx_p_o (direction OUTPUT))
+           (port lp_d2_rx_n_o (direction OUTPUT))
+           (port lp_d2_rx_p_o (direction OUTPUT))
+           (port lp_d1_rx_n_o (direction OUTPUT))
+           (port lp_d1_rx_p_o (direction OUTPUT))
+           (port term_d0_en_w (direction INPUT))
+           (port lp_d0_rx_n_o (direction OUTPUT))
+           (port lp_d0_rx_p_o (direction OUTPUT))
+           (port reset_n_i_c_i (direction INPUT))
+           (port lp_clk_rx_n (direction OUTPUT))
+           (port lp_clk_rx_p (direction OUTPUT))
+           (port term_clk_en_o (direction INPUT))
+           (port clk_n_io (direction INOUT))
+           (port clk_p_io (direction INOUT))
+           (port clk_byte_hs_w (direction OUTPUT))
+           (port clk_byte_o (direction OUTPUT))
+           (port hs_settle_en_w (direction INPUT))
+           (port hs_d_en_o (direction INPUT))
+         )
+         (contents
+          (instance (rename MIXEL_un1_hs_settle_en_i "MIXEL.un1_hs_settle_en_i") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
+          )
+          (instance (rename MIXEL_mixel_dphy "MIXEL.mixel_dphy") (viewRef verilog (cellRef MIPIDPHYA))
+           (property HS_MODE (string "RX"))
+           (property DIR_PIN_DN3 (string "INPUT"))
+           (property DIR_PIN_DP3 (string "INPUT"))
+           (property DIR_PIN_DN2 (string "INPUT"))
+           (property DIR_PIN_DP2 (string "INPUT"))
+           (property DIR_PIN_DN1 (string "INPUT"))
+           (property DIR_PIN_DP1 (string "INPUT"))
+           (property DIR_PIN_CKN (string "INPUT"))
+           (property DIR_PIN_CKP (string "INPUT"))
+           (property DIR_PIN_DN0 (string "INPUT"))
+           (property DIR_PIN_DP0 (string "INPUT"))
+           (property FREQUENCY_PIN_HSBYTECLKD (string "10.0"))
+           (property HSEL (integer 0))
+           (property HS_16BIT_EN (integer 0))
+           (property CN (integer 0))
+           (property CM (integer 0))
+           (property CO (integer 0))
+           (property ENP_DESER (integer 1))
+           (property PLL_TST (integer 9))
+          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net hs_d_en_o (joined
+           (portRef hs_d_en_o)
+           (portRef A (instanceRef MIXEL_un1_hs_settle_en_i))
+          ))
+          (net hs_settle_en_w (joined
+           (portRef hs_settle_en_w)
+           (portRef B (instanceRef MIXEL_un1_hs_settle_en_i))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC))
+           (portRef D3TXHSPD (instanceRef MIXEL_mixel_dphy))
+           (portRef D3RXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2TXHSPD (instanceRef MIXEL_mixel_dphy))
+           (portRef D2RXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1TXHSPD (instanceRef MIXEL_mixel_dphy))
+           (portRef D1RXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0TXHSPD (instanceRef MIXEL_mixel_dphy))
+           (portRef D0DTXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0DTXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef D0CDEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0RXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef PDPLL (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKTXHSPD (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKCDEN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKRXLPEN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_hs_settle_en_i (joined
+           (portRef Z (instanceRef MIXEL_un1_hs_settle_en_i))
+           (portRef D3HSDESEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSDESEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSDESEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSDESEREN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename clk_byte_o_inferred_clock "clk_byte_o") (joined
+           (portRef clk_byte_o)
+           (portRef HSBYTECLKD (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename clk_hs_o_inferred_clock "clk_byte_hs_w") (joined
+           (portRef clk_byte_hs_w)
+           (portRef CLKHSBYTE (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net clk_p_io (joined
+           (portRef CKP (instanceRef MIXEL_mixel_dphy))
+           (portRef clk_p_io)
+          ))
+          (net clk_n_io (joined
+           (portRef CKN (instanceRef MIXEL_mixel_dphy))
+           (portRef clk_n_io)
+          ))
+          (net term_clk_en_o (joined
+           (portRef term_clk_en_o)
+           (portRef CLKRXHSEN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net lp_clk_rx_p (joined
+           (portRef CLKDRXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_clk_rx_p)
+          ))
+          (net lp_clk_rx_n (joined
+           (portRef CLKDRXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_clk_rx_n)
+          ))
+          (net cd_clk_o (joined
+           (portRef CLKDCDN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net GND (joined
+           (portRef Z (instanceRef GND))
+           (portRef D3HSSEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA8 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA9 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA10 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA11 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA12 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA13 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA14 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3HSTXDATA15 (instanceRef MIXEL_mixel_dphy))
+           (portRef D3TXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D3DTXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef D3TXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D3DTXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef D3CDEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSSEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA8 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA9 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA10 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA11 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA12 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA13 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA14 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2HSTXDATA15 (instanceRef MIXEL_mixel_dphy))
+           (portRef D2TXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2DTXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2TXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2DTXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef D2CDEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSSEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA8 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA9 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA10 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA11 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA12 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA13 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA14 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1HSTXDATA15 (instanceRef MIXEL_mixel_dphy))
+           (portRef D1TXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1DTXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1TXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1DTXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef D1CDEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSSEREN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA8 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA9 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA10 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA11 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA12 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA13 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA14 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0HSTXDATA15 (instanceRef MIXEL_mixel_dphy))
+           (portRef D0TXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0TXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKREF (instanceRef MIXEL_mixel_dphy))
+           (portRef PDCKG (instanceRef MIXEL_mixel_dphy))
+           (portRef PDBIAS (instanceRef MIXEL_mixel_dphy))
+           (portRef LBEN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKTXHSGATE (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKTXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKDTXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKTXLPEN (instanceRef MIXEL_mixel_dphy))
+           (portRef CLKDTXLPP (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_6 (joined
+           (portRef CLKDRXHS (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_8 (joined
+           (portRef HSBYTECLKS (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef reset_n_i_c_i)
+           (portRef PDDPHY (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_9 (joined
+           (portRef LOCK (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename d_p_io_0 "d_p_io[0]") (joined
+           (portRef DP0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_p_io 3))
+          ))
+          (net (rename d_p_io_1 "d_p_io[1]") (joined
+           (portRef DP1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_p_io 2))
+          ))
+          (net (rename d_p_io_2 "d_p_io[2]") (joined
+           (portRef DP2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_p_io 1))
+          ))
+          (net (rename d_p_io_3 "d_p_io[3]") (joined
+           (portRef DP3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_p_io 0))
+          ))
+          (net (rename d_n_io_0 "d_n_io[0]") (joined
+           (portRef DN0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_n_io 3))
+          ))
+          (net (rename d_n_io_1 "d_n_io[1]") (joined
+           (portRef DN1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_n_io 2))
+          ))
+          (net (rename d_n_io_2 "d_n_io[2]") (joined
+           (portRef DN2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_n_io 1))
+          ))
+          (net (rename d_n_io_3 "d_n_io[3]") (joined
+           (portRef DN3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_n_io 0))
+          ))
+          (net lp_d0_rx_p_o (joined
+           (portRef D0DRXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d0_rx_p_o)
+          ))
+          (net lp_d0_rx_n_o (joined
+           (portRef D0DRXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d0_rx_n_o)
+          ))
+          (net cd_d0_p (joined
+           (portRef D0DCDP (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net cd_d0_n (joined
+           (portRef D0DCDN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net term_d0_en_w (joined
+           (portRef term_d0_en_w)
+           (portRef D3RXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D2RXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D1RXHSEN (instanceRef MIXEL_mixel_dphy))
+           (portRef D0RXHSEN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_22 (joined
+           (portRef D0HSRXDATA15 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_23 (joined
+           (portRef D0HSRXDATA14 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_24 (joined
+           (portRef D0HSRXDATA13 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_25 (joined
+           (portRef D0HSRXDATA12 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_26 (joined
+           (portRef D0HSRXDATA11 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_27 (joined
+           (portRef D0HSRXDATA10 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_55 (joined
+           (portRef D0HSRXDATA9 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_56 (joined
+           (portRef D0HSRXDATA8 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename bd0_w_7 "bd0_w[7]") (joined
+           (portRef D0HSRXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 0))
+          ))
+          (net (rename bd0_w_6 "bd0_w[6]") (joined
+           (portRef D0HSRXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 1))
+          ))
+          (net (rename bd0_w_5 "bd0_w[5]") (joined
+           (portRef D0HSRXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 2))
+          ))
+          (net (rename bd0_w_4 "bd0_w[4]") (joined
+           (portRef D0HSRXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 3))
+          ))
+          (net (rename bd0_w_3 "bd0_w[3]") (joined
+           (portRef D0HSRXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 4))
+          ))
+          (net (rename bd0_w_2 "bd0_w[2]") (joined
+           (portRef D0HSRXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 5))
+          ))
+          (net (rename bd0_w_1 "bd0_w[1]") (joined
+           (portRef D0HSRXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 6))
+          ))
+          (net (rename bd0_w_0 "bd0_w[0]") (joined
+           (portRef D0HSRXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd0_w 7))
+          ))
+          (net (rename d_sot_det_w_0 "d_sot_det_w[0]") (joined
+           (portRef D0SYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sot_det_w 3))
+          ))
+          (net (rename d_sote_det_w_0 "d_sote_det_w[0]") (joined
+           (portRef D0ERRSYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sote_det_w 3))
+          ))
+          (net un1_mixel_dphy_40 (joined
+           (portRef D0NOSYNC (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_28 (joined
+           (portRef D0DRXHS (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net lp_d1_rx_p_o (joined
+           (portRef D1DRXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d1_rx_p_o)
+          ))
+          (net lp_d1_rx_n_o (joined
+           (portRef D1DRXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d1_rx_n_o)
+          ))
+          (net un1_mixel_dphy_4 (joined
+           (portRef D1DCDP (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_5 (joined
+           (portRef D1DCDN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_46 (joined
+           (portRef D1HSRXDATA15 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_7 (joined
+           (portRef D1HSRXDATA14 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_35 (joined
+           (portRef D1HSRXDATA13 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_45 (joined
+           (portRef D1HSRXDATA12 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_37 (joined
+           (portRef D1HSRXDATA11 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_11 (joined
+           (portRef D1HSRXDATA10 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_12 (joined
+           (portRef D1HSRXDATA9 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_36 (joined
+           (portRef D1HSRXDATA8 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename bd1_w_7 "bd1_w[7]") (joined
+           (portRef D1HSRXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 0))
+          ))
+          (net (rename bd1_w_6 "bd1_w[6]") (joined
+           (portRef D1HSRXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 1))
+          ))
+          (net (rename bd1_w_5 "bd1_w[5]") (joined
+           (portRef D1HSRXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 2))
+          ))
+          (net (rename bd1_w_4 "bd1_w[4]") (joined
+           (portRef D1HSRXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 3))
+          ))
+          (net (rename bd1_w_3 "bd1_w[3]") (joined
+           (portRef D1HSRXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 4))
+          ))
+          (net (rename bd1_w_2 "bd1_w[2]") (joined
+           (portRef D1HSRXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 5))
+          ))
+          (net (rename bd1_w_1 "bd1_w[1]") (joined
+           (portRef D1HSRXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 6))
+          ))
+          (net (rename bd1_w_0 "bd1_w[0]") (joined
+           (portRef D1HSRXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd1_w 7))
+          ))
+          (net (rename d_sot_det_w_1 "d_sot_det_w[1]") (joined
+           (portRef D1SYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sot_det_w 2))
+          ))
+          (net (rename d_sote_det_w_1 "d_sote_det_w[1]") (joined
+           (portRef D1ERRSYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sote_det_w 2))
+          ))
+          (net un1_mixel_dphy_38 (joined
+           (portRef D1NOSYNC (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_39 (joined
+           (portRef D1DRXHS (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net lp_d2_rx_p_o (joined
+           (portRef D2DRXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d2_rx_p_o)
+          ))
+          (net lp_d2_rx_n_o (joined
+           (portRef D2DRXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d2_rx_n_o)
+          ))
+          (net un1_mixel_dphy_42 (joined
+           (portRef D2DCDP (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_47 (joined
+           (portRef D2DCDN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_30 (joined
+           (portRef D2HSRXDATA15 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_31 (joined
+           (portRef D2HSRXDATA14 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_57 (joined
+           (portRef D2HSRXDATA13 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_58 (joined
+           (portRef D2HSRXDATA12 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_2 (joined
+           (portRef D2HSRXDATA11 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_3 (joined
+           (portRef D2HSRXDATA10 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy (joined
+           (portRef D2HSRXDATA9 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_1 (joined
+           (portRef D2HSRXDATA8 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename bd2_w_7 "bd2_w[7]") (joined
+           (portRef D2HSRXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 0))
+          ))
+          (net (rename bd2_w_6 "bd2_w[6]") (joined
+           (portRef D2HSRXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 1))
+          ))
+          (net (rename bd2_w_5 "bd2_w[5]") (joined
+           (portRef D2HSRXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 2))
+          ))
+          (net (rename bd2_w_4 "bd2_w[4]") (joined
+           (portRef D2HSRXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 3))
+          ))
+          (net (rename bd2_w_3 "bd2_w[3]") (joined
+           (portRef D2HSRXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 4))
+          ))
+          (net (rename bd2_w_2 "bd2_w[2]") (joined
+           (portRef D2HSRXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 5))
+          ))
+          (net (rename bd2_w_1 "bd2_w[1]") (joined
+           (portRef D2HSRXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 6))
+          ))
+          (net (rename bd2_w_0 "bd2_w[0]") (joined
+           (portRef D2HSRXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd2_w 7))
+          ))
+          (net (rename d_sot_det_w_2 "d_sot_det_w[2]") (joined
+           (portRef D2SYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sot_det_w 1))
+          ))
+          (net (rename d_sote_det_w_2 "d_sote_det_w[2]") (joined
+           (portRef D2ERRSYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sote_det_w 1))
+          ))
+          (net un1_mixel_dphy_48 (joined
+           (portRef D2NOSYNC (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_17 (joined
+           (portRef D2DRXHS (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net lp_d3_rx_p_o (joined
+           (portRef D3DRXLPP (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d3_rx_p_o)
+          ))
+          (net lp_d3_rx_n_o (joined
+           (portRef D3DRXLPN (instanceRef MIXEL_mixel_dphy))
+           (portRef lp_d3_rx_n_o)
+          ))
+          (net un1_mixel_dphy_18 (joined
+           (portRef D3DCDP (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_49 (joined
+           (portRef D3DCDN (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_41 (joined
+           (portRef D3HSRXDATA15 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_29 (joined
+           (portRef D3HSRXDATA14 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_43 (joined
+           (portRef D3HSRXDATA13 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_44 (joined
+           (portRef D3HSRXDATA12 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_33 (joined
+           (portRef D3HSRXDATA11 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_19 (joined
+           (portRef D3HSRXDATA10 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_20 (joined
+           (portRef D3HSRXDATA9 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_21 (joined
+           (portRef D3HSRXDATA8 (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net (rename bd3_w_7 "bd3_w[7]") (joined
+           (portRef D3HSRXDATA7 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 0))
+          ))
+          (net (rename bd3_w_6 "bd3_w[6]") (joined
+           (portRef D3HSRXDATA6 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 1))
+          ))
+          (net (rename bd3_w_5 "bd3_w[5]") (joined
+           (portRef D3HSRXDATA5 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 2))
+          ))
+          (net (rename bd3_w_4 "bd3_w[4]") (joined
+           (portRef D3HSRXDATA4 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 3))
+          ))
+          (net (rename bd3_w_3 "bd3_w[3]") (joined
+           (portRef D3HSRXDATA3 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 4))
+          ))
+          (net (rename bd3_w_2 "bd3_w[2]") (joined
+           (portRef D3HSRXDATA2 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 5))
+          ))
+          (net (rename bd3_w_1 "bd3_w[1]") (joined
+           (portRef D3HSRXDATA1 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 6))
+          ))
+          (net (rename bd3_w_0 "bd3_w[0]") (joined
+           (portRef D3HSRXDATA0 (instanceRef MIXEL_mixel_dphy))
+           (portRef (member bd3_w 7))
+          ))
+          (net (rename d_sot_det_w_3 "d_sot_det_w[3]") (joined
+           (portRef D3SYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sot_det_w 0))
+          ))
+          (net (rename d_sote_det_w_3 "d_sote_det_w[3]") (joined
+           (portRef D3ERRSYNC (instanceRef MIXEL_mixel_dphy))
+           (portRef (member d_sote_det_w 0))
+          ))
+          (net un1_mixel_dphy_50 (joined
+           (portRef D3NOSYNC (instanceRef MIXEL_mixel_dphy))
+          ))
+          (net un1_mixel_dphy_34 (joined
+           (portRef D3DRXHS (instanceRef MIXEL_mixel_dphy))
+          ))
+         )
+        (property NUM_RX_LANE (integer 4))
+        (property WORD_ALIGN (string "ON"))
+        (property RX_GEAR (integer 8))
+        (property DPHY_RX_IP (string "MIXEL"))
+        (property orig_inst_of (string "rx_dphy_dphy_wrapper"))
+       )
+    )
+    (cell rx_dphy_dphy_rx_wrap (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port reset_n_i (direction INPUT))
+           (port reset_byte_n_i (direction INPUT))
+           (port reset_byte_fr_n_i (direction INPUT))
+           (port clk_byte_fr_i (direction INPUT))
+           (port term_d0_en_i (direction INPUT))
+           (port term_d1_en_i (direction INPUT))
+           (port term_d2_en_i (direction INPUT))
+           (port term_d3_en_i (direction INPUT))
+           (port hs_d0_en_i (direction INPUT))
+           (port hs_d1_en_i (direction INPUT))
+           (port hs_d2_en_i (direction INPUT))
+           (port hs_d3_en_i (direction INPUT))
+           (port (array (rename d_sot_det "d_sot_det[3:0]") 4) (direction INPUT))
+           (port (array (rename d_sote_det "d_sote_det[3:0]") 4) (direction INPUT))
+           (port clk_byte_i (direction INPUT))
+           (port (array (rename bd0_i "bd0_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd1_i "bd1_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd2_i "bd2_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd3_i "bd3_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd0_o "bd0_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd1_o "bd1_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd2_o "bd2_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd3_o "bd3_o[7:0]") 8) (direction OUTPUT))
+           (port hs_sync_o (direction OUTPUT))
+         )
+        (property orig_inst_of (string "rx_dphy_dphy_rx_wrap"))
+       )
+    )
+    (cell rx_dphy_rx_global_ctrl (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port reset_n_i (direction INPUT))
+           (port reset_lp_n_i (direction INPUT))
+           (port reset_byte_fr_n_i (direction INPUT))
+           (port clk_lp_ctrl_i (direction INPUT))
+           (port clk_byte_hs_i (direction INPUT))
+           (port clk_byte_i (direction INPUT))
+           (port clk_byte_fr_i (direction INPUT))
+           (port pll_lock_i (direction INPUT))
+           (port (array (rename bd0_i "bd0_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd1_i "bd1_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd2_i "bd2_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd3_i "bd3_i[7:0]") 8) (direction INPUT))
+           (port lp_clk_p_i (direction INPUT))
+           (port lp_clk_n_i (direction INPUT))
+           (port lp_d0_p_i (direction INPUT))
+           (port lp_d0_n_i (direction INPUT))
+           (port lp_d1_p_i (direction INPUT))
+           (port lp_d1_n_i (direction INPUT))
+           (port lp_d2_p_i (direction INPUT))
+           (port lp_d2_n_i (direction INPUT))
+           (port lp_d3_p_i (direction INPUT))
+           (port lp_d3_n_i (direction INPUT))
+           (port hs_sync_i (direction INPUT))
+           (port (array (rename bd0_o "bd0_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd1_o "bd1_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd2_o "bd2_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename bd3_o "bd3_o[7:0]") 8) (direction OUTPUT))
+           (port term_clk_en_o (direction OUTPUT))
+           (port term_d0_en_o (direction OUTPUT))
+           (port hs_d0_en_o (direction OUTPUT))
+           (port term_d1_en_o (direction OUTPUT))
+           (port hs_d1_en_o (direction OUTPUT))
+           (port term_d2_en_o (direction OUTPUT))
+           (port hs_d2_en_o (direction OUTPUT))
+           (port term_d3_en_o (direction OUTPUT))
+           (port hs_d3_en_o (direction OUTPUT))
+           (port hs_sync_o (direction OUTPUT))
+           (port hs_settle_en_o (direction OUTPUT))
+           (port (array (rename lp_hs_state_clk_o "lp_hs_state_clk_o[1:0]") 2) (direction OUTPUT))
+           (port (array (rename lp_hs_state_d_o "lp_hs_state_d_o[1:0]") 2) (direction OUTPUT))
+         )
+        (property orig_inst_of (string "rx_dphy_rx_global_ctrl"))
+       )
+    )
+    (cell rx_dphy_capture_ctrl (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port reset_n_i (direction INPUT))
+           (port clk_byte_i (direction INPUT))
+           (port (array (rename bd0_i "bd0_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd1_i "bd1_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd2_i "bd2_i[7:0]") 8) (direction INPUT))
+           (port (array (rename bd3_i "bd3_i[7:0]") 8) (direction INPUT))
+           (port capture_en_i (direction INPUT))
+           (port (array (rename ref_dt_i "ref_dt_i[5:0]") 6) (direction INPUT))
+           (port sp_en_o (direction OUTPUT))
+           (port sp2_en_o (direction OUTPUT))
+           (port lp_en_o (direction OUTPUT))
+           (port lp2_en_o (direction OUTPUT))
+           (port lp_av_en_o (direction OUTPUT))
+           (port lp2_av_en_o (direction OUTPUT))
+           (port (array (rename bd_o "bd_o[31:0]") 32) (direction OUTPUT))
+           (port (array (rename vc_o "vc_o[1:0]") 2) (direction OUTPUT))
+           (port (array (rename vc2_o "vc2_o[1:0]") 2) (direction OUTPUT))
+           (port payload_en_o (direction OUTPUT))
+           (port (array (rename payload_o "payload_o[31:0]") 32) (direction OUTPUT))
+           (port (array (rename wc_o "wc_o[15:0]") 16) (direction OUTPUT))
+           (port (array (rename wc2_o "wc2_o[15:0]") 16) (direction OUTPUT))
+           (port (array (rename dt_o "dt_o[5:0]") 6) (direction OUTPUT))
+           (port (array (rename dt2_o "dt2_o[5:0]") 6) (direction OUTPUT))
+           (port (array (rename ecc_o "ecc_o[7:0]") 8) (direction OUTPUT))
+           (port (array (rename ecc2_o "ecc2_o[7:0]") 8) (direction OUTPUT))
+         )
+        (property orig_inst_of (string "rx_dphy_capture_ctrl"))
+       )
+    )
+    (cell b2p_byte2pixel (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port reset_byte_n_i (direction INPUT))
+           (port clk_byte_i (direction INPUT))
+           (port sp_en_i (direction INPUT))
+           (port (array (rename dt_i "dt_i[5:0]") 6) (direction INPUT))
+           (port lp_av_en_i (direction INPUT))
+           (port payload_en_i (direction INPUT))
+           (port (array (rename payload_i "payload_i[31:0]") 32) (direction INPUT))
+           (port (array (rename wc_i "wc_i[15:0]") 16) (direction INPUT))
+           (port reset_pixel_n_i (direction INPUT))
+           (port clk_pixel_i (direction INPUT))
+           (port de_o (direction OUTPUT))
+           (port vsync_o (direction OUTPUT))
+           (port hsync_o (direction OUTPUT))
+           (port (array (rename pd_o "pd_o[23:0]") 24) (direction OUTPUT))
+           (port (array (rename p_odd_o "p_odd_o[1:0]") 2) (direction OUTPUT))
+         )
+        (property orig_inst_of (string "b2p_byte2pixel"))
+       )
+    )
+    (cell rx_dphy_dphy_rx_Z1 (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename d_p_io "d_p_io[3:0]") 4) (direction INOUT))
+           (port (array (rename d_n_io "d_n_io[3:0]") 4) (direction INOUT))
+           (port (array (rename dt_w "dt_w[5:0]") 6) (direction OUTPUT))
+           (port (array (rename wc_o "wc_o[15:0]") 16) (direction OUTPUT))
+           (port (array (rename payload_o "payload_o[31:0]") 32) (direction OUTPUT))
+           (port clk_p_io (direction INOUT))
+           (port clk_n_io (direction INOUT))
+           (port reset_n_i_c_i (direction INPUT))
+           (port rx_reset_byte_n_sync_r (direction INPUT))
+           (port clk_byte_o (direction OUTPUT))
+           (port reset_n_i_c (direction INPUT))
+           (port payload_en_o (direction OUTPUT))
+           (port lp_av_en_o (direction OUTPUT))
+           (port sp_en_w (direction OUTPUT))
+           (port clk_byte_hs_w (direction OUTPUT))
+           (port rx_reset_byte_fr_n_sync_r (direction INPUT))
+         )
+         (contents
+          (instance (rename capture_ctrl_inst_capture_ctrl_inst "capture_ctrl_inst.capture_ctrl_inst") (viewRef verilog (cellRef rx_dphy_capture_ctrl))
+          )
+          (instance rx_global_ctrl_inst (viewRef verilog (cellRef rx_dphy_rx_global_ctrl))          )
+          (instance dphy_rx_wrap_inst (viewRef verilog (cellRef rx_dphy_dphy_rx_wrap))          )
+          (instance u_dphy_wrapper (viewRef netlist (cellRef rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s))
+           (property DPHY_RX_IP (string "MIXEL"))
+           (property RX_GEAR (integer 8))
+           (property WORD_ALIGN (string "ON"))
+           (property NUM_RX_LANE (integer 4))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (net rx_reset_byte_fr_n_sync_r (joined
+           (portRef rx_reset_byte_fr_n_sync_r)
+           (portRef reset_byte_fr_n_i (instanceRef dphy_rx_wrap_inst))
+           (portRef reset_byte_fr_n_i (instanceRef rx_global_ctrl_inst))
+           (portRef reset_n_i (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net clk_byte_hs_w (joined
+           (portRef clk_byte_hs_w (instanceRef u_dphy_wrapper))
+           (portRef clk_byte_fr_i (instanceRef dphy_rx_wrap_inst))
+           (portRef clk_byte_fr_i (instanceRef rx_global_ctrl_inst))
+           (portRef clk_byte_hs_i (instanceRef rx_global_ctrl_inst))
+           (portRef clk_byte_i (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef clk_byte_hs_w)
+          ))
+          (net (rename bd0_o_0 "bd0_o[0]") (joined
+           (portRef (member bd0_o 7) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_1 "bd0_o[1]") (joined
+           (portRef (member bd0_o 6) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_2 "bd0_o[2]") (joined
+           (portRef (member bd0_o 5) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_3 "bd0_o[3]") (joined
+           (portRef (member bd0_o 4) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_4 "bd0_o[4]") (joined
+           (portRef (member bd0_o 3) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_5 "bd0_o[5]") (joined
+           (portRef (member bd0_o 2) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_6 "bd0_o[6]") (joined
+           (portRef (member bd0_o 1) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd0_o_7 "bd0_o[7]") (joined
+           (portRef (member bd0_o 0) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd0_i 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_0 "bd1_o[0]") (joined
+           (portRef (member bd1_o 7) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_1 "bd1_o[1]") (joined
+           (portRef (member bd1_o 6) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_2 "bd1_o[2]") (joined
+           (portRef (member bd1_o 5) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_3 "bd1_o[3]") (joined
+           (portRef (member bd1_o 4) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_4 "bd1_o[4]") (joined
+           (portRef (member bd1_o 3) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_5 "bd1_o[5]") (joined
+           (portRef (member bd1_o 2) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_6 "bd1_o[6]") (joined
+           (portRef (member bd1_o 1) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd1_o_7 "bd1_o[7]") (joined
+           (portRef (member bd1_o 0) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd1_i 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_0 "bd2_o[0]") (joined
+           (portRef (member bd2_o 7) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_1 "bd2_o[1]") (joined
+           (portRef (member bd2_o 6) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_2 "bd2_o[2]") (joined
+           (portRef (member bd2_o 5) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_3 "bd2_o[3]") (joined
+           (portRef (member bd2_o 4) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_4 "bd2_o[4]") (joined
+           (portRef (member bd2_o 3) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_5 "bd2_o[5]") (joined
+           (portRef (member bd2_o 2) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_6 "bd2_o[6]") (joined
+           (portRef (member bd2_o 1) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd2_o_7 "bd2_o[7]") (joined
+           (portRef (member bd2_o 0) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd2_i 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_0 "bd3_o[0]") (joined
+           (portRef (member bd3_o 7) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_1 "bd3_o[1]") (joined
+           (portRef (member bd3_o 6) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_2 "bd3_o[2]") (joined
+           (portRef (member bd3_o 5) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_3 "bd3_o[3]") (joined
+           (portRef (member bd3_o 4) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_4 "bd3_o[4]") (joined
+           (portRef (member bd3_o 3) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_5 "bd3_o[5]") (joined
+           (portRef (member bd3_o 2) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_6 "bd3_o[6]") (joined
+           (portRef (member bd3_o 1) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd3_o_7 "bd3_o[7]") (joined
+           (portRef (member bd3_o 0) (instanceRef rx_global_ctrl_inst))
+           (portRef (member bd3_i 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net capture_en_o (joined
+           (portRef hs_sync_o (instanceRef rx_global_ctrl_inst))
+           (portRef capture_en_i (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net GND (joined
+           (portRef Z (instanceRef GND))
+           (portRef clk_lp_ctrl_i (instanceRef rx_global_ctrl_inst))
+           (portRef reset_lp_n_i (instanceRef rx_global_ctrl_inst))
+           (portRef (member ref_dt_i 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC))
+           (portRef pll_lock_i (instanceRef rx_global_ctrl_inst))
+           (portRef (member ref_dt_i 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member ref_dt_i 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member ref_dt_i 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member ref_dt_i 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member ref_dt_i 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net sp_en_w (joined
+           (portRef sp_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef sp_en_w)
+          ))
+          (net sp2_en_o (joined
+           (portRef sp2_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net lp_en_o (joined
+           (portRef lp_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net lp2_en_o (joined
+           (portRef lp2_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net lp_av_en_o (joined
+           (portRef lp_av_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef lp_av_en_o)
+          ))
+          (net lp2_av_en_o (joined
+           (portRef lp2_av_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_0 "bd_o[0]") (joined
+           (portRef (member bd_o 31) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_1 "bd_o[1]") (joined
+           (portRef (member bd_o 30) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_2 "bd_o[2]") (joined
+           (portRef (member bd_o 29) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_3 "bd_o[3]") (joined
+           (portRef (member bd_o 28) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_4 "bd_o[4]") (joined
+           (portRef (member bd_o 27) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_5 "bd_o[5]") (joined
+           (portRef (member bd_o 26) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_6 "bd_o[6]") (joined
+           (portRef (member bd_o 25) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_7 "bd_o[7]") (joined
+           (portRef (member bd_o 24) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_8 "bd_o[8]") (joined
+           (portRef (member bd_o 23) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_9 "bd_o[9]") (joined
+           (portRef (member bd_o 22) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_10 "bd_o[10]") (joined
+           (portRef (member bd_o 21) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_11 "bd_o[11]") (joined
+           (portRef (member bd_o 20) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_12 "bd_o[12]") (joined
+           (portRef (member bd_o 19) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_13 "bd_o[13]") (joined
+           (portRef (member bd_o 18) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_14 "bd_o[14]") (joined
+           (portRef (member bd_o 17) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_15 "bd_o[15]") (joined
+           (portRef (member bd_o 16) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_16 "bd_o[16]") (joined
+           (portRef (member bd_o 15) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_17 "bd_o[17]") (joined
+           (portRef (member bd_o 14) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_18 "bd_o[18]") (joined
+           (portRef (member bd_o 13) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_19 "bd_o[19]") (joined
+           (portRef (member bd_o 12) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_20 "bd_o[20]") (joined
+           (portRef (member bd_o 11) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_21 "bd_o[21]") (joined
+           (portRef (member bd_o 10) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_22 "bd_o[22]") (joined
+           (portRef (member bd_o 9) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_23 "bd_o[23]") (joined
+           (portRef (member bd_o 8) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_24 "bd_o[24]") (joined
+           (portRef (member bd_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_25 "bd_o[25]") (joined
+           (portRef (member bd_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_26 "bd_o[26]") (joined
+           (portRef (member bd_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_27 "bd_o[27]") (joined
+           (portRef (member bd_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_28 "bd_o[28]") (joined
+           (portRef (member bd_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_29 "bd_o[29]") (joined
+           (portRef (member bd_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_30 "bd_o[30]") (joined
+           (portRef (member bd_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename bd_o_31 "bd_o[31]") (joined
+           (portRef (member bd_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename vc_o_0 "vc_o[0]") (joined
+           (portRef (member vc_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename vc_o_1 "vc_o[1]") (joined
+           (portRef (member vc_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename vc2_o_0 "vc2_o[0]") (joined
+           (portRef (member vc2_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename vc2_o_1 "vc2_o[1]") (joined
+           (portRef (member vc2_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net payload_en_o (joined
+           (portRef payload_en_o (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef payload_en_o)
+          ))
+          (net (rename payload_o_0 "payload_o[0]") (joined
+           (portRef (member payload_o 31) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 31))
+          ))
+          (net (rename payload_o_1 "payload_o[1]") (joined
+           (portRef (member payload_o 30) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 30))
+          ))
+          (net (rename payload_o_2 "payload_o[2]") (joined
+           (portRef (member payload_o 29) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 29))
+          ))
+          (net (rename payload_o_3 "payload_o[3]") (joined
+           (portRef (member payload_o 28) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 28))
+          ))
+          (net (rename payload_o_4 "payload_o[4]") (joined
+           (portRef (member payload_o 27) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 27))
+          ))
+          (net (rename payload_o_5 "payload_o[5]") (joined
+           (portRef (member payload_o 26) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 26))
+          ))
+          (net (rename payload_o_6 "payload_o[6]") (joined
+           (portRef (member payload_o 25) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 25))
+          ))
+          (net (rename payload_o_7 "payload_o[7]") (joined
+           (portRef (member payload_o 24) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 24))
+          ))
+          (net (rename payload_o_8 "payload_o[8]") (joined
+           (portRef (member payload_o 23) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 23))
+          ))
+          (net (rename payload_o_9 "payload_o[9]") (joined
+           (portRef (member payload_o 22) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 22))
+          ))
+          (net (rename payload_o_10 "payload_o[10]") (joined
+           (portRef (member payload_o 21) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 21))
+          ))
+          (net (rename payload_o_11 "payload_o[11]") (joined
+           (portRef (member payload_o 20) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 20))
+          ))
+          (net (rename payload_o_12 "payload_o[12]") (joined
+           (portRef (member payload_o 19) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 19))
+          ))
+          (net (rename payload_o_13 "payload_o[13]") (joined
+           (portRef (member payload_o 18) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 18))
+          ))
+          (net (rename payload_o_14 "payload_o[14]") (joined
+           (portRef (member payload_o 17) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 17))
+          ))
+          (net (rename payload_o_15 "payload_o[15]") (joined
+           (portRef (member payload_o 16) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 16))
+          ))
+          (net (rename payload_o_16 "payload_o[16]") (joined
+           (portRef (member payload_o 15) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 15))
+          ))
+          (net (rename payload_o_17 "payload_o[17]") (joined
+           (portRef (member payload_o 14) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 14))
+          ))
+          (net (rename payload_o_18 "payload_o[18]") (joined
+           (portRef (member payload_o 13) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 13))
+          ))
+          (net (rename payload_o_19 "payload_o[19]") (joined
+           (portRef (member payload_o 12) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 12))
+          ))
+          (net (rename payload_o_20 "payload_o[20]") (joined
+           (portRef (member payload_o 11) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 11))
+          ))
+          (net (rename payload_o_21 "payload_o[21]") (joined
+           (portRef (member payload_o 10) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 10))
+          ))
+          (net (rename payload_o_22 "payload_o[22]") (joined
+           (portRef (member payload_o 9) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 9))
+          ))
+          (net (rename payload_o_23 "payload_o[23]") (joined
+           (portRef (member payload_o 8) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 8))
+          ))
+          (net (rename payload_o_24 "payload_o[24]") (joined
+           (portRef (member payload_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 7))
+          ))
+          (net (rename payload_o_25 "payload_o[25]") (joined
+           (portRef (member payload_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 6))
+          ))
+          (net (rename payload_o_26 "payload_o[26]") (joined
+           (portRef (member payload_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 5))
+          ))
+          (net (rename payload_o_27 "payload_o[27]") (joined
+           (portRef (member payload_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 4))
+          ))
+          (net (rename payload_o_28 "payload_o[28]") (joined
+           (portRef (member payload_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 3))
+          ))
+          (net (rename payload_o_29 "payload_o[29]") (joined
+           (portRef (member payload_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 2))
+          ))
+          (net (rename payload_o_30 "payload_o[30]") (joined
+           (portRef (member payload_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 1))
+          ))
+          (net (rename payload_o_31 "payload_o[31]") (joined
+           (portRef (member payload_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member payload_o 0))
+          ))
+          (net (rename wc_o_0 "wc_o[0]") (joined
+           (portRef (member wc_o 15) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 15))
+          ))
+          (net (rename wc_o_1 "wc_o[1]") (joined
+           (portRef (member wc_o 14) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 14))
+          ))
+          (net (rename wc_o_2 "wc_o[2]") (joined
+           (portRef (member wc_o 13) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 13))
+          ))
+          (net (rename wc_o_3 "wc_o[3]") (joined
+           (portRef (member wc_o 12) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 12))
+          ))
+          (net (rename wc_o_4 "wc_o[4]") (joined
+           (portRef (member wc_o 11) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 11))
+          ))
+          (net (rename wc_o_5 "wc_o[5]") (joined
+           (portRef (member wc_o 10) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 10))
+          ))
+          (net (rename wc_o_6 "wc_o[6]") (joined
+           (portRef (member wc_o 9) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 9))
+          ))
+          (net (rename wc_o_7 "wc_o[7]") (joined
+           (portRef (member wc_o 8) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 8))
+          ))
+          (net (rename wc_o_8 "wc_o[8]") (joined
+           (portRef (member wc_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 7))
+          ))
+          (net (rename wc_o_9 "wc_o[9]") (joined
+           (portRef (member wc_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 6))
+          ))
+          (net (rename wc_o_10 "wc_o[10]") (joined
+           (portRef (member wc_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 5))
+          ))
+          (net (rename wc_o_11 "wc_o[11]") (joined
+           (portRef (member wc_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 4))
+          ))
+          (net (rename wc_o_12 "wc_o[12]") (joined
+           (portRef (member wc_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 3))
+          ))
+          (net (rename wc_o_13 "wc_o[13]") (joined
+           (portRef (member wc_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 2))
+          ))
+          (net (rename wc_o_14 "wc_o[14]") (joined
+           (portRef (member wc_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 1))
+          ))
+          (net (rename wc_o_15 "wc_o[15]") (joined
+           (portRef (member wc_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member wc_o 0))
+          ))
+          (net (rename wc2_o_0 "wc2_o[0]") (joined
+           (portRef (member wc2_o 15) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_1 "wc2_o[1]") (joined
+           (portRef (member wc2_o 14) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_2 "wc2_o[2]") (joined
+           (portRef (member wc2_o 13) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_3 "wc2_o[3]") (joined
+           (portRef (member wc2_o 12) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_4 "wc2_o[4]") (joined
+           (portRef (member wc2_o 11) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_5 "wc2_o[5]") (joined
+           (portRef (member wc2_o 10) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_6 "wc2_o[6]") (joined
+           (portRef (member wc2_o 9) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_7 "wc2_o[7]") (joined
+           (portRef (member wc2_o 8) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_8 "wc2_o[8]") (joined
+           (portRef (member wc2_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_9 "wc2_o[9]") (joined
+           (portRef (member wc2_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_10 "wc2_o[10]") (joined
+           (portRef (member wc2_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_11 "wc2_o[11]") (joined
+           (portRef (member wc2_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_12 "wc2_o[12]") (joined
+           (portRef (member wc2_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_13 "wc2_o[13]") (joined
+           (portRef (member wc2_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_14 "wc2_o[14]") (joined
+           (portRef (member wc2_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename wc2_o_15 "wc2_o[15]") (joined
+           (portRef (member wc2_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt_w_0 "dt_w[0]") (joined
+           (portRef (member dt_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 5))
+          ))
+          (net (rename dt_w_1 "dt_w[1]") (joined
+           (portRef (member dt_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 4))
+          ))
+          (net (rename dt_w_2 "dt_w[2]") (joined
+           (portRef (member dt_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 3))
+          ))
+          (net (rename dt_w_3 "dt_w[3]") (joined
+           (portRef (member dt_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 2))
+          ))
+          (net (rename dt_w_4 "dt_w[4]") (joined
+           (portRef (member dt_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 1))
+          ))
+          (net (rename dt_w_5 "dt_w[5]") (joined
+           (portRef (member dt_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+           (portRef (member dt_w 0))
+          ))
+          (net (rename dt2_o_0 "dt2_o[0]") (joined
+           (portRef (member dt2_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt2_o_1 "dt2_o[1]") (joined
+           (portRef (member dt2_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt2_o_2 "dt2_o[2]") (joined
+           (portRef (member dt2_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt2_o_3 "dt2_o[3]") (joined
+           (portRef (member dt2_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt2_o_4 "dt2_o[4]") (joined
+           (portRef (member dt2_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename dt2_o_5 "dt2_o[5]") (joined
+           (portRef (member dt2_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_0 "ecc_o[0]") (joined
+           (portRef (member ecc_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_1 "ecc_o[1]") (joined
+           (portRef (member ecc_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_2 "ecc_o[2]") (joined
+           (portRef (member ecc_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_3 "ecc_o[3]") (joined
+           (portRef (member ecc_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_4 "ecc_o[4]") (joined
+           (portRef (member ecc_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_5 "ecc_o[5]") (joined
+           (portRef (member ecc_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_6 "ecc_o[6]") (joined
+           (portRef (member ecc_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc_o_7 "ecc_o[7]") (joined
+           (portRef (member ecc_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_0 "ecc2_o[0]") (joined
+           (portRef (member ecc2_o 7) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_1 "ecc2_o[1]") (joined
+           (portRef (member ecc2_o 6) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_2 "ecc2_o[2]") (joined
+           (portRef (member ecc2_o 5) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_3 "ecc2_o[3]") (joined
+           (portRef (member ecc2_o 4) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_4 "ecc2_o[4]") (joined
+           (portRef (member ecc2_o 3) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_5 "ecc2_o[5]") (joined
+           (portRef (member ecc2_o 2) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_6 "ecc2_o[6]") (joined
+           (portRef (member ecc2_o 1) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net (rename ecc2_o_7 "ecc2_o[7]") (joined
+           (portRef (member ecc2_o 0) (instanceRef capture_ctrl_inst_capture_ctrl_inst))
+          ))
+          (net reset_n_i_c (joined
+           (portRef reset_n_i_c)
+           (portRef reset_n_i (instanceRef dphy_rx_wrap_inst))
+           (portRef reset_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net clk_byte_o (joined
+           (portRef clk_byte_o (instanceRef u_dphy_wrapper))
+           (portRef clk_byte_i (instanceRef dphy_rx_wrap_inst))
+           (portRef clk_byte_i (instanceRef rx_global_ctrl_inst))
+           (portRef clk_byte_o)
+          ))
+          (net (rename bd0_0 "bd0[0]") (joined
+           (portRef (member bd0_o 7) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 7) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_1 "bd0[1]") (joined
+           (portRef (member bd0_o 6) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 6) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_2 "bd0[2]") (joined
+           (portRef (member bd0_o 5) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 5) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_3 "bd0[3]") (joined
+           (portRef (member bd0_o 4) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 4) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_4 "bd0[4]") (joined
+           (portRef (member bd0_o 3) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 3) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_5 "bd0[5]") (joined
+           (portRef (member bd0_o 2) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 2) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_6 "bd0[6]") (joined
+           (portRef (member bd0_o 1) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd0_7 "bd0[7]") (joined
+           (portRef (member bd0_o 0) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd0_i 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_0 "bd1[0]") (joined
+           (portRef (member bd1_o 7) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 7) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_1 "bd1[1]") (joined
+           (portRef (member bd1_o 6) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 6) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_2 "bd1[2]") (joined
+           (portRef (member bd1_o 5) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 5) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_3 "bd1[3]") (joined
+           (portRef (member bd1_o 4) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 4) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_4 "bd1[4]") (joined
+           (portRef (member bd1_o 3) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 3) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_5 "bd1[5]") (joined
+           (portRef (member bd1_o 2) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 2) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_6 "bd1[6]") (joined
+           (portRef (member bd1_o 1) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd1_7 "bd1[7]") (joined
+           (portRef (member bd1_o 0) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd1_i 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_0 "bd2[0]") (joined
+           (portRef (member bd2_o 7) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 7) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_1 "bd2[1]") (joined
+           (portRef (member bd2_o 6) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 6) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_2 "bd2[2]") (joined
+           (portRef (member bd2_o 5) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 5) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_3 "bd2[3]") (joined
+           (portRef (member bd2_o 4) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 4) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_4 "bd2[4]") (joined
+           (portRef (member bd2_o 3) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 3) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_5 "bd2[5]") (joined
+           (portRef (member bd2_o 2) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 2) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_6 "bd2[6]") (joined
+           (portRef (member bd2_o 1) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd2_7 "bd2[7]") (joined
+           (portRef (member bd2_o 0) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd2_i 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_0 "bd3[0]") (joined
+           (portRef (member bd3_o 7) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 7) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_1 "bd3[1]") (joined
+           (portRef (member bd3_o 6) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 6) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_2 "bd3[2]") (joined
+           (portRef (member bd3_o 5) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 5) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_3 "bd3[3]") (joined
+           (portRef (member bd3_o 4) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 4) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_4 "bd3[4]") (joined
+           (portRef (member bd3_o 3) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 3) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_5 "bd3[5]") (joined
+           (portRef (member bd3_o 2) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 2) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_6 "bd3[6]") (joined
+           (portRef (member bd3_o 1) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename bd3_7 "bd3[7]") (joined
+           (portRef (member bd3_o 0) (instanceRef dphy_rx_wrap_inst))
+           (portRef (member bd3_i 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_clk_rx_p (joined
+           (portRef lp_clk_rx_p (instanceRef u_dphy_wrapper))
+           (portRef lp_clk_p_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_clk_rx_n (joined
+           (portRef lp_clk_rx_n (instanceRef u_dphy_wrapper))
+           (portRef lp_clk_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d0_rx_p_o (joined
+           (portRef lp_d0_rx_p_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d0_p_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d0_rx_n_o (joined
+           (portRef lp_d0_rx_n_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d0_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d1_rx_p_o (joined
+           (portRef lp_d1_rx_p_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d1_p_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d1_rx_n_o (joined
+           (portRef lp_d1_rx_n_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d1_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d2_rx_p_o (joined
+           (portRef lp_d2_rx_p_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d2_p_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d2_rx_n_o (joined
+           (portRef lp_d2_rx_n_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d2_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d3_rx_p_o (joined
+           (portRef lp_d3_rx_p_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d3_p_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net lp_d3_rx_n_o (joined
+           (portRef lp_d3_rx_n_o (instanceRef u_dphy_wrapper))
+           (portRef lp_d3_n_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net hs_sync_o (joined
+           (portRef hs_sync_o (instanceRef dphy_rx_wrap_inst))
+           (portRef hs_sync_i (instanceRef rx_global_ctrl_inst))
+          ))
+          (net term_clk_en_o (joined
+           (portRef term_clk_en_o (instanceRef rx_global_ctrl_inst))
+           (portRef term_clk_en_o (instanceRef u_dphy_wrapper))
+          ))
+          (net term_d0_en_w (joined
+           (portRef term_d0_en_o (instanceRef rx_global_ctrl_inst))
+           (portRef term_d0_en_w (instanceRef u_dphy_wrapper))
+           (portRef term_d3_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef term_d2_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef term_d1_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef term_d0_en_i (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net hs_d_en_o (joined
+           (portRef hs_d0_en_o (instanceRef rx_global_ctrl_inst))
+           (portRef hs_d_en_o (instanceRef u_dphy_wrapper))
+           (portRef hs_d3_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef hs_d2_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef hs_d1_en_i (instanceRef dphy_rx_wrap_inst))
+           (portRef hs_d0_en_i (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net term_d1_en_temp_w (joined
+           (portRef term_d1_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net hs_d1_en_temp_w (joined
+           (portRef hs_d1_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net term_d2_en_temp_w (joined
+           (portRef term_d2_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net hs_d2_en_temp_w (joined
+           (portRef hs_d2_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net term_d3_en_temp_w (joined
+           (portRef term_d3_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net hs_d3_en_temp_w (joined
+           (portRef hs_d3_en_o (instanceRef rx_global_ctrl_inst))
+          ))
+          (net hs_settle_en_w (joined
+           (portRef hs_settle_en_o (instanceRef rx_global_ctrl_inst))
+           (portRef hs_settle_en_w (instanceRef u_dphy_wrapper))
+          ))
+          (net (rename lp_hs_state_clk_o_0 "lp_hs_state_clk_o[0]") (joined
+           (portRef (member lp_hs_state_clk_o 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename lp_hs_state_clk_o_1 "lp_hs_state_clk_o[1]") (joined
+           (portRef (member lp_hs_state_clk_o 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename lp_hs_state_d_o_0 "lp_hs_state_d_o[0]") (joined
+           (portRef (member lp_hs_state_d_o 1) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net (rename lp_hs_state_d_o_1 "lp_hs_state_d_o[1]") (joined
+           (portRef (member lp_hs_state_d_o 0) (instanceRef rx_global_ctrl_inst))
+          ))
+          (net rx_reset_byte_n_sync_r (joined
+           (portRef rx_reset_byte_n_sync_r)
+           (portRef reset_byte_n_i (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sot_det_w_0 "d_sot_det_w[0]") (joined
+           (portRef (member d_sot_det_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sot_det 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sot_det_w_1 "d_sot_det_w[1]") (joined
+           (portRef (member d_sot_det_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sot_det 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sot_det_w_2 "d_sot_det_w[2]") (joined
+           (portRef (member d_sot_det_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sot_det 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sot_det_w_3 "d_sot_det_w[3]") (joined
+           (portRef (member d_sot_det_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sot_det 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sote_det_w_0 "d_sote_det_w[0]") (joined
+           (portRef (member d_sote_det_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sote_det 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sote_det_w_1 "d_sote_det_w[1]") (joined
+           (portRef (member d_sote_det_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sote_det 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sote_det_w_2 "d_sote_det_w[2]") (joined
+           (portRef (member d_sote_det_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sote_det 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_sote_det_w_3 "d_sote_det_w[3]") (joined
+           (portRef (member d_sote_det_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member d_sote_det 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_0 "bd0_w[0]") (joined
+           (portRef (member bd0_w 7) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 7) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_1 "bd0_w[1]") (joined
+           (portRef (member bd0_w 6) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 6) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_2 "bd0_w[2]") (joined
+           (portRef (member bd0_w 5) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 5) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_3 "bd0_w[3]") (joined
+           (portRef (member bd0_w 4) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 4) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_4 "bd0_w[4]") (joined
+           (portRef (member bd0_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_5 "bd0_w[5]") (joined
+           (portRef (member bd0_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_6 "bd0_w[6]") (joined
+           (portRef (member bd0_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd0_w_7 "bd0_w[7]") (joined
+           (portRef (member bd0_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member bd0_i 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_0 "bd1_w[0]") (joined
+           (portRef (member bd1_w 7) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 7) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_1 "bd1_w[1]") (joined
+           (portRef (member bd1_w 6) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 6) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_2 "bd1_w[2]") (joined
+           (portRef (member bd1_w 5) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 5) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_3 "bd1_w[3]") (joined
+           (portRef (member bd1_w 4) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 4) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_4 "bd1_w[4]") (joined
+           (portRef (member bd1_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_5 "bd1_w[5]") (joined
+           (portRef (member bd1_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_6 "bd1_w[6]") (joined
+           (portRef (member bd1_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd1_w_7 "bd1_w[7]") (joined
+           (portRef (member bd1_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member bd1_i 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_0 "bd2_w[0]") (joined
+           (portRef (member bd2_w 7) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 7) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_1 "bd2_w[1]") (joined
+           (portRef (member bd2_w 6) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 6) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_2 "bd2_w[2]") (joined
+           (portRef (member bd2_w 5) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 5) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_3 "bd2_w[3]") (joined
+           (portRef (member bd2_w 4) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 4) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_4 "bd2_w[4]") (joined
+           (portRef (member bd2_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_5 "bd2_w[5]") (joined
+           (portRef (member bd2_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_6 "bd2_w[6]") (joined
+           (portRef (member bd2_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd2_w_7 "bd2_w[7]") (joined
+           (portRef (member bd2_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member bd2_i 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_0 "bd3_w[0]") (joined
+           (portRef (member bd3_w 7) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 7) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_1 "bd3_w[1]") (joined
+           (portRef (member bd3_w 6) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 6) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_2 "bd3_w[2]") (joined
+           (portRef (member bd3_w 5) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 5) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_3 "bd3_w[3]") (joined
+           (portRef (member bd3_w 4) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 4) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_4 "bd3_w[4]") (joined
+           (portRef (member bd3_w 3) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 3) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_5 "bd3_w[5]") (joined
+           (portRef (member bd3_w 2) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 2) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_6 "bd3_w[6]") (joined
+           (portRef (member bd3_w 1) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 1) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename bd3_w_7 "bd3_w[7]") (joined
+           (portRef (member bd3_w 0) (instanceRef u_dphy_wrapper))
+           (portRef (member bd3_i 0) (instanceRef dphy_rx_wrap_inst))
+          ))
+          (net (rename d_n_io_0 "d_n_io[0]") (joined
+           (portRef (member d_n_io 3) (instanceRef u_dphy_wrapper))
+           (portRef (member d_n_io 3))
+          ))
+          (net (rename d_n_io_1 "d_n_io[1]") (joined
+           (portRef (member d_n_io 2) (instanceRef u_dphy_wrapper))
+           (portRef (member d_n_io 2))
+          ))
+          (net (rename d_n_io_2 "d_n_io[2]") (joined
+           (portRef (member d_n_io 1) (instanceRef u_dphy_wrapper))
+           (portRef (member d_n_io 1))
+          ))
+          (net (rename d_n_io_3 "d_n_io[3]") (joined
+           (portRef (member d_n_io 0) (instanceRef u_dphy_wrapper))
+           (portRef (member d_n_io 0))
+          ))
+          (net (rename d_p_io_0 "d_p_io[0]") (joined
+           (portRef (member d_p_io 3) (instanceRef u_dphy_wrapper))
+           (portRef (member d_p_io 3))
+          ))
+          (net (rename d_p_io_1 "d_p_io[1]") (joined
+           (portRef (member d_p_io 2) (instanceRef u_dphy_wrapper))
+           (portRef (member d_p_io 2))
+          ))
+          (net (rename d_p_io_2 "d_p_io[2]") (joined
+           (portRef (member d_p_io 1) (instanceRef u_dphy_wrapper))
+           (portRef (member d_p_io 1))
+          ))
+          (net (rename d_p_io_3 "d_p_io[3]") (joined
+           (portRef (member d_p_io 0) (instanceRef u_dphy_wrapper))
+           (portRef (member d_p_io 0))
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef reset_n_i_c_i)
+           (portRef reset_n_i_c_i (instanceRef u_dphy_wrapper))
+          ))
+          (net clk_n_io (joined
+           (portRef clk_n_io (instanceRef u_dphy_wrapper))
+           (portRef clk_n_io)
+          ))
+          (net clk_p_io (joined
+           (portRef clk_p_io (instanceRef u_dphy_wrapper))
+           (portRef clk_p_io)
+          ))
+         )
+        (property FIFO_TYPE (string "LUT"))
+        (property SETTLE_CYC (integer 2))
+        (property BYTECLK_MHZ (integer 10))
+        (property WORD_ALIGN (string "ON"))
+        (property LANE_ALIGN (string "ON"))
+        (property TX_WAIT_TIME (string "LESS_15MS"))
+        (property RX_CLK_MODE (string "HS_ONLY"))
+        (property DATA_TYPE (string "RGB888"))
+        (property DPHY_RX_IP (string "MIXEL"))
+        (property RX_GEAR (integer 8))
+        (property NUM_RX_LANE (integer 4))
+        (property RX_TYPE (string "DSI"))
+        (property PARSER (string "ON"))
+        (property orig_inst_of (string "rx_dphy_dphy_rx"))
+       )
+    )
+    (cell b2p (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename pd_o_c "pd_o_c[23:0]") 24) (direction OUTPUT))
+           (port (array (rename wc_o "wc_o[15:0]") 16) (direction INPUT))
+           (port (array (rename payload_o "payload_o[31:0]") 32) (direction INPUT))
+           (port (array (rename dt_w "dt_w[5:0]") 6) (direction INPUT))
+           (port hsync_o_c (direction OUTPUT))
+           (port vsync_o_c (direction OUTPUT))
+           (port de_o_c (direction OUTPUT))
+           (port clk_pixel_o_c (direction INPUT))
+           (port b2p_reset_pixel_n_sync_r (direction INPUT))
+           (port payload_en_o (direction INPUT))
+           (port lp_av_en_o (direction INPUT))
+           (port sp_en_w (direction INPUT))
+           (port clk_byte_hs_w (direction INPUT))
+           (port rx_reset_byte_fr_n_sync_r (direction INPUT))
+         )
+         (contents
+          (instance byte2pixel_wrapper (viewRef verilog (cellRef b2p_byte2pixel))          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net rx_reset_byte_fr_n_sync_r (joined
+           (portRef rx_reset_byte_fr_n_sync_r)
+           (portRef reset_byte_n_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net clk_byte_hs_w (joined
+           (portRef clk_byte_hs_w)
+           (portRef clk_byte_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net sp_en_w (joined
+           (portRef sp_en_w)
+           (portRef sp_en_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_0 "dt_w[0]") (joined
+           (portRef (member dt_w 5))
+           (portRef (member dt_i 5) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_1 "dt_w[1]") (joined
+           (portRef (member dt_w 4))
+           (portRef (member dt_i 4) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_2 "dt_w[2]") (joined
+           (portRef (member dt_w 3))
+           (portRef (member dt_i 3) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_3 "dt_w[3]") (joined
+           (portRef (member dt_w 2))
+           (portRef (member dt_i 2) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_4 "dt_w[4]") (joined
+           (portRef (member dt_w 1))
+           (portRef (member dt_i 1) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename dt_w_5 "dt_w[5]") (joined
+           (portRef (member dt_w 0))
+           (portRef (member dt_i 0) (instanceRef byte2pixel_wrapper))
+          ))
+          (net lp_av_en_o (joined
+           (portRef lp_av_en_o)
+           (portRef lp_av_en_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net payload_en_o (joined
+           (portRef payload_en_o)
+           (portRef payload_en_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_0 "payload_o[0]") (joined
+           (portRef (member payload_o 31))
+           (portRef (member payload_i 31) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_1 "payload_o[1]") (joined
+           (portRef (member payload_o 30))
+           (portRef (member payload_i 30) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_2 "payload_o[2]") (joined
+           (portRef (member payload_o 29))
+           (portRef (member payload_i 29) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_3 "payload_o[3]") (joined
+           (portRef (member payload_o 28))
+           (portRef (member payload_i 28) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_4 "payload_o[4]") (joined
+           (portRef (member payload_o 27))
+           (portRef (member payload_i 27) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_5 "payload_o[5]") (joined
+           (portRef (member payload_o 26))
+           (portRef (member payload_i 26) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_6 "payload_o[6]") (joined
+           (portRef (member payload_o 25))
+           (portRef (member payload_i 25) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_7 "payload_o[7]") (joined
+           (portRef (member payload_o 24))
+           (portRef (member payload_i 24) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_8 "payload_o[8]") (joined
+           (portRef (member payload_o 23))
+           (portRef (member payload_i 23) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_9 "payload_o[9]") (joined
+           (portRef (member payload_o 22))
+           (portRef (member payload_i 22) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_10 "payload_o[10]") (joined
+           (portRef (member payload_o 21))
+           (portRef (member payload_i 21) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_11 "payload_o[11]") (joined
+           (portRef (member payload_o 20))
+           (portRef (member payload_i 20) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_12 "payload_o[12]") (joined
+           (portRef (member payload_o 19))
+           (portRef (member payload_i 19) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_13 "payload_o[13]") (joined
+           (portRef (member payload_o 18))
+           (portRef (member payload_i 18) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_14 "payload_o[14]") (joined
+           (portRef (member payload_o 17))
+           (portRef (member payload_i 17) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_15 "payload_o[15]") (joined
+           (portRef (member payload_o 16))
+           (portRef (member payload_i 16) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_16 "payload_o[16]") (joined
+           (portRef (member payload_o 15))
+           (portRef (member payload_i 15) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_17 "payload_o[17]") (joined
+           (portRef (member payload_o 14))
+           (portRef (member payload_i 14) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_18 "payload_o[18]") (joined
+           (portRef (member payload_o 13))
+           (portRef (member payload_i 13) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_19 "payload_o[19]") (joined
+           (portRef (member payload_o 12))
+           (portRef (member payload_i 12) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_20 "payload_o[20]") (joined
+           (portRef (member payload_o 11))
+           (portRef (member payload_i 11) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_21 "payload_o[21]") (joined
+           (portRef (member payload_o 10))
+           (portRef (member payload_i 10) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_22 "payload_o[22]") (joined
+           (portRef (member payload_o 9))
+           (portRef (member payload_i 9) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_23 "payload_o[23]") (joined
+           (portRef (member payload_o 8))
+           (portRef (member payload_i 8) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_24 "payload_o[24]") (joined
+           (portRef (member payload_o 7))
+           (portRef (member payload_i 7) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_25 "payload_o[25]") (joined
+           (portRef (member payload_o 6))
+           (portRef (member payload_i 6) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_26 "payload_o[26]") (joined
+           (portRef (member payload_o 5))
+           (portRef (member payload_i 5) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_27 "payload_o[27]") (joined
+           (portRef (member payload_o 4))
+           (portRef (member payload_i 4) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_28 "payload_o[28]") (joined
+           (portRef (member payload_o 3))
+           (portRef (member payload_i 3) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_29 "payload_o[29]") (joined
+           (portRef (member payload_o 2))
+           (portRef (member payload_i 2) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_30 "payload_o[30]") (joined
+           (portRef (member payload_o 1))
+           (portRef (member payload_i 1) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename payload_o_31 "payload_o[31]") (joined
+           (portRef (member payload_o 0))
+           (portRef (member payload_i 0) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_0 "wc_o[0]") (joined
+           (portRef (member wc_o 15))
+           (portRef (member wc_i 15) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_1 "wc_o[1]") (joined
+           (portRef (member wc_o 14))
+           (portRef (member wc_i 14) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_2 "wc_o[2]") (joined
+           (portRef (member wc_o 13))
+           (portRef (member wc_i 13) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_3 "wc_o[3]") (joined
+           (portRef (member wc_o 12))
+           (portRef (member wc_i 12) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_4 "wc_o[4]") (joined
+           (portRef (member wc_o 11))
+           (portRef (member wc_i 11) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_5 "wc_o[5]") (joined
+           (portRef (member wc_o 10))
+           (portRef (member wc_i 10) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_6 "wc_o[6]") (joined
+           (portRef (member wc_o 9))
+           (portRef (member wc_i 9) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_7 "wc_o[7]") (joined
+           (portRef (member wc_o 8))
+           (portRef (member wc_i 8) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_8 "wc_o[8]") (joined
+           (portRef (member wc_o 7))
+           (portRef (member wc_i 7) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_9 "wc_o[9]") (joined
+           (portRef (member wc_o 6))
+           (portRef (member wc_i 6) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_10 "wc_o[10]") (joined
+           (portRef (member wc_o 5))
+           (portRef (member wc_i 5) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_11 "wc_o[11]") (joined
+           (portRef (member wc_o 4))
+           (portRef (member wc_i 4) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_12 "wc_o[12]") (joined
+           (portRef (member wc_o 3))
+           (portRef (member wc_i 3) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_13 "wc_o[13]") (joined
+           (portRef (member wc_o 2))
+           (portRef (member wc_i 2) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_14 "wc_o[14]") (joined
+           (portRef (member wc_o 1))
+           (portRef (member wc_i 1) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename wc_o_15 "wc_o[15]") (joined
+           (portRef (member wc_o 0))
+           (portRef (member wc_i 0) (instanceRef byte2pixel_wrapper))
+          ))
+          (net b2p_reset_pixel_n_sync_r (joined
+           (portRef b2p_reset_pixel_n_sync_r)
+           (portRef reset_pixel_n_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net clk_pixel_o_c (joined
+           (portRef clk_pixel_o_c)
+           (portRef clk_pixel_i (instanceRef byte2pixel_wrapper))
+          ))
+          (net de_o_c (joined
+           (portRef de_o (instanceRef byte2pixel_wrapper))
+           (portRef de_o_c)
+          ))
+          (net vsync_o_c (joined
+           (portRef vsync_o (instanceRef byte2pixel_wrapper))
+           (portRef vsync_o_c)
+          ))
+          (net hsync_o_c (joined
+           (portRef hsync_o (instanceRef byte2pixel_wrapper))
+           (portRef hsync_o_c)
+          ))
+          (net (rename pd_o_c_0 "pd_o_c[0]") (joined
+           (portRef (member pd_o 23) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 23))
+          ))
+          (net (rename pd_o_c_1 "pd_o_c[1]") (joined
+           (portRef (member pd_o 22) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 22))
+          ))
+          (net (rename pd_o_c_2 "pd_o_c[2]") (joined
+           (portRef (member pd_o 21) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 21))
+          ))
+          (net (rename pd_o_c_3 "pd_o_c[3]") (joined
+           (portRef (member pd_o 20) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 20))
+          ))
+          (net (rename pd_o_c_4 "pd_o_c[4]") (joined
+           (portRef (member pd_o 19) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 19))
+          ))
+          (net (rename pd_o_c_5 "pd_o_c[5]") (joined
+           (portRef (member pd_o 18) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 18))
+          ))
+          (net (rename pd_o_c_6 "pd_o_c[6]") (joined
+           (portRef (member pd_o 17) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 17))
+          ))
+          (net (rename pd_o_c_7 "pd_o_c[7]") (joined
+           (portRef (member pd_o 16) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 16))
+          ))
+          (net (rename pd_o_c_8 "pd_o_c[8]") (joined
+           (portRef (member pd_o 15) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 15))
+          ))
+          (net (rename pd_o_c_9 "pd_o_c[9]") (joined
+           (portRef (member pd_o 14) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 14))
+          ))
+          (net (rename pd_o_c_10 "pd_o_c[10]") (joined
+           (portRef (member pd_o 13) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 13))
+          ))
+          (net (rename pd_o_c_11 "pd_o_c[11]") (joined
+           (portRef (member pd_o 12) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 12))
+          ))
+          (net (rename pd_o_c_12 "pd_o_c[12]") (joined
+           (portRef (member pd_o 11) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 11))
+          ))
+          (net (rename pd_o_c_13 "pd_o_c[13]") (joined
+           (portRef (member pd_o 10) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 10))
+          ))
+          (net (rename pd_o_c_14 "pd_o_c[14]") (joined
+           (portRef (member pd_o 9) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 9))
+          ))
+          (net (rename pd_o_c_15 "pd_o_c[15]") (joined
+           (portRef (member pd_o 8) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 8))
+          ))
+          (net (rename pd_o_c_16 "pd_o_c[16]") (joined
+           (portRef (member pd_o 7) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 7))
+          ))
+          (net (rename pd_o_c_17 "pd_o_c[17]") (joined
+           (portRef (member pd_o 6) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 6))
+          ))
+          (net (rename pd_o_c_18 "pd_o_c[18]") (joined
+           (portRef (member pd_o 5) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 5))
+          ))
+          (net (rename pd_o_c_19 "pd_o_c[19]") (joined
+           (portRef (member pd_o 4) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 4))
+          ))
+          (net (rename pd_o_c_20 "pd_o_c[20]") (joined
+           (portRef (member pd_o 3) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 3))
+          ))
+          (net (rename pd_o_c_21 "pd_o_c[21]") (joined
+           (portRef (member pd_o 2) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 2))
+          ))
+          (net (rename pd_o_c_22 "pd_o_c[22]") (joined
+           (portRef (member pd_o 1) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 1))
+          ))
+          (net (rename pd_o_c_23 "pd_o_c[23]") (joined
+           (portRef (member pd_o 0) (instanceRef byte2pixel_wrapper))
+           (portRef (member pd_o_c 0))
+          ))
+          (net (rename p_odd_o_0 "p_odd_o[0]") (joined
+           (portRef (member p_odd_o 1) (instanceRef byte2pixel_wrapper))
+          ))
+          (net (rename p_odd_o_1 "p_odd_o[1]") (joined
+           (portRef (member p_odd_o 0) (instanceRef byte2pixel_wrapper))
+          ))
+         )
+        (property orig_inst_of (string "b2p"))
+       )
+    )
+    (cell rx_dphy (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename payload_o "payload_o[31:0]") 32) (direction OUTPUT))
+           (port (array (rename wc_o "wc_o[15:0]") 16) (direction OUTPUT))
+           (port (array (rename dt_w "dt_w[5:0]") 6) (direction OUTPUT))
+           (port (array (rename d_n_io "d_n_io[3:0]") 4) (direction INOUT))
+           (port (array (rename d_p_io "d_p_io[3:0]") 4) (direction INOUT))
+           (port rx_reset_byte_fr_n_sync_r (direction INPUT))
+           (port clk_byte_hs_w (direction OUTPUT))
+           (port sp_en_w (direction OUTPUT))
+           (port lp_av_en_o (direction OUTPUT))
+           (port payload_en_o (direction OUTPUT))
+           (port reset_n_i_c (direction INPUT))
+           (port clk_byte_o (direction OUTPUT))
+           (port rx_reset_byte_n_sync_r (direction INPUT))
+           (port reset_n_i_c_i (direction INPUT))
+           (port clk_n_io (direction INOUT))
+           (port clk_p_io (direction INOUT))
+         )
+         (contents
+          (instance dphy_rx_inst (viewRef netlist (cellRef rx_dphy_dphy_rx_Z1))
+           (property PARSER (string "ON"))
+           (property RX_TYPE (string "DSI"))
+           (property NUM_RX_LANE (integer 4))
+           (property RX_GEAR (integer 8))
+           (property DPHY_RX_IP (string "MIXEL"))
+           (property RX_CLK_MODE (string "HS_ONLY"))
+           (property LANE_ALIGN (string "ON"))
+           (property WORD_ALIGN (string "ON"))
+           (property BYTECLK_MHZ (integer 10))
+           (property FIFO_TYPE (string "LUT"))
+          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net (rename d_p_io_0 "d_p_io[0]") (joined
+           (portRef (member d_p_io 3) (instanceRef dphy_rx_inst))
+           (portRef (member d_p_io 3))
+          ))
+          (net (rename d_p_io_1 "d_p_io[1]") (joined
+           (portRef (member d_p_io 2) (instanceRef dphy_rx_inst))
+           (portRef (member d_p_io 2))
+          ))
+          (net (rename d_p_io_2 "d_p_io[2]") (joined
+           (portRef (member d_p_io 1) (instanceRef dphy_rx_inst))
+           (portRef (member d_p_io 1))
+          ))
+          (net (rename d_p_io_3 "d_p_io[3]") (joined
+           (portRef (member d_p_io 0) (instanceRef dphy_rx_inst))
+           (portRef (member d_p_io 0))
+          ))
+          (net (rename d_n_io_0 "d_n_io[0]") (joined
+           (portRef (member d_n_io 3) (instanceRef dphy_rx_inst))
+           (portRef (member d_n_io 3))
+          ))
+          (net (rename d_n_io_1 "d_n_io[1]") (joined
+           (portRef (member d_n_io 2) (instanceRef dphy_rx_inst))
+           (portRef (member d_n_io 2))
+          ))
+          (net (rename d_n_io_2 "d_n_io[2]") (joined
+           (portRef (member d_n_io 1) (instanceRef dphy_rx_inst))
+           (portRef (member d_n_io 1))
+          ))
+          (net (rename d_n_io_3 "d_n_io[3]") (joined
+           (portRef (member d_n_io 0) (instanceRef dphy_rx_inst))
+           (portRef (member d_n_io 0))
+          ))
+          (net (rename dt_w_0 "dt_w[0]") (joined
+           (portRef (member dt_w 5) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 5))
+          ))
+          (net (rename dt_w_1 "dt_w[1]") (joined
+           (portRef (member dt_w 4) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 4))
+          ))
+          (net (rename dt_w_2 "dt_w[2]") (joined
+           (portRef (member dt_w 3) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 3))
+          ))
+          (net (rename dt_w_3 "dt_w[3]") (joined
+           (portRef (member dt_w 2) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 2))
+          ))
+          (net (rename dt_w_4 "dt_w[4]") (joined
+           (portRef (member dt_w 1) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 1))
+          ))
+          (net (rename dt_w_5 "dt_w[5]") (joined
+           (portRef (member dt_w 0) (instanceRef dphy_rx_inst))
+           (portRef (member dt_w 0))
+          ))
+          (net (rename wc_o_0 "wc_o[0]") (joined
+           (portRef (member wc_o 15) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 15))
+          ))
+          (net (rename wc_o_1 "wc_o[1]") (joined
+           (portRef (member wc_o 14) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 14))
+          ))
+          (net (rename wc_o_2 "wc_o[2]") (joined
+           (portRef (member wc_o 13) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 13))
+          ))
+          (net (rename wc_o_3 "wc_o[3]") (joined
+           (portRef (member wc_o 12) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 12))
+          ))
+          (net (rename wc_o_4 "wc_o[4]") (joined
+           (portRef (member wc_o 11) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 11))
+          ))
+          (net (rename wc_o_5 "wc_o[5]") (joined
+           (portRef (member wc_o 10) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 10))
+          ))
+          (net (rename wc_o_6 "wc_o[6]") (joined
+           (portRef (member wc_o 9) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 9))
+          ))
+          (net (rename wc_o_7 "wc_o[7]") (joined
+           (portRef (member wc_o 8) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 8))
+          ))
+          (net (rename wc_o_8 "wc_o[8]") (joined
+           (portRef (member wc_o 7) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 7))
+          ))
+          (net (rename wc_o_9 "wc_o[9]") (joined
+           (portRef (member wc_o 6) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 6))
+          ))
+          (net (rename wc_o_10 "wc_o[10]") (joined
+           (portRef (member wc_o 5) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 5))
+          ))
+          (net (rename wc_o_11 "wc_o[11]") (joined
+           (portRef (member wc_o 4) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 4))
+          ))
+          (net (rename wc_o_12 "wc_o[12]") (joined
+           (portRef (member wc_o 3) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 3))
+          ))
+          (net (rename wc_o_13 "wc_o[13]") (joined
+           (portRef (member wc_o 2) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 2))
+          ))
+          (net (rename wc_o_14 "wc_o[14]") (joined
+           (portRef (member wc_o 1) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 1))
+          ))
+          (net (rename wc_o_15 "wc_o[15]") (joined
+           (portRef (member wc_o 0) (instanceRef dphy_rx_inst))
+           (portRef (member wc_o 0))
+          ))
+          (net (rename payload_o_0 "payload_o[0]") (joined
+           (portRef (member payload_o 31) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 31))
+          ))
+          (net (rename payload_o_1 "payload_o[1]") (joined
+           (portRef (member payload_o 30) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 30))
+          ))
+          (net (rename payload_o_2 "payload_o[2]") (joined
+           (portRef (member payload_o 29) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 29))
+          ))
+          (net (rename payload_o_3 "payload_o[3]") (joined
+           (portRef (member payload_o 28) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 28))
+          ))
+          (net (rename payload_o_4 "payload_o[4]") (joined
+           (portRef (member payload_o 27) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 27))
+          ))
+          (net (rename payload_o_5 "payload_o[5]") (joined
+           (portRef (member payload_o 26) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 26))
+          ))
+          (net (rename payload_o_6 "payload_o[6]") (joined
+           (portRef (member payload_o 25) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 25))
+          ))
+          (net (rename payload_o_7 "payload_o[7]") (joined
+           (portRef (member payload_o 24) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 24))
+          ))
+          (net (rename payload_o_8 "payload_o[8]") (joined
+           (portRef (member payload_o 23) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 23))
+          ))
+          (net (rename payload_o_9 "payload_o[9]") (joined
+           (portRef (member payload_o 22) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 22))
+          ))
+          (net (rename payload_o_10 "payload_o[10]") (joined
+           (portRef (member payload_o 21) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 21))
+          ))
+          (net (rename payload_o_11 "payload_o[11]") (joined
+           (portRef (member payload_o 20) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 20))
+          ))
+          (net (rename payload_o_12 "payload_o[12]") (joined
+           (portRef (member payload_o 19) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 19))
+          ))
+          (net (rename payload_o_13 "payload_o[13]") (joined
+           (portRef (member payload_o 18) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 18))
+          ))
+          (net (rename payload_o_14 "payload_o[14]") (joined
+           (portRef (member payload_o 17) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 17))
+          ))
+          (net (rename payload_o_15 "payload_o[15]") (joined
+           (portRef (member payload_o 16) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 16))
+          ))
+          (net (rename payload_o_16 "payload_o[16]") (joined
+           (portRef (member payload_o 15) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 15))
+          ))
+          (net (rename payload_o_17 "payload_o[17]") (joined
+           (portRef (member payload_o 14) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 14))
+          ))
+          (net (rename payload_o_18 "payload_o[18]") (joined
+           (portRef (member payload_o 13) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 13))
+          ))
+          (net (rename payload_o_19 "payload_o[19]") (joined
+           (portRef (member payload_o 12) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 12))
+          ))
+          (net (rename payload_o_20 "payload_o[20]") (joined
+           (portRef (member payload_o 11) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 11))
+          ))
+          (net (rename payload_o_21 "payload_o[21]") (joined
+           (portRef (member payload_o 10) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 10))
+          ))
+          (net (rename payload_o_22 "payload_o[22]") (joined
+           (portRef (member payload_o 9) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 9))
+          ))
+          (net (rename payload_o_23 "payload_o[23]") (joined
+           (portRef (member payload_o 8) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 8))
+          ))
+          (net (rename payload_o_24 "payload_o[24]") (joined
+           (portRef (member payload_o 7) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 7))
+          ))
+          (net (rename payload_o_25 "payload_o[25]") (joined
+           (portRef (member payload_o 6) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 6))
+          ))
+          (net (rename payload_o_26 "payload_o[26]") (joined
+           (portRef (member payload_o 5) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 5))
+          ))
+          (net (rename payload_o_27 "payload_o[27]") (joined
+           (portRef (member payload_o 4) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 4))
+          ))
+          (net (rename payload_o_28 "payload_o[28]") (joined
+           (portRef (member payload_o 3) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 3))
+          ))
+          (net (rename payload_o_29 "payload_o[29]") (joined
+           (portRef (member payload_o 2) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 2))
+          ))
+          (net (rename payload_o_30 "payload_o[30]") (joined
+           (portRef (member payload_o 1) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 1))
+          ))
+          (net (rename payload_o_31 "payload_o[31]") (joined
+           (portRef (member payload_o 0) (instanceRef dphy_rx_inst))
+           (portRef (member payload_o 0))
+          ))
+          (net clk_p_io (joined
+           (portRef clk_p_io (instanceRef dphy_rx_inst))
+           (portRef clk_p_io)
+          ))
+          (net clk_n_io (joined
+           (portRef clk_n_io (instanceRef dphy_rx_inst))
+           (portRef clk_n_io)
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef reset_n_i_c_i)
+           (portRef reset_n_i_c_i (instanceRef dphy_rx_inst))
+          ))
+          (net rx_reset_byte_n_sync_r (joined
+           (portRef rx_reset_byte_n_sync_r)
+           (portRef rx_reset_byte_n_sync_r (instanceRef dphy_rx_inst))
+          ))
+          (net clk_byte_o (joined
+           (portRef clk_byte_o (instanceRef dphy_rx_inst))
+           (portRef clk_byte_o)
+          ))
+          (net reset_n_i_c (joined
+           (portRef reset_n_i_c)
+           (portRef reset_n_i_c (instanceRef dphy_rx_inst))
+          ))
+          (net payload_en_o (joined
+           (portRef payload_en_o (instanceRef dphy_rx_inst))
+           (portRef payload_en_o)
+          ))
+          (net lp_av_en_o (joined
+           (portRef lp_av_en_o (instanceRef dphy_rx_inst))
+           (portRef lp_av_en_o)
+          ))
+          (net sp_en_w (joined
+           (portRef sp_en_w (instanceRef dphy_rx_inst))
+           (portRef sp_en_w)
+          ))
+          (net clk_byte_hs_w (joined
+           (portRef clk_byte_hs_w (instanceRef dphy_rx_inst))
+           (portRef clk_byte_hs_w)
+          ))
+          (net rx_reset_byte_fr_n_sync_r (joined
+           (portRef rx_reset_byte_fr_n_sync_r)
+           (portRef rx_reset_byte_fr_n_sync_r (instanceRef dphy_rx_inst))
+          ))
+         )
+        (property FIFO_TYPE (string "LUT"))
+        (property BYTECLK_MHZ (integer 10))
+        (property LANE_ALIGN (string "ON"))
+        (property RX_CLK_MODE (string "HS_ONLY"))
+        (property WORD_ALIGN (string "ON"))
+        (property DPHY_RX_IP (string "MIXEL"))
+        (property RX_TYPE (string "DSI"))
+        (property PARSER (string "ON"))
+        (property orig_inst_of (string "rx_dphy"))
+       )
+    )
+    (cell EHXPLLM (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port CLKI (direction INPUT))
+           (port CLKFB (direction INPUT))
+           (port PHASESEL1 (direction INPUT))
+           (port PHASESEL0 (direction INPUT))
+           (port PHASEDIR (direction INPUT))
+           (port PHASESTEP (direction INPUT))
+           (port PHASELOADREG (direction INPUT))
+           (port PLLWAKESYNC (direction INPUT))
+           (port RST (direction INPUT))
+           (port ENCLKOP (direction INPUT))
+           (port ENCLKOS (direction INPUT))
+           (port ENCLKOS2 (direction INPUT))
+           (port ENCLKOS3 (direction INPUT))
+           (port USRSTDBY (direction INPUT))
+           (port CLKOP (direction OUTPUT))
+           (port CLKOS (direction OUTPUT))
+           (port CLKOS2 (direction OUTPUT))
+           (port CLKOS3 (direction OUTPUT))
+           (port LOCK (direction OUTPUT))
+           (port INTLOCK (direction OUTPUT))
+           (port REFCLK (direction OUTPUT))
+           (port CLKINTFB (direction OUTPUT))
+         )
+        (property INTFB_WAKE (string "DISABLED"))
+        (property PLLRST_ENA (string "ENABLED"))
+        (property STDBY_ENABLE (string "DISABLED"))
+        (property DPHASE_SOURCE (string "DISABLED"))
+        (property INT_LOCK_STICKY (string "ENABLED"))
+        (property SYNC_ENABLE (string "DISABLED"))
+        (property REFIN_RESET (string "DISABLED"))
+        (property PLL_LOCK_DELAY (integer 200))
+        (property PLL_LOCK_MODE (integer 2))
+        (property OUTDIVIDER_MUXD (string "DIVD"))
+        (property OUTDIVIDER_MUXC (string "DIVC"))
+        (property OUTDIVIDER_MUXB (string "DIVB"))
+        (property OUTDIVIDER_MUXA (string "DIVA"))
+        (property CLKOS_TRIM_DELAY (integer 0))
+        (property CLKOS_TRIM_POL (string "FALLING"))
+        (property CLKOP_TRIM_DELAY (integer 0))
+        (property CLKOP_TRIM_POL (string "FALLING"))
+        (property FEEDBK_PATH (string "CLKOP"))
+        (property CLKOS3_FPHASE (integer 0))
+        (property CLKOS2_FPHASE (integer 0))
+        (property CLKOS_FPHASE (integer 0))
+        (property CLKOP_FPHASE (integer 0))
+        (property CLKOS3_CPHASE (integer 0))
+        (property CLKOS2_CPHASE (integer 26))
+        (property CLKOS_CPHASE (integer 26))
+        (property CLKOP_CPHASE (integer 29))
+        (property CLKOS3_ENABLE (string "DISABLED"))
+        (property CLKOS2_ENABLE (string "ENABLED"))
+        (property CLKOS_ENABLE (string "ENABLED"))
+        (property CLKOP_ENABLE (string "ENABLED"))
+        (property CLKOS3_DIV (integer 1))
+        (property CLKOS2_DIV (integer 27))
+        (property CLKOS_DIV (integer 27))
+        (property CLKOP_DIV (integer 30))
+        (property CLKFB_DIV (integer 3))
+        (property CLKI_DIV (integer 2))
+        (property FIN (string "100.0000"))
+        (property orig_inst_of (string "EHXPLLM"))
+       )
+    )
+    (cell mipi2parallel (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename pd_o_c "pd_o_c[23:0]") 24) (direction OUTPUT))
+           (port (array (rename d_p_io "d_p_io[3:0]") 4) (direction INOUT))
+           (port (array (rename d_n_io "d_n_io[3:0]") 4) (direction INOUT))
+           (port de_o_c (direction OUTPUT))
+           (port vsync_o_c (direction OUTPUT))
+           (port hsync_o_c (direction OUTPUT))
+           (port clk_p_io (direction INOUT))
+           (port clk_n_io (direction INOUT))
+           (port reset_n_i_c (direction INPUT))
+           (port clk_pixel_o_c (direction INPUT))
+           (port reset_n_i_c_i (direction INPUT))
+         )
+         (contents
+          (instance rx_reset_byte_n_sync_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance rx_reset_byte_n_meta_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance rx_reset_byte_fr_n_sync_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance rx_reset_byte_fr_n_meta_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance b2p_reset_pixel_n_sync_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance b2p_reset_pixel_n_meta_r (viewRef PRIM (cellRef FD1S3DX (libraryRef LUCENT)))
+          )
+          (instance rx_dphy_inst (viewRef netlist (cellRef rx_dphy))
+          )
+          (instance b2p_inst (viewRef netlist (cellRef b2p))
+          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net rx_reset_byte_n_meta_r (joined
+           (portRef Q (instanceRef rx_reset_byte_n_meta_r))
+           (portRef D (instanceRef rx_reset_byte_n_sync_r))
+          ))
+          (net clk_byte_o (joined
+           (portRef clk_byte_o (instanceRef rx_dphy_inst))
+           (portRef CK (instanceRef rx_reset_byte_n_meta_r))
+           (portRef CK (instanceRef rx_reset_byte_n_sync_r))
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef reset_n_i_c_i)
+           (portRef reset_n_i_c_i (instanceRef rx_dphy_inst))
+           (portRef CD (instanceRef b2p_reset_pixel_n_meta_r))
+           (portRef CD (instanceRef b2p_reset_pixel_n_sync_r))
+           (portRef CD (instanceRef rx_reset_byte_fr_n_meta_r))
+           (portRef CD (instanceRef rx_reset_byte_fr_n_sync_r))
+           (portRef CD (instanceRef rx_reset_byte_n_meta_r))
+           (portRef CD (instanceRef rx_reset_byte_n_sync_r))
+          ))
+          (net rx_reset_byte_n_sync_r (joined
+           (portRef Q (instanceRef rx_reset_byte_n_sync_r))
+           (portRef rx_reset_byte_n_sync_r (instanceRef rx_dphy_inst))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC))
+           (portRef D (instanceRef b2p_reset_pixel_n_meta_r))
+           (portRef D (instanceRef rx_reset_byte_fr_n_meta_r))
+           (portRef D (instanceRef rx_reset_byte_n_meta_r))
+          ))
+          (net rx_reset_byte_fr_n_meta_r (joined
+           (portRef Q (instanceRef rx_reset_byte_fr_n_meta_r))
+           (portRef D (instanceRef rx_reset_byte_fr_n_sync_r))
+          ))
+          (net clk_byte_hs_w (joined
+           (portRef clk_byte_hs_w (instanceRef rx_dphy_inst))
+           (portRef clk_byte_hs_w (instanceRef b2p_inst))
+           (portRef CK (instanceRef rx_reset_byte_fr_n_meta_r))
+           (portRef CK (instanceRef rx_reset_byte_fr_n_sync_r))
+          ))
+          (net rx_reset_byte_fr_n_sync_r (joined
+           (portRef Q (instanceRef rx_reset_byte_fr_n_sync_r))
+           (portRef rx_reset_byte_fr_n_sync_r (instanceRef b2p_inst))
+           (portRef rx_reset_byte_fr_n_sync_r (instanceRef rx_dphy_inst))
+          ))
+          (net b2p_reset_pixel_n_meta_r (joined
+           (portRef Q (instanceRef b2p_reset_pixel_n_meta_r))
+           (portRef D (instanceRef b2p_reset_pixel_n_sync_r))
+          ))
+          (net clk_pixel_o_c (joined
+           (portRef clk_pixel_o_c)
+           (portRef clk_pixel_o_c (instanceRef b2p_inst))
+           (portRef CK (instanceRef b2p_reset_pixel_n_meta_r))
+           (portRef CK (instanceRef b2p_reset_pixel_n_sync_r))
+          ))
+          (net b2p_reset_pixel_n_sync_r (joined
+           (portRef Q (instanceRef b2p_reset_pixel_n_sync_r))
+           (portRef b2p_reset_pixel_n_sync_r (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_0 "payload_o[0]") (joined
+           (portRef (member payload_o 31) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 31) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_1 "payload_o[1]") (joined
+           (portRef (member payload_o 30) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 30) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_2 "payload_o[2]") (joined
+           (portRef (member payload_o 29) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 29) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_3 "payload_o[3]") (joined
+           (portRef (member payload_o 28) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 28) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_4 "payload_o[4]") (joined
+           (portRef (member payload_o 27) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 27) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_5 "payload_o[5]") (joined
+           (portRef (member payload_o 26) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 26) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_6 "payload_o[6]") (joined
+           (portRef (member payload_o 25) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 25) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_7 "payload_o[7]") (joined
+           (portRef (member payload_o 24) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 24) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_8 "payload_o[8]") (joined
+           (portRef (member payload_o 23) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 23) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_9 "payload_o[9]") (joined
+           (portRef (member payload_o 22) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 22) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_10 "payload_o[10]") (joined
+           (portRef (member payload_o 21) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 21) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_11 "payload_o[11]") (joined
+           (portRef (member payload_o 20) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 20) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_12 "payload_o[12]") (joined
+           (portRef (member payload_o 19) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 19) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_13 "payload_o[13]") (joined
+           (portRef (member payload_o 18) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 18) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_14 "payload_o[14]") (joined
+           (portRef (member payload_o 17) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 17) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_15 "payload_o[15]") (joined
+           (portRef (member payload_o 16) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 16) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_16 "payload_o[16]") (joined
+           (portRef (member payload_o 15) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 15) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_17 "payload_o[17]") (joined
+           (portRef (member payload_o 14) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 14) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_18 "payload_o[18]") (joined
+           (portRef (member payload_o 13) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 13) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_19 "payload_o[19]") (joined
+           (portRef (member payload_o 12) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 12) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_20 "payload_o[20]") (joined
+           (portRef (member payload_o 11) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 11) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_21 "payload_o[21]") (joined
+           (portRef (member payload_o 10) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 10) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_22 "payload_o[22]") (joined
+           (portRef (member payload_o 9) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 9) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_23 "payload_o[23]") (joined
+           (portRef (member payload_o 8) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 8) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_24 "payload_o[24]") (joined
+           (portRef (member payload_o 7) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 7) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_25 "payload_o[25]") (joined
+           (portRef (member payload_o 6) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 6) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_26 "payload_o[26]") (joined
+           (portRef (member payload_o 5) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 5) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_27 "payload_o[27]") (joined
+           (portRef (member payload_o 4) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 4) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_28 "payload_o[28]") (joined
+           (portRef (member payload_o 3) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 3) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_29 "payload_o[29]") (joined
+           (portRef (member payload_o 2) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 2) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_30 "payload_o[30]") (joined
+           (portRef (member payload_o 1) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 1) (instanceRef b2p_inst))
+          ))
+          (net (rename payload_o_31 "payload_o[31]") (joined
+           (portRef (member payload_o 0) (instanceRef rx_dphy_inst))
+           (portRef (member payload_o 0) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_0 "wc_o[0]") (joined
+           (portRef (member wc_o 15) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 15) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_1 "wc_o[1]") (joined
+           (portRef (member wc_o 14) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 14) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_2 "wc_o[2]") (joined
+           (portRef (member wc_o 13) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 13) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_3 "wc_o[3]") (joined
+           (portRef (member wc_o 12) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 12) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_4 "wc_o[4]") (joined
+           (portRef (member wc_o 11) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 11) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_5 "wc_o[5]") (joined
+           (portRef (member wc_o 10) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 10) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_6 "wc_o[6]") (joined
+           (portRef (member wc_o 9) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 9) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_7 "wc_o[7]") (joined
+           (portRef (member wc_o 8) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 8) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_8 "wc_o[8]") (joined
+           (portRef (member wc_o 7) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 7) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_9 "wc_o[9]") (joined
+           (portRef (member wc_o 6) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 6) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_10 "wc_o[10]") (joined
+           (portRef (member wc_o 5) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 5) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_11 "wc_o[11]") (joined
+           (portRef (member wc_o 4) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 4) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_12 "wc_o[12]") (joined
+           (portRef (member wc_o 3) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 3) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_13 "wc_o[13]") (joined
+           (portRef (member wc_o 2) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 2) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_14 "wc_o[14]") (joined
+           (portRef (member wc_o 1) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 1) (instanceRef b2p_inst))
+          ))
+          (net (rename wc_o_15 "wc_o[15]") (joined
+           (portRef (member wc_o 0) (instanceRef rx_dphy_inst))
+           (portRef (member wc_o 0) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_0 "dt_w[0]") (joined
+           (portRef (member dt_w 5) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 5) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_1 "dt_w[1]") (joined
+           (portRef (member dt_w 4) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 4) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_2 "dt_w[2]") (joined
+           (portRef (member dt_w 3) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 3) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_3 "dt_w[3]") (joined
+           (portRef (member dt_w 2) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 2) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_4 "dt_w[4]") (joined
+           (portRef (member dt_w 1) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 1) (instanceRef b2p_inst))
+          ))
+          (net (rename dt_w_5 "dt_w[5]") (joined
+           (portRef (member dt_w 0) (instanceRef rx_dphy_inst))
+           (portRef (member dt_w 0) (instanceRef b2p_inst))
+          ))
+          (net (rename d_n_io_0 "d_n_io[0]") (joined
+           (portRef (member d_n_io 3) (instanceRef rx_dphy_inst))
+           (portRef (member d_n_io 3))
+          ))
+          (net (rename d_n_io_1 "d_n_io[1]") (joined
+           (portRef (member d_n_io 2) (instanceRef rx_dphy_inst))
+           (portRef (member d_n_io 2))
+          ))
+          (net (rename d_n_io_2 "d_n_io[2]") (joined
+           (portRef (member d_n_io 1) (instanceRef rx_dphy_inst))
+           (portRef (member d_n_io 1))
+          ))
+          (net (rename d_n_io_3 "d_n_io[3]") (joined
+           (portRef (member d_n_io 0) (instanceRef rx_dphy_inst))
+           (portRef (member d_n_io 0))
+          ))
+          (net (rename d_p_io_0 "d_p_io[0]") (joined
+           (portRef (member d_p_io 3) (instanceRef rx_dphy_inst))
+           (portRef (member d_p_io 3))
+          ))
+          (net (rename d_p_io_1 "d_p_io[1]") (joined
+           (portRef (member d_p_io 2) (instanceRef rx_dphy_inst))
+           (portRef (member d_p_io 2))
+          ))
+          (net (rename d_p_io_2 "d_p_io[2]") (joined
+           (portRef (member d_p_io 1) (instanceRef rx_dphy_inst))
+           (portRef (member d_p_io 1))
+          ))
+          (net (rename d_p_io_3 "d_p_io[3]") (joined
+           (portRef (member d_p_io 0) (instanceRef rx_dphy_inst))
+           (portRef (member d_p_io 0))
+          ))
+          (net sp_en_w (joined
+           (portRef sp_en_w (instanceRef rx_dphy_inst))
+           (portRef sp_en_w (instanceRef b2p_inst))
+          ))
+          (net lp_av_en_o (joined
+           (portRef lp_av_en_o (instanceRef rx_dphy_inst))
+           (portRef lp_av_en_o (instanceRef b2p_inst))
+          ))
+          (net payload_en_o (joined
+           (portRef payload_en_o (instanceRef rx_dphy_inst))
+           (portRef payload_en_o (instanceRef b2p_inst))
+          ))
+          (net reset_n_i_c (joined
+           (portRef reset_n_i_c)
+           (portRef reset_n_i_c (instanceRef rx_dphy_inst))
+          ))
+          (net clk_n_io (joined
+           (portRef clk_n_io (instanceRef rx_dphy_inst))
+           (portRef clk_n_io)
+          ))
+          (net clk_p_io (joined
+           (portRef clk_p_io (instanceRef rx_dphy_inst))
+           (portRef clk_p_io)
+          ))
+          (net (rename pd_o_c_0 "pd_o_c[0]") (joined
+           (portRef (member pd_o_c 23) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 23))
+          ))
+          (net (rename pd_o_c_1 "pd_o_c[1]") (joined
+           (portRef (member pd_o_c 22) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 22))
+          ))
+          (net (rename pd_o_c_2 "pd_o_c[2]") (joined
+           (portRef (member pd_o_c 21) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 21))
+          ))
+          (net (rename pd_o_c_3 "pd_o_c[3]") (joined
+           (portRef (member pd_o_c 20) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 20))
+          ))
+          (net (rename pd_o_c_4 "pd_o_c[4]") (joined
+           (portRef (member pd_o_c 19) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 19))
+          ))
+          (net (rename pd_o_c_5 "pd_o_c[5]") (joined
+           (portRef (member pd_o_c 18) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 18))
+          ))
+          (net (rename pd_o_c_6 "pd_o_c[6]") (joined
+           (portRef (member pd_o_c 17) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 17))
+          ))
+          (net (rename pd_o_c_7 "pd_o_c[7]") (joined
+           (portRef (member pd_o_c 16) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 16))
+          ))
+          (net (rename pd_o_c_8 "pd_o_c[8]") (joined
+           (portRef (member pd_o_c 15) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 15))
+          ))
+          (net (rename pd_o_c_9 "pd_o_c[9]") (joined
+           (portRef (member pd_o_c 14) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 14))
+          ))
+          (net (rename pd_o_c_10 "pd_o_c[10]") (joined
+           (portRef (member pd_o_c 13) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 13))
+          ))
+          (net (rename pd_o_c_11 "pd_o_c[11]") (joined
+           (portRef (member pd_o_c 12) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 12))
+          ))
+          (net (rename pd_o_c_12 "pd_o_c[12]") (joined
+           (portRef (member pd_o_c 11) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 11))
+          ))
+          (net (rename pd_o_c_13 "pd_o_c[13]") (joined
+           (portRef (member pd_o_c 10) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 10))
+          ))
+          (net (rename pd_o_c_14 "pd_o_c[14]") (joined
+           (portRef (member pd_o_c 9) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 9))
+          ))
+          (net (rename pd_o_c_15 "pd_o_c[15]") (joined
+           (portRef (member pd_o_c 8) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 8))
+          ))
+          (net (rename pd_o_c_16 "pd_o_c[16]") (joined
+           (portRef (member pd_o_c 7) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 7))
+          ))
+          (net (rename pd_o_c_17 "pd_o_c[17]") (joined
+           (portRef (member pd_o_c 6) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 6))
+          ))
+          (net (rename pd_o_c_18 "pd_o_c[18]") (joined
+           (portRef (member pd_o_c 5) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 5))
+          ))
+          (net (rename pd_o_c_19 "pd_o_c[19]") (joined
+           (portRef (member pd_o_c 4) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 4))
+          ))
+          (net (rename pd_o_c_20 "pd_o_c[20]") (joined
+           (portRef (member pd_o_c 3) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 3))
+          ))
+          (net (rename pd_o_c_21 "pd_o_c[21]") (joined
+           (portRef (member pd_o_c 2) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 2))
+          ))
+          (net (rename pd_o_c_22 "pd_o_c[22]") (joined
+           (portRef (member pd_o_c 1) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 1))
+          ))
+          (net (rename pd_o_c_23 "pd_o_c[23]") (joined
+           (portRef (member pd_o_c 0) (instanceRef b2p_inst))
+           (portRef (member pd_o_c 0))
+          ))
+          (net hsync_o_c (joined
+           (portRef hsync_o_c (instanceRef b2p_inst))
+           (portRef hsync_o_c)
+          ))
+          (net vsync_o_c (joined
+           (portRef vsync_o_c (instanceRef b2p_inst))
+           (portRef vsync_o_c)
+          ))
+          (net de_o_c (joined
+           (portRef de_o_c (instanceRef b2p_inst))
+           (portRef de_o_c)
+          ))
+         )
+        (property orig_inst_of (string "mipi2parallel"))
+       )
+    )
+    (cell int_pll (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port reset_n_i_c_i (direction INPUT))
+           (port ref_clk_i_c (direction INPUT))
+           (port clk_pixel_o_c (direction OUTPUT))
+         )
+         (contents
+          (instance PLLInst_0 (viewRef verilog (cellRef EHXPLLM))
+           (property FREQUENCY_PIN_CLKOS2 (string "40.000000"))
+           (property FREQUENCY_PIN_CLKOS (string "40.000000"))
+           (property FREQUENCY_PIN_CLKOP (string "36.000000"))
+           (property FREQUENCY_PIN_CLKI (string "24.000000"))
+           (property ICP_CURRENT (string "8"))
+           (property LPF_RESISTOR (string "16"))
+           (property PLLRST_ENA (string "ENABLED"))
+           (property INTFB_WAKE (string "DISABLED"))
+           (property STDBY_ENABLE (string "DISABLED"))
+           (property DPHASE_SOURCE (string "DISABLED"))
+           (property CLKOS3_FPHASE (integer 0))
+           (property CLKOS3_CPHASE (integer 0))
+           (property CLKOS2_FPHASE (integer 0))
+           (property CLKOS2_CPHASE (integer 26))
+           (property CLKOS_FPHASE (integer 0))
+           (property CLKOS_CPHASE (integer 26))
+           (property CLKOP_FPHASE (integer 0))
+           (property CLKOP_CPHASE (integer 29))
+           (property PLL_LOCK_MODE (integer 2))
+           (property CLKOS_TRIM_DELAY (integer 0))
+           (property CLKOS_TRIM_POL (string "FALLING"))
+           (property CLKOP_TRIM_DELAY (integer 0))
+           (property CLKOP_TRIM_POL (string "FALLING"))
+           (property OUTDIVIDER_MUXD (string "DIVD"))
+           (property CLKOS3_ENABLE (string "DISABLED"))
+           (property OUTDIVIDER_MUXC (string "DIVC"))
+           (property CLKOS2_ENABLE (string "ENABLED"))
+           (property OUTDIVIDER_MUXB (string "DIVB"))
+           (property CLKOS_ENABLE (string "ENABLED"))
+           (property OUTDIVIDER_MUXA (string "DIVA"))
+           (property CLKOP_ENABLE (string "ENABLED"))
+           (property CLKOS3_DIV (integer 1))
+           (property CLKOS2_DIV (integer 27))
+           (property CLKOS_DIV (integer 27))
+           (property CLKOP_DIV (integer 30))
+           (property CLKFB_DIV (integer 3))
+           (property CLKI_DIV (integer 2))
+           (property FEEDBK_PATH (string "CLKOP"))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (net (rename CLKOS2_inferred_clock "clk_pixel_o_c") (joined
+           (portRef clk_pixel_o_c)
+           (portRef CLKOS2 (instanceRef PLLInst_0))
+          ))
+          (net ref_clk_i_c (joined
+           (portRef ref_clk_i_c)
+           (portRef CLKI (instanceRef PLLInst_0))
+          ))
+          (net CLKOP (joined
+           (portRef CLKOP (instanceRef PLLInst_0))
+           (portRef CLKFB (instanceRef PLLInst_0))
+          ))
+          (net GND (joined
+           (portRef Z (instanceRef GND))
+           (portRef USRSTDBY (instanceRef PLLInst_0))
+           (portRef ENCLKOS3 (instanceRef PLLInst_0))
+           (portRef ENCLKOS2 (instanceRef PLLInst_0))
+           (portRef ENCLKOS (instanceRef PLLInst_0))
+           (portRef ENCLKOP (instanceRef PLLInst_0))
+           (portRef PLLWAKESYNC (instanceRef PLLInst_0))
+           (portRef PHASELOADREG (instanceRef PLLInst_0))
+           (portRef PHASESTEP (instanceRef PLLInst_0))
+           (portRef PHASEDIR (instanceRef PLLInst_0))
+           (portRef PHASESEL0 (instanceRef PLLInst_0))
+           (portRef PHASESEL1 (instanceRef PLLInst_0))
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef reset_n_i_c_i)
+           (portRef RST (instanceRef PLLInst_0))
+          ))
+          (net CLKOS (joined
+           (portRef CLKOS (instanceRef PLLInst_0))
+          ))
+          (net CLKOS3 (joined
+           (portRef CLKOS3 (instanceRef PLLInst_0))
+          ))
+          (net LOCK (joined
+           (portRef LOCK (instanceRef PLLInst_0))
+          ))
+          (net INTLOCK (joined
+           (portRef INTLOCK (instanceRef PLLInst_0))
+          ))
+          (net REFCLK (joined
+           (portRef REFCLK (instanceRef PLLInst_0))
+          ))
+          (net CLKINTFB (joined
+           (portRef CLKINTFB (instanceRef PLLInst_0))
+          ))
+         )
+        (property NGD_DRC_MASK (integer 1))
+        (property orig_inst_of (string "int_pll"))
+       )
+    )
+    (cell mipi2parallel_top (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port reset_n_i (direction INPUT))
+           (port ref_clk_i (direction INPUT))
+           (port clk_p_io (direction INOUT))
+           (port clk_n_io (direction INOUT))
+           (port (array (rename d_p_io "d_p_io[3:0]") 4) (direction INOUT))
+           (port (array (rename d_n_io "d_n_io[3:0]") 4) (direction INOUT))
+           (port (array (rename pd_o "pd_o[23:0]") 24) (direction OUTPUT))
+           (port clk_pixel_o (direction OUTPUT))
+           (port vsync_o (direction OUTPUT))
+           (port hsync_o (direction OUTPUT))
+           (port de_o (direction OUTPUT))
+         )
+         (contents
+          (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (instance reset_n_i_pad_RNICEC4 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
+          (instance de_o_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance hsync_o_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance vsync_o_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance clk_pixel_o_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_23 "pd_o_pad[23]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_22 "pd_o_pad[22]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_21 "pd_o_pad[21]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_20 "pd_o_pad[20]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_19 "pd_o_pad[19]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_18 "pd_o_pad[18]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_17 "pd_o_pad[17]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_16 "pd_o_pad[16]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_15 "pd_o_pad[15]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_14 "pd_o_pad[14]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_13 "pd_o_pad[13]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_12 "pd_o_pad[12]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_11 "pd_o_pad[11]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_10 "pd_o_pad[10]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_9 "pd_o_pad[9]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_8 "pd_o_pad[8]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_7 "pd_o_pad[7]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_6 "pd_o_pad[6]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_5 "pd_o_pad[5]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_4 "pd_o_pad[4]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_3 "pd_o_pad[3]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_2 "pd_o_pad[2]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_1 "pd_o_pad[1]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance (rename pd_o_pad_0 "pd_o_pad[0]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance ref_clk_i_pad (viewRef PRIM (cellRef IB (libraryRef LUCENT)))          )
+          (instance reset_n_i_pad (viewRef PRIM (cellRef IB (libraryRef LUCENT)))          )
+          (instance GSR_INST (viewRef PRIM (cellRef GSR (libraryRef LUCENT)))
+          )
+          (instance PUR_INST (viewRef PRIM (cellRef PUR (libraryRef LUCENT)))
+          )
+          (instance int_pll_inst (viewRef netlist (cellRef int_pll))
+          )
+          (instance mipi2parallel_inst (viewRef netlist (cellRef mipi2parallel))
+          )
+          (net clk_p_io (joined
+           (portRef clk_p_io (instanceRef mipi2parallel_inst))
+           (portRef clk_p_io)
+          ))
+          (net clk_n_io (joined
+           (portRef clk_n_io (instanceRef mipi2parallel_inst))
+           (portRef clk_n_io)
+          ))
+          (net (rename d_p_io_0 "d_p_io[0]") (joined
+           (portRef (member d_p_io 3) (instanceRef mipi2parallel_inst))
+           (portRef (member d_p_io 3))
+          ))
+          (net (rename d_p_io_1 "d_p_io[1]") (joined
+           (portRef (member d_p_io 2) (instanceRef mipi2parallel_inst))
+           (portRef (member d_p_io 2))
+          ))
+          (net (rename d_p_io_2 "d_p_io[2]") (joined
+           (portRef (member d_p_io 1) (instanceRef mipi2parallel_inst))
+           (portRef (member d_p_io 1))
+          ))
+          (net (rename d_p_io_3 "d_p_io[3]") (joined
+           (portRef (member d_p_io 0) (instanceRef mipi2parallel_inst))
+           (portRef (member d_p_io 0))
+          ))
+          (net (rename d_n_io_0 "d_n_io[0]") (joined
+           (portRef (member d_n_io 3) (instanceRef mipi2parallel_inst))
+           (portRef (member d_n_io 3))
+          ))
+          (net (rename d_n_io_1 "d_n_io[1]") (joined
+           (portRef (member d_n_io 2) (instanceRef mipi2parallel_inst))
+           (portRef (member d_n_io 2))
+          ))
+          (net (rename d_n_io_2 "d_n_io[2]") (joined
+           (portRef (member d_n_io 1) (instanceRef mipi2parallel_inst))
+           (portRef (member d_n_io 1))
+          ))
+          (net (rename d_n_io_3 "d_n_io[3]") (joined
+           (portRef (member d_n_io 0) (instanceRef mipi2parallel_inst))
+           (portRef (member d_n_io 0))
+          ))
+          (net clk_pixel_o_c (joined
+           (portRef clk_pixel_o_c (instanceRef int_pll_inst))
+           (portRef clk_pixel_o_c (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef clk_pixel_o_pad))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC))
+           (portRef PUR (instanceRef PUR_INST))
+           (portRef GSR (instanceRef GSR_INST))
+          ))
+          (net reset_n_i_c (joined
+           (portRef O (instanceRef reset_n_i_pad))
+           (portRef reset_n_i_c (instanceRef mipi2parallel_inst))
+           (portRef A (instanceRef reset_n_i_pad_RNICEC4))
+          ))
+          (net reset_n_i (joined
+           (portRef reset_n_i)
+           (portRef I (instanceRef reset_n_i_pad))
+          ))
+          (net ref_clk_i_c (joined
+           (portRef O (instanceRef ref_clk_i_pad))
+           (portRef ref_clk_i_c (instanceRef int_pll_inst))
+          ))
+          (net ref_clk_i (joined
+           (portRef ref_clk_i)
+           (portRef I (instanceRef ref_clk_i_pad))
+          ))
+          (net (rename pd_o_c_0 "pd_o_c[0]") (joined
+           (portRef (member pd_o_c 23) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_0))
+          ))
+          (net (rename pd_o_0 "pd_o[0]") (joined
+           (portRef O (instanceRef pd_o_pad_0))
+           (portRef (member pd_o 23))
+          ))
+          (net (rename pd_o_c_1 "pd_o_c[1]") (joined
+           (portRef (member pd_o_c 22) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_1))
+          ))
+          (net (rename pd_o_1 "pd_o[1]") (joined
+           (portRef O (instanceRef pd_o_pad_1))
+           (portRef (member pd_o 22))
+          ))
+          (net (rename pd_o_c_2 "pd_o_c[2]") (joined
+           (portRef (member pd_o_c 21) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_2))
+          ))
+          (net (rename pd_o_2 "pd_o[2]") (joined
+           (portRef O (instanceRef pd_o_pad_2))
+           (portRef (member pd_o 21))
+          ))
+          (net (rename pd_o_c_3 "pd_o_c[3]") (joined
+           (portRef (member pd_o_c 20) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_3))
+          ))
+          (net (rename pd_o_3 "pd_o[3]") (joined
+           (portRef O (instanceRef pd_o_pad_3))
+           (portRef (member pd_o 20))
+          ))
+          (net (rename pd_o_c_4 "pd_o_c[4]") (joined
+           (portRef (member pd_o_c 19) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_4))
+          ))
+          (net (rename pd_o_4 "pd_o[4]") (joined
+           (portRef O (instanceRef pd_o_pad_4))
+           (portRef (member pd_o 19))
+          ))
+          (net (rename pd_o_c_5 "pd_o_c[5]") (joined
+           (portRef (member pd_o_c 18) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_5))
+          ))
+          (net (rename pd_o_5 "pd_o[5]") (joined
+           (portRef O (instanceRef pd_o_pad_5))
+           (portRef (member pd_o 18))
+          ))
+          (net (rename pd_o_c_6 "pd_o_c[6]") (joined
+           (portRef (member pd_o_c 17) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_6))
+          ))
+          (net (rename pd_o_6 "pd_o[6]") (joined
+           (portRef O (instanceRef pd_o_pad_6))
+           (portRef (member pd_o 17))
+          ))
+          (net (rename pd_o_c_7 "pd_o_c[7]") (joined
+           (portRef (member pd_o_c 16) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_7))
+          ))
+          (net (rename pd_o_7 "pd_o[7]") (joined
+           (portRef O (instanceRef pd_o_pad_7))
+           (portRef (member pd_o 16))
+          ))
+          (net (rename pd_o_c_8 "pd_o_c[8]") (joined
+           (portRef (member pd_o_c 15) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_8))
+          ))
+          (net (rename pd_o_8 "pd_o[8]") (joined
+           (portRef O (instanceRef pd_o_pad_8))
+           (portRef (member pd_o 15))
+          ))
+          (net (rename pd_o_c_9 "pd_o_c[9]") (joined
+           (portRef (member pd_o_c 14) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_9))
+          ))
+          (net (rename pd_o_9 "pd_o[9]") (joined
+           (portRef O (instanceRef pd_o_pad_9))
+           (portRef (member pd_o 14))
+          ))
+          (net (rename pd_o_c_10 "pd_o_c[10]") (joined
+           (portRef (member pd_o_c 13) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_10))
+          ))
+          (net (rename pd_o_10 "pd_o[10]") (joined
+           (portRef O (instanceRef pd_o_pad_10))
+           (portRef (member pd_o 13))
+          ))
+          (net (rename pd_o_c_11 "pd_o_c[11]") (joined
+           (portRef (member pd_o_c 12) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_11))
+          ))
+          (net (rename pd_o_11 "pd_o[11]") (joined
+           (portRef O (instanceRef pd_o_pad_11))
+           (portRef (member pd_o 12))
+          ))
+          (net (rename pd_o_c_12 "pd_o_c[12]") (joined
+           (portRef (member pd_o_c 11) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_12))
+          ))
+          (net (rename pd_o_12 "pd_o[12]") (joined
+           (portRef O (instanceRef pd_o_pad_12))
+           (portRef (member pd_o 11))
+          ))
+          (net (rename pd_o_c_13 "pd_o_c[13]") (joined
+           (portRef (member pd_o_c 10) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_13))
+          ))
+          (net (rename pd_o_13 "pd_o[13]") (joined
+           (portRef O (instanceRef pd_o_pad_13))
+           (portRef (member pd_o 10))
+          ))
+          (net (rename pd_o_c_14 "pd_o_c[14]") (joined
+           (portRef (member pd_o_c 9) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_14))
+          ))
+          (net (rename pd_o_14 "pd_o[14]") (joined
+           (portRef O (instanceRef pd_o_pad_14))
+           (portRef (member pd_o 9))
+          ))
+          (net (rename pd_o_c_15 "pd_o_c[15]") (joined
+           (portRef (member pd_o_c 8) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_15))
+          ))
+          (net (rename pd_o_15 "pd_o[15]") (joined
+           (portRef O (instanceRef pd_o_pad_15))
+           (portRef (member pd_o 8))
+          ))
+          (net (rename pd_o_c_16 "pd_o_c[16]") (joined
+           (portRef (member pd_o_c 7) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_16))
+          ))
+          (net (rename pd_o_16 "pd_o[16]") (joined
+           (portRef O (instanceRef pd_o_pad_16))
+           (portRef (member pd_o 7))
+          ))
+          (net (rename pd_o_c_17 "pd_o_c[17]") (joined
+           (portRef (member pd_o_c 6) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_17))
+          ))
+          (net (rename pd_o_17 "pd_o[17]") (joined
+           (portRef O (instanceRef pd_o_pad_17))
+           (portRef (member pd_o 6))
+          ))
+          (net (rename pd_o_c_18 "pd_o_c[18]") (joined
+           (portRef (member pd_o_c 5) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_18))
+          ))
+          (net (rename pd_o_18 "pd_o[18]") (joined
+           (portRef O (instanceRef pd_o_pad_18))
+           (portRef (member pd_o 5))
+          ))
+          (net (rename pd_o_c_19 "pd_o_c[19]") (joined
+           (portRef (member pd_o_c 4) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_19))
+          ))
+          (net (rename pd_o_19 "pd_o[19]") (joined
+           (portRef O (instanceRef pd_o_pad_19))
+           (portRef (member pd_o 4))
+          ))
+          (net (rename pd_o_c_20 "pd_o_c[20]") (joined
+           (portRef (member pd_o_c 3) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_20))
+          ))
+          (net (rename pd_o_20 "pd_o[20]") (joined
+           (portRef O (instanceRef pd_o_pad_20))
+           (portRef (member pd_o 3))
+          ))
+          (net (rename pd_o_c_21 "pd_o_c[21]") (joined
+           (portRef (member pd_o_c 2) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_21))
+          ))
+          (net (rename pd_o_21 "pd_o[21]") (joined
+           (portRef O (instanceRef pd_o_pad_21))
+           (portRef (member pd_o 2))
+          ))
+          (net (rename pd_o_c_22 "pd_o_c[22]") (joined
+           (portRef (member pd_o_c 1) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_22))
+          ))
+          (net (rename pd_o_22 "pd_o[22]") (joined
+           (portRef O (instanceRef pd_o_pad_22))
+           (portRef (member pd_o 1))
+          ))
+          (net (rename pd_o_c_23 "pd_o_c[23]") (joined
+           (portRef (member pd_o_c 0) (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef pd_o_pad_23))
+          ))
+          (net (rename pd_o_23 "pd_o[23]") (joined
+           (portRef O (instanceRef pd_o_pad_23))
+           (portRef (member pd_o 0))
+          ))
+          (net clk_pixel_o (joined
+           (portRef O (instanceRef clk_pixel_o_pad))
+           (portRef clk_pixel_o)
+          ))
+          (net vsync_o_c (joined
+           (portRef vsync_o_c (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef vsync_o_pad))
+          ))
+          (net vsync_o (joined
+           (portRef O (instanceRef vsync_o_pad))
+           (portRef vsync_o)
+          ))
+          (net hsync_o_c (joined
+           (portRef hsync_o_c (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef hsync_o_pad))
+          ))
+          (net hsync_o (joined
+           (portRef O (instanceRef hsync_o_pad))
+           (portRef hsync_o)
+          ))
+          (net de_o_c (joined
+           (portRef de_o_c (instanceRef mipi2parallel_inst))
+           (portRef I (instanceRef de_o_pad))
+          ))
+          (net de_o (joined
+           (portRef O (instanceRef de_o_pad))
+           (portRef de_o)
+          ))
+          (net reset_n_i_c_i (joined
+           (portRef Z (instanceRef reset_n_i_pad_RNICEC4))
+           (portRef reset_n_i_c_i (instanceRef mipi2parallel_inst))
+           (portRef reset_n_i_c_i (instanceRef int_pll_inst))
+          ))
+         )
+        (property orig_inst_of (string "mipi2parallel_top"))
+       )
+    )
+  )
+  (design mipi2parallel_top (cellRef mipi2parallel_top (libraryRef work))
+	(property PART (string "lif_md6000-6") ))
+)

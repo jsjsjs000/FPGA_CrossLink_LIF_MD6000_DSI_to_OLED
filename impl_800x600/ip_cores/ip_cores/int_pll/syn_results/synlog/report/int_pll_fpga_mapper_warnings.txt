@@ -1,0 +1,1 @@
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_800x600\ip_cores\ip_cores\int_pll\int_pll.v":59:12:59:20|Blackbox EHXPLLM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)

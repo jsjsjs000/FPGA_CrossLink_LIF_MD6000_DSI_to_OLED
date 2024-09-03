@@ -1,0 +1,1602 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+<!--(==============================================================)-->
+<!--(Document created with RoboEditor. )============================-->
+<!--(==============================================================)-->
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="iphelp_files/filelist.xml">
+<link rel=Edit-Time-Data href="iphelp_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>LatticeCORE IP Module Readme</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PostalCode"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="Street"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="address"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ashimi</o:Author>
+  <o:LastAuthor>hfeng</o:LastAuthor>
+  <o:Revision>219</o:Revision>
+  <o:TotalTime>441</o:TotalTime>
+  <o:Created>2006-10-03T19:00:00Z</o:Created>
+  <o:LastSaved>2010-06-21T06:47:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1421</o:Words>
+  <o:Characters>8101</o:Characters>
+  <o:Company>Lattice Semiconductor Corp</o:Company>
+  <o:Lines>67</o:Lines>
+  <o:Paragraphs>19</o:Paragraphs>
+  <o:CharactersWithSpaces>9503</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>110</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--table.WHS1
+	{x-cell-content-align: Center;
+	border-spacing: 0px;
+	border-spacing: 0px;}
+col.whs2 {width: 100%;}
+tr.WHS3
+	{x-cell-content-align: center;}
+table.WHS5
+	{x-cell-content-align: top;
+	border-spacing: 4px;
+	border-spacing: 4px;}
+col.whs6 {width: 100px;}
+col.whs7 {width: 300px;}
+tr.WHS8
+	{x-cell-content-align: top;}
+div.WEBHELPPOPUPMENU
+	{left:0px;
+	position:absolute;
+	top:0px;
+	visibility:hidden;
+	z-index:4;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.webhelpnavbar, li.webhelpnavbar, div.webhelpnavbar
+	{mso-style-name:webhelpnavbar;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.table, li.table, div.table
+	{mso-style-name:table;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.bullet, li.bullet, div.bullet
+	{mso-style-name:bullet;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.msonormal0
+	{mso-style-name:msonormal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:295767101;
+	mso-list-template-ids:1593891816;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:330909628;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2021601562 -1008183850 1872950780 1375756338 -1199439710 -1990456762 -1523836294 235070938 1479282484 -1330340198;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:614560566;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1438953124 999560470 964717536 -559239814 -1337281044 -1332968916 1701985288 1584275974 -1703228768 149815354;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:883561075;
+	mso-list-type:hybrid;
+	mso-list-template-ids:136629634 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:1327438358;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-630391050 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1788155812;
+	mso-list-template-ids:1824700990;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1907180906;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2024986148 -945282540 -1303980334 -1173565196 -929497328 -936585402 830118026 1468553028 810846710 1197665106;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+div.MsoNormal1 {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+div.table1 {mso-style-name:table;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+li.MsoNormal1 {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+li.table1 {mso-style-name:table;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoNormal1 {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.table1 {mso-style-name:table;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE1 {mso-style-name:"";
+	mso-spl-e:yes;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--(Meta)==========================================================-->
+<meta name=generator-major-version content=0.1>
+<meta name=generator-minor-version content=1>
+<meta name=filetype content=kadov>
+<meta name=filetype-version content=1>
+<meta name=page-count content=1>
+<meta name=layout-height content=3793>
+<meta name=layout-width content=660>
+<!--(Links)=========================================================--><!--(Scripts)=======================================================-->
+<script language="JavaScript"  type="text/javascript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='default.css'>");}
+//-->
+</script>
+
+<script language="JavaScript"  type="text/javascript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+
+<script language="javascript1.2"  type="text/javascript" src="whmsg.js">
+</script>
+
+<script language="JavaScript"  type="text/javascript" src="whver.js">
+</script>
+
+<script language="javascript1.2"  type="text/javascript" src="whproxy.js">
+</script>
+
+<script language="javascript1.2"  type="text/javascript" src="whutils.js">
+</script>
+
+<script language="javascript1.2"  type="text/javascript" src="whtopic.js">
+</script>
+
+<script language="javascript1.2"  type="text/javascript">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.setRelStartPage)
+	{
+	
+	}
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("ip_tutor.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<!--(Body)==========================================================-->
+
+<body lang=ZH-CN link=blue vlink=blue style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<h1><span lang=EN-US style='font-family:Verdana;color:#ED6F25'>CSI-2/DSI DPHY Receiver IP</span><span lang=EN-US style='color:navy'><o:p></o:p></span></h1>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 0cm 0cm'>
+
+<!--<div style='border-bottom:..75pt'>-->
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 0cm 0cm'>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'><a
+name=implementing></a><b><span lang=EN-US style='font-size:18.0pt;font-family:
+"Arial","sans-serif"'>Generating IP Module Using Lattice Clarity Designer</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span lang=EN-US><br>
+</span><b><span lang=EN-US style='font-family:Arial'>Parameter Settings</span></b><span
+lang=EN-US><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <b>Parameter</b>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <b>Value</b>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <b>Attribute</b>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <b>Description</b>
+  </td>
+ </tr>
+ 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX Interface
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  DSI <br> CSI 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Selects RX interface type
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Number of RX lanes
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  1 <br> 2 <br> 3 <br> 4
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Selects number of RX lanes. 3-lane input is only available if packet parser is off
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX Gear
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  8 <br> 16
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Number of bits per lane in one byteclock cycle <br>
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX D-PHY IP
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Hard D-PHY <br> Soft D-PHY 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Selects between hard block or soft logic implementations<br>
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX Line Rate
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  80-1500 Mbps (Hard) <br>
+  80-1200 Mbps (Soft)
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Specifies MIPI D-PHY data rate per lane
+  </td>
+ </tr>
+ 
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  D-PHY Clock Frequency
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX Line Rate/2, in MHz
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Read-Only
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Specifies D-PHY clock frequency <br>
+  tHS-SETTLE MIPI D-PHY timing parameter is also derived from this setting (85 ns + 6UI). <br>
+  tHS-SETTLE counter is implemented in byte clock domain, expect actual tHS-SETTLE is ~2 byte clock cycles more than computed value.
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  D-PHY Clock Mode
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Continuous <br> Non-Continuous 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Continuous D-PHY clock means clock lane is always in HS mode<br>
+  Non-continuous D-PHY clock means clock lane goes to LP mode when there is no HS data transmission
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Byte Clock Frequency
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX Line Rate /8 (gear8) <br>
+  RX Line Rate /16 (gear16) <br>  
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Read-Only
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Specifies the byte clock frequency, in MHz
+  </td>
+ </tr>
+ 
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Data Settle Period
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  0-25 <br> 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Corresponds to the tHS-SETTLE timing parameter, in number of byteclocks
+  </td>
+ </tr>
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Packet Parser
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Enabled <br>
+  Disabled <br>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Includes the packet parser in the design 
+  </td>
+ </tr>
+ 
+
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Word and Lane Aligner Module
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Enabled <br>
+  Disabled <br>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Enables or disables the lane aligner module when soft logic implementation is selected
+  </td>
+ </tr>
+
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Lane Aligner FIFO Type 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  EBR <br> LUT 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  select the lane aligner FIFO implementation depending on the preferred resource usage 
+  </td>
+ </tr> 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  ON <br> OFF 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  Instantiates a buffer between the PHY block strobe domain and the soft logic freerunning byteclock domain. The data stored in the buffer includes the trail bits (and hs-zero bits, in case of Soft D-PHY or Hard D-PHY with aligners enabled). The FIFO width is (RX Gear * Number of RX lanes)
+  </td>
+ </tr> 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Type
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  EBR <br> LUT 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Selects the FIFO implementation of the buffer depending on the preferred resource usage  
+  </td>
+ </tr> 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Depth
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  16-4096
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Configures the depth of the FIFO. Reduce the depth if this is only used as an elastic buffer. Select the depth (and delay) that will ensure that overflow nor underflow will not happen  
+  </td>
+ </tr>  
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Implementation
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  PINGPONG <br> SINGLE <br> QUEUE 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Selects the buffer control implementation. <br> <br>
+   <li>PINGPONG - uses 2 FIFOs alternately to prevent the stored data from being overwritten by the next incoming high speed data transaction. </li> <br>
+   <li>SINGLE   - uses 1 circular FIFO. Read from FIFO continues until the empty flag asserts. This is for applications where there are large enough interval between high speed data arrival thus the incoming data will not be appended to the previous one. </li> <br>
+   <li>QUEUE    - uses 1 circular FIFO and a separate list of entries (queue) to track the number of cycles of each high speed transactions. The FIFO depth must be large enough to hold multiple D-PHY packets, including the hs-zero and trail bits. </li> <br>
+  </td>
+ </tr> 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Packet Delay
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  0-4096 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Delays reading from the FIFO. The delay counter starts from the deassertion of the FIFO empty signal. <br>
+   The delay applies to every high speed data transaction. <br>
+   Increase the delay to compensate for any clock drift between the clock strobe and the freerunning byteclock domain. <br>
+   Ensure the arrival of the next high speed data will not overwrite the current one stored in the FIFO by adjusting the depth and the delay.   
+  </td>
+ </tr> 
+ 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Counter Width
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  0-12 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Sets the width of the delay counter. This determines the maximum delay value for the design.   
+  </td>
+ </tr> 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Number of Queue Entries
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  2-6 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   Sets the depth of the queue entry list. <br> Configure this to the maximum number of transactions that may be present in the data buffers at any given time. <br>
+   For example, in the case of the CSI-2 sequence, the line end, frame end and frame start may arrive while the last video line is still being read out of the data buffer. Therefore, the number of queue entries should be set to 4. 
+  </td>
+ </tr> 
+
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  RX FIFO Clock Implementation
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+ Single Clock <br> Dual Clock 
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  User-Input
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+   In this IP version, the use of a single clock FIFO is only available for Single Type RX_FIFO. Select Single Clock mode only if the clk_byte_hs_o from the Soft D-PHY is driving the continuous byteclock clk_byte_fr_i.  
+  </td>
+ </tr>
+ 
+</table>
+<br>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'><a
+name=implementing></a><b><span lang=EN-US style='font-size:18.0pt;font-family:
+"Arial","sans-serif"'>Implementing the IP Module Using Lattice Diamond</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span lang=EN-US><br>
+</span><b><span lang=EN-US style='font-family:Arial'>Instantiating the IP</span></b><span
+lang=EN-US><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>
+The core modules of the CSI-2/DSI DPHY Receiver IP are synthesized and provided in NGO format with black box Verilog source files for synthesis. 
+A Verilog source file named <i>&lt;instance_name&gt;_dphy_rx.v</i> instantiates the black box of core modules. 
+The top-level file <i>&lt;instance_name&gt;.v</i> instantiates <i>&lt;instance_name&gt;_dphy_rx.v</i>.<br>
+<br> 
+The user does not need to instantiate the IP instances one by one manually. 
+The top-level file along with the other Verilog source files are provided in <i>&lt;project_dir&gt;</i>. 
+These files are refreshed each time the IP is regenerated.<br>
+<br>
+A Verilog instance template <i>&lt;instance_name&gt;_inst.v</i> or VHDL instance template <i>&lt;instance_name&gt;_inst.vhd</i> is 
+also provided as a guide how to instantiate the generated soft IP module in their own top-level design.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span lang=EN-US><br>
+</span><b><span lang=EN-US style='font-family:Arial'>Hardware Evaluation</span></b><span
+lang=EN-US><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoBodyText><span lang=EN-US>
+An IP-specific license is required to enable full, unrestricted use of the CSI-2/DSI DPHY Receiver IP in a complete, top-level design. 
+The CSI-2/DSI DPHY Receiver IP is available free or charge. Please request your free IP license at: <br>
+<a href="http://www.latticesemi.com/licenseprocessing/ipcore_lic_req.cfm?api=true"><span
+     style='font-family:"Arial","sans-serif"'>http://www.latticesemi.com/licenseprocessing/ipcore_lic_req.cfm?api=true</span></a><o:p></o:p></span></li> <br>
+<br>
+You may download or generate the CSI-2/DSI DPHY Receiver IP and fully evaluate through functional simulation and implementation (synthesis, map, place and route) 
+without the IP license. The CSI-2/DSI DPHY Receiver IP also supports Lattice’s IP hardware evaluation capability, 
+which makes it possible to create versions of the IP that operate in hardware for a limited time (approximately four hours) without requiring an IP license. 
+However, the IP license is required to enable timing simulation, to open the design in Diamond EPIC tool, 
+or to generate bitstreams that do not include the hardware evaluation timeout limitation.
+  </span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-bottom:12.0pt'><b><span lang=EN-US style='font-family:Arial'>Running
+Functional Simulation</span></b><span lang=EN-US><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>To run simulation using Active HDL: 
+   <o:p></o:p></span></p>
+  <ol type=disc>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Create new project using Lattice Diamond for Windows.</span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Open <b>Active-HDL Lattice Edition</b> GUI tool.</span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>To customize the testbench parameters, edit the file <b> tb_setup_params.v </b> inside <i> &lt;project_dir&gt;\&lt;instance_name&gt;\dphy_rx_eval\testbench </i> folder. 
+             <br> See the additional info related to Testbench Compiler Directives below.</i></span>
+	  	   <span lang=EN-US><o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Click <b>Tools -> Execute macro</b>, then select <b> &lt;instance_name&gt;_run.do </b> file inside <i> &lt;project_dir&gt;\&lt;instance_name&gt;\dphy_rx_eval\&lt;instance_name&gt;\sim\aldec </i> .</span>
+	   <span lang=EN-US><o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Wait for simulation to finish.</span>
+	   <span lang=EN-US><o:p></o:p></span></li>
+
+  </ol>
+  </td>
+ </tr> 
+ 
+ 
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'><br>Testbench Directives   
+   <o:p></o:p></span></p>
+  <ul type=disc>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Testbench directives common to both DSI and CSI-2 Rx types:<br></span><span lang=EN-US
+       style='font-size:10.0pt;font-family:Courier'>
+   * NUM_FRAMES - Used to set the number of video frames <br>
+   * NUM_LINES - Used to set the number of lines per frame <br>
+   * VIRTUAL_CHANNEL - Used to set the virtual channel number <br>
+   * DPHY_DEBUG_ON - Used to enable or disable debug messages (0 - debug messages disabled, 1 - debug messages enabled) <br>
+   * DPHY_CLK - Used to override the dphy clock period (in ps). By default, the testbench automatically calculates the dphy clock based from the BYTECLK_MHZ and RX_GEAR design parameters <br>
+   * FRAME_LPM_DELAY - Used to set the low power mode delay between frames (in ps) <br>
+   * INIT_DELAY - Used to set the delay before data is transmitted to the design <br>   
+   <o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Testbench directives for D-PHY timing parameters:<br></span><span lang=EN-US
+       style='font-size:10.0pt;font-family:Courier'>
+   * DPHY_LPX - Used to set T-LPX (in ps) <br>
+   * DPHY_CLK_PREPARE - Used to set T-CLK-PREPARE (in ps) <br>
+   * DPHY_CLK_ZERO - Used to set T-CLK-ZERO (in ps) <br>
+   * DPHY_CLK_PRE - Used to set T-CLK-PRE (in ps) <br>
+   * DPHY_CLK_POST - Used to set T-CLK-POST (in ps) <br>
+   * DPHY_CLK_TRAIL - Used to set T-CLK-TRAIL (in ps) <br>
+   * DPHY_HS_PREPARE - Used to set T-HS-PREPARE (in ps) <br>
+   * DPHY_HS_ZERO - Used to set T-HS-ZERO (in ps) <br>
+   * DPHY_HS_TRAIL - Used to set T-HS-TRAIL (in ps) <br>
+   * DPHY_INIT - Used to set the T-INIT timing (in ps) <br>
+   <o:p></o:p></span></li>
+
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Testbench directives for DSI Rx type:<br></span><span lang=EN-US
+       style='font-size:10.0pt;font-family:Courier'>
+   * LP_BLANKING - Used to drive low-power blanking. If this is not defined, the testbench drives HS data as blanking <br>
+   * DSI video Modes: <br>
+   &nbsp &nbsp  * NON_BURST_SYNC_PULSE <br>
+   &nbsp &nbsp  * NON_BURST_SYNC_EVENTS <br>
+   &nbsp &nbsp  * BURST_MODE <br>
+   * DSI data types: <br>
+   &nbsp &nbsp  * RGB888 <br>
+   &nbsp &nbsp  * RGB666 <br>
+   &nbsp &nbsp  * RGB666_LOOSE <br>
+   
+   * DSI_VACT_PAYLOAD - Number of bytes of active pixels per line <br>
+   * DSI_HSA_PAYLOAD - Number of bytes of Horizontal Sync Active Payload (used for Non-burst sync pulse)  <br>
+   * DSI_BLLP_PAYLOAD - Number of bytes of BLLP Payload (used for HS data blanking) <br>
+   * DSI_HBP_PAYLOAD - Number of bytes of Horizontal Back Porch Payload (used for HS data blanking, and in LP blanking for Non-burst sync pulse mode) <br>
+   * DSI_HFP_PAYLOAD - Number of bytes of Horizontal Front Porch Payload (used for HS data blanking, and in LP blanking for Non-burst sync pulse mode)  <br>
+   * DSI_VSA_LINES - Number of Vertical Sync Active Lines <br>
+   * DSI_VBP_LINES - Number of Vertical Back Porch Lines <br>
+   * DSI_VFP_LINES - Number of Vertical Front Porch Lines <br>
+   * DSI_EOTP_ENABLE - Used to enable/disable transmission of EOTP packet <br>
+    &nbsp &nbsp  0 - EOTP packet is disabled <br>
+    &nbsp &nbsp  1 - EOTP packet is enabled <br>
+   * DSI_LPS_BLLP_DURATION - Used to set the duration (in ps) for BLLP low-power state (used for LP blanking) <br>
+   * DSI_LPS_HBP_DURATION - Used to set the duration (in ps) for Horizontal Back Porch low-power state (used for LP blanking in Non-burst sync events and Burst mode) <br>
+   * DSI_LPS_HFP_DURATION - Used to set the duration (in ps) for Horizontal Front Porch low-power state (used for LP blanking in Non-burst sync events and Burst mode) <br>
+
+   <o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Testbench directives for CSI-2 Rx type:<br></span><span lang=EN-US
+       style='font-size:10.0pt;font-family:Courier'>
+
+   * CSI2_LPS_GAP - Used to set low power state delay between HS transactions (in ps) <br>
+   * CSI2_NUM_PIXELS - Used to set the number of pixels per line <br>
+   * CSI2_LS_LE_EN - Used to enable/disable DPHY model transmission of line start and line end packets <br>
+   &nbsp &nbsp  0 - No Line start and Line end packets <br>
+   &nbsp &nbsp  1 - Line start and Line end packets enable) <br>
+   * CSI-2 data types: <br>
+   &nbsp &nbsp  * RGB888 <br>
+   &nbsp &nbsp  * RAW8 <br>
+   &nbsp &nbsp  * RAW10 <br>  
+   &nbsp &nbsp  * RAW12 <br> 
+   &nbsp &nbsp  * YUV420_10 <br>     
+   &nbsp &nbsp  * YUV420_10_CSPS <br>  
+   &nbsp &nbsp  * YUV420_8 <br>     
+   &nbsp &nbsp  * YUV420_8_CSPS <br>  
+   &nbsp &nbsp  * LEGACY_YUV420_8 <br>  
+   &nbsp &nbsp  * LEGACY_YUV422_10 <br> 
+   &nbsp &nbsp  * LEGACY_YUV422_8 <br>    
+   <o:p></o:p></span></li>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><br>
+</span><b><span lang=EN-US style='font-family:Arial'>Synthesizing and Implementing the IP</span></b><span lang=EN-US><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US><br>
+  </span><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'> 
+In Clarity Designer, the Clarity Designer project file (.sbx) is added to Lattice Diamond as a source file after IP is generated. 
+All required Verilog source files for implementation are invoked automatically. The IP can be directly synthesized, mapped and placed/routed 
+in the Diamond design environment after the IP is generated. Note that default Diamond strategy (.sty) and default Diamond preference file (.lpf) will be used.
+When using the .sbx approach, import the recommended strategy from <i>&lt;project_dir&gt;\dphy_rx_eval\&lt;implementation_name&gt;\impl\&lt;device&gt;\lse</i> 
+or <i>&lt;project_dir&gt;\dphy_rx_eval\&lt;implementation_name&gt;\impl\&lt;device&gt;\synplify</i> directories and set them as active strategy. 
+A sample lpf file is also available in the same folder.<br> 
+<br>
+Push-button implementation of this top-level design with either Lattice Synthesis Engine (LSE) or Synopsys Synplify Pro RTL synthesis is supported via 
+the pre-built Diamond project file <i>&lt;implementation_name&gt;_top.ldf</i> located in 
+<i>&lt;project_dir&gt;\dphy_rx_eval\&lt;implementation_name&gt;\impl\&lt;device&gt;\lse</i> or 
+<i>&lt;project_dir&gt;\dphy_rx_eval\&lt;implementation_name&gt;\impl\&lt;device&gt;\synplify</i> directories. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp; <o:p></o:p></span></p>
+  
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>
+  To use the pre-built project file:<o:p></o:p></span></p>
+  <ul type=disc>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Select <i
+       style='mso-bidi-font-style:normal'><span style='mso-bidi-font-style:
+       italic'>Open <em><span style='font-family:Verdana'>-&gt; </span></em>Project</span></i>
+       under the File tab in Diamond.</span><span
+       lang=EN-US><o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Browse to <i>&lt;<span
+       class=SpellE>project_dir</span>&gt;\<span class=SpellE>dphy_rx_eval</span>\&lt;implementation_name&gt;\<span
+       class=SpellE>impl</span>\<span class=SpellE>&lt;device&gt;</span>\&lt;<span class=SpellE>synplify|LSE</span>&gt;</i>in
+       the Open Project dialog box.<o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Select and open <i>&lt;implementation_name&gt;_top.ldf</i>
+       . At this point, all of the
+       files needed to support top-level synthesis and implementation will be
+       imported to the project.<o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'> A sample <span class=SpellE>lpf</span>
+       file is available in the <i>\<span class=SpellE>impl\&lt;device&gt;</span>\&lt;<span
+       class=SpellE>synplify|LSE</span>&gt; directory</i> <i>&lt;implementation_name&gt;_<span
+       class=GramE>top</span>.<span class=SpellE>lpf</span></i>.<o:p></o:p></span></li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US
+       style='font-size:10.0pt;font-family:Verdana'>Implement the complete
+       design via the standard <span class=SpellE></span> Diamond GUI
+       flow, keeping all other options at their default values.<o:p></o:p></span></li>
+  </ul>
+  </td>
+ </tr>
+</table>
+
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+<p class=MsoNormal><span lang=EN-US><br>
+</span><b><span lang=EN-US style='font-family:Arial'>Reference Information</span></b><span
+lang=EN-US><br>
+</span><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'><br>
+<span class=GramE>The</span> following documents provide more information on
+implementing this IP:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US><a
+     href="http://www.latticesemi.com/view_document?document_id=52136"><span
+     style='font-family:"Arial","sans-serif"'>User’s Guide</span></a><o:p></o:p></span></li>
+ <li class=MsoNormal><span lang=EN-US style='font-family:"Arial","sans-serif"'><a
+     href="http://www.latticesemi.com/view_document?document_id=51564">Clarity
+     Designer User Manual</a></span></li>
+</ul>
+
+  </td>
+ </tr>
+</table>
+
+
+
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+
+<span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#013C9A'><script language="javascript1.2"  type="text/javascript">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script></span><span lang=EN-US>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>&nbsp;</p>
+
+
+
+
+  <div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 0cm 0cm'>
+    <p class=MsoNormal1 style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'><b><span
+lang=EN-US style='font-size:18.0pt;font-family:Arial'>General Information</span></b><span
+lang=EN-US>
+      <o:p></o:p>
+    </span></p>
+  </div>
+  
+  <p class=MsoNormal1 style='margin-bottom:12.0pt'><span lang=EN-US><br>
+    </span><b><span lang=EN-US style='font-family:Arial'>Copyright Notice</span></b><span
+lang=EN-US>
+      <o:p></o:p>
+    </span></p>
+  <table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+      <td style='padding:.75pt .75pt .75pt .75pt'><p><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Copyright 2017&copy;
+        Lattice Semiconductor Corporation. ALL RIGHTS RESERVED. This confidential
+        and proprietary software may be used only as authorized by a licensing
+        agreement from Lattice Semiconductor Corporation. The entire notice above
+        must be reproduced on all authorized copies and copies may only be made to
+        the extent permitted by a licensing agreement from Lattice Semiconductor
+        Corporation.
+              <o:p></o:p>
+      </span></p></td>
+    </tr>
+  </table>
+  <div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 0cm 0cm'>
+    <p class=MsoNormal1 style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'><span
+lang=EN-US><br>
+      </span><b><span lang=EN-US style='font-size:18.0pt;font-family:Arial'>Contacting
+        Lattice</span></b><span lang=EN-US>
+          <o:p></o:p>
+        </span></p>
+  </div>
+  <p class=MsoNormal1><span lang=EN-US>
+    <o:p>&nbsp;</o:p>
+  </span></p>
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=563
+ style='width:337.5pt;mso-cellspacing:0cm;margin-left:9.0pt;border:solid silver 1.0pt;
+ mso-border-alt:solid silver .75pt;mso-padding-alt:0cm 0cm 0cm 0cm;border-spacing: 0px;
+ border-spacing: 0px' x-use-null-cells>
+    <col class=whs6>
+    <col class=whs7>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;x-cell-content-align: top'>
+      <td width=125 valign=top style='width:75.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1>
+        <!--(Table)=========================================================-->
+        <span
+  lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Mail:
+          <o:p></o:p>
+        </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Lattice
+        Semiconductor Corporation<br>
+          <st1:address w:st="on">
+            <st1:Street w:st="on">5555 NE Moore 
+              Court</st1:Street>
+            <br>
+            <st1:City w:st="on">Hillsboro</st1:City>
+            ,
+            <st1:State w:st="on">OR</st1:State>
+            &nbsp;
+            <st1:PostalCode w:st="on">97124</st1:PostalCode>
+            <br>
+            <st1:country-region w:st="on">U.S.A.
+              <u1:p></u1:p>
+            </st1:country-region>
+          </st1:address>
+        <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:1;x-cell-content-align: top'>
+      <td width=125 valign=top style='width:75.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Telephone:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>1-800-LATTICE
+        (
+              <st1:country-region w:st="on">USA</st1:country-region>
+        and
+        <st1:country-region
+  w:st="on">
+          <st1:place w:st="on">Canada</st1:place>
+        </st1:country-region>
+        )
+        <u1:p></u1:p>
+        <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;x-cell-content-align: top'>
+      <td width=125 valign=top style='width:75.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US>&nbsp;
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>1-503-268-8001
+        (other locations)
+              <u1:p></u1:p>
+        <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:3;x-cell-content-align: top'>
+      <td width=125 valign=top style='width:75.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Website:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;
+  color:#013C9A'><a href="http://www.latticesemi.com" target="_blank"><span
+  style='color:#013C9A'>http://www.latticesemi.com</span></a>
+              <u1:p></u1:p>
+        (
+        <st1:country-region
+  w:st="on">US</st1:country-region>
+        )<br>
+                <a href="http://www.latticesemi.com.cn" target="_blank"><span
+  style='color:#013C9A'>http://www.latticesemi.com.cn(China)</span></a><br>
+                <a href="http://www.latticesemi.co.kr" target="_blank"><span
+  style='color:#013C9A'>http://www.latticesemi.co.kr(Korea)</span></a><br>
+                <a href="http://www.latticesemi.co.jp" target="_blank"><span
+  style='color:#013C9A'>http://www.latticesemi.co.jp(Japan)</span></a>
+                <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;x-cell-content-align: top'>
+      <td width=125 valign=top style='width:75.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>E-mail:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;
+  color:#013C9A'><a href="mailto:techsupport@latticesemi.com"><span
+  style='color:#013C9A'>techsupport@latticesemi.com</span></a>
+              <u1:p></u1:p>
+        <br>
+                <a href="mailto:techsupport_asia@latticesemi.com"><span style='color:#013C9A'>techsupport_asia@latticesemi.com
+                  (Asia)</span></a>
+        <o:p></o:p>
+      </span></p></td>
+    </tr>
+  </table>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><span lang=EN-US>
+    <o:p>&nbsp;</o:p>
+  </span></p>
+  <div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 0cm 0cm'>
+    <p class=MsoNormal1 style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid windowtext .75pt;padding:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'><b><span
+lang=EN-US style='font-size:18.0pt;font-family:Arial'>IP Module Information</span></b><span
+lang=EN-US>
+      <o:p></o:p>
+    </span></p>
+  </div>
+  <p class=MsoNormal1 style='margin-bottom:12.0pt'><span lang=EN-US><br>
+    </span><b><span lang=EN-US style='font-family:Arial'>About this Module</span></b><span
+lang=EN-US>
+    <o:p></o:p>
+    </span></p>
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=563
+ style='width:337.5pt;mso-cellspacing:0cm;margin-left:9.0pt;border:solid silver 1.0pt;
+ mso-border-alt:solid silver .75pt;mso-padding-alt:0cm 0cm 0cm 0cm;border-spacing: 0px;
+ border-spacing: 0px' x-use-null-cells>
+    <col>
+    <col>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1>
+        <!--(Table)=========================================================-->
+        <span
+  lang=EN-US style='font-size:10.0pt;font-family:Verdana'>IP Name:
+          <o:p></o:p>
+        </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=MsoNormal1><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;font-family:Verdana'>CSI-2/DSI DPHY Receiver IP
+              <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:1;x-cell-content-align: top'>
+      <td width=375 valign=top style="width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt; height: 18px;"><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>IP
+        Version:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style="width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt; height: 18px;"><p class=table1><span class=SpellE1><span lang=EN-US style='font-size:10.0pt;
+  font-family:Verdana'>Ver</span></span><span lang=EN-US style='font-size:10.0pt;
+  font-family:Verdana'> 1.6</span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>IP
+        Release Date:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;
+  mso-fareast-font-family:SimSun'>November 2021</span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Target
+        Technology:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>
+      	LIFMD, LIFMDF
+              <o:p></o:p>
+      </span></p></td>
+    </tr>
+  </table>
+  <p class=MsoNormal1 style='margin-bottom:12.0pt'><span lang=EN-US><br>
+    </span><b><span lang=EN-US style='font-family:Arial'>Software Requirements</span></b><span
+lang=EN-US>
+      <o:p></o:p>
+    </span></p>
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=563
+ style='width:337.5pt;mso-cellspacing:0cm;margin-left:9.0pt;border:solid silver 1.0pt;
+ mso-border-alt:solid silver .75pt;mso-padding-alt:0cm 0cm 0cm 0cm;border-spacing: 0px;
+ border-spacing: 0px' x-use-null-cells>
+    <col>
+    <col>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1>
+        <!--(Table)=========================================================-->
+        <span
+  lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Synthesis Tools
+          Supported:
+          <o:p></o:p>
+        </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span class=SpellE1><span lang=EN-US style='font-size:10.0pt;
+  font-family:Verdana'>Lattice Synthesis Engine (LSE), Synplify Pro for Lattice L-2016.09L or later<br>
+        </span><span lang=EN-US>
+          <o:p></o:p>
+        </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:1;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Simulation
+        Tools Supported:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span class=SpellE1><span lang=EN-US style='font-size:10.0pt;
+  font-family:Verdana'>
+        Active-HDL Lattice Edition 10.3 SP1 or later (Windows only)
+              <o:p></o:p>
+      </span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;x-cell-content-align: top'>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1><span lang=EN-US style='font-size:10.0pt;font-family:Verdana'>Lattice
+        Tool Supported:
+              <o:p></o:p>
+      </span></p></td>
+      <td width=375 valign=top style='width:225.0pt;border:none;padding:.75pt .75pt .75pt .75pt'><p class=table1 style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Verdana'>Diamond 3.10 or later
+              <o:p></o:p>
+      </span></p></td>
+    </tr>
+  </table>
+  <p><span lang=EN-US>&nbsp;
+        <o:p></o:p>
+  </span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

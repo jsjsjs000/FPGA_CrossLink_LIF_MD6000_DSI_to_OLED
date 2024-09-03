@@ -1,0 +1,57 @@
+if {![file exists "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/simulation/simulation.mpf"]} { 
+	project new "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/simulation" simulation
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/synthesis_directives.v"
+	project addfile "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/capture_ctrl_beh.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_capture_ctrl.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/rx_global_ctrl_beh.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_rx_global_ctrl.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/soft_dphy_rx_beh.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_soft_dphy_rx.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_wrapper.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/dphy_rx_eval/rx_dphy/src/beh_rtl/dphy_rx_wrap_beh.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx_wrap.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy_dphy_rx.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/rx_dphy/rx_dphy.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/int_pll/int_pll.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/i2c_s/i2c_s.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p_byte2pixel.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/b2p.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/ipk.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/testbench/verilog/mipi2parallel_MD_tb.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/i2c_target_top.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/mipi2parallel_top.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/source/verilog/synthesis_directives.v"
+	vlog  +incdir+C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl  -work work  "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/ipk/b2p/byte2pixel_eval/b2p/src/beh_rtl/byte2pixel_beh.v"
+} else {
+	project open "C:/Users/jarsul/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel_DSI/simulation/simulation"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_lifmd  mipi2parallel_MD_tb
+view wave
+add wave /*
+run 1000ns
