@@ -60,21 +60,9 @@ Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 202
 @I::"C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\mipi2parallel.v" (library work)
 @I::"C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\mipi2parallel_top.v" (library work)
 Verilog syntax check successful!
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\synthesis_directives.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\mipi2parallel.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\synthesis_directives.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\mipi2parallel_top.v changed - recompiling
-File C:\Users\jarsul\Desktop\fpga\impl_1280x1024\source\synthesis_directives.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module mipi2parallel_top
 @N: CG364 :"D:\LatticeDiamond\diamond\3.13\synpbase\lib\lucent\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -206,12 +194,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 91MB peak: 92MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 89MB peak: 90MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Sep  3 21:58:33 2024
+# Wed Sep  4 00:23:25 2024
 
 ###########################################################]
 ###########################################################[
@@ -237,7 +225,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Sep  3 21:58:33 2024
+# Wed Sep  4 00:23:25 2024
 
 ###########################################################]
 
@@ -247,11 +235,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 22MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 22MB peak: 23MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Sep  3 21:58:33 2024
+# Wed Sep  4 00:23:25 2024
 
 ###########################################################]

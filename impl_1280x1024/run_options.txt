@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version U-2023.03L-SP1
 #--  Project file C:\Users\jarsul\Desktop\fpga\impl_1280x1024\run_options.txt
-#--  Written on Tue Sep  3 21:58:29 2024
+#--  Written on Wed Sep  4 00:23:25 2024
 
 
 #project files
