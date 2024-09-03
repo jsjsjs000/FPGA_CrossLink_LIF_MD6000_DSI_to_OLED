@@ -11,6 +11,12 @@
 *.html
 *.ini
 *.log
+*.log.bak
+*.log.bak.1
+*.log.bak.2
+*.log.bak.3
+*.log.bak.4
+*.log.bak.5
 *.lsedata
 *.mrp
 *.ncd

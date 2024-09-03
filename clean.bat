@@ -25,6 +25,12 @@ for %%p in (impl_800x600 impl_1280x1024) do (
 	del %%p%\*.html
 	del %%p%\*.ini
 	del %%p%\*.log
+	del %%p%\*.log.bak.1
+	del %%p%\*.log.bak
+	del %%p%\*.log.bak.2
+	del %%p%\*.log.bak.3
+	del %%p%\*.log.bak.4
+	del %%p%\*.log.bak.5
 	del %%p%\*.lsedata
 	del %%p%\*.mrp
 	del %%p%\*.ncd
