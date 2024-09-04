@@ -46,28 +46,28 @@ set_option -seqshift_no_replicate 0
 
 #-- add_file options
 set_option -hdl_define -set SBP_SYNTHESIS
-set_option -include_path {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/source/include}
-set_option -include_path {C:/Users/jarsul/Desktop/fpga}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/source/synthesis_directives.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/b2p/b2p.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/b2p/b2p_byte2pixel_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/int_pll/int_pll.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_rx.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_wrapper.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_capture_ctrl_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_rx_wrap_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_rx_global_ctrl_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_soft_dphy_rx_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/ip_cores/ip_cores/ip_cores.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/source/mipi2parallel.v}
-add_file -verilog -vlog_std v2001 {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/source/mipi2parallel_top.v}
+set_option -include_path {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/source/include}
+set_option -include_path {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/source/synthesis_directives.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/b2p/b2p.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/b2p/b2p_byte2pixel_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/int_pll/int_pll.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_rx.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_wrapper.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_capture_ctrl_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_rx_wrap_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_rx_global_ctrl_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_soft_dphy_rx_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/ip_cores.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/source/mipi2parallel.v}
+add_file -verilog -vlog_std v2001 {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/source/mipi2parallel_top.v}
 
 #-- top module name
 set_option -top_module mipi2parallel_top
 
 #-- set result format/file last
-project -result_file {C:/Users/jarsul/Desktop/fpga/impl_1280x1024/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi}
+project -result_file {C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi}
 
 #-- error message log file
 project -log_file {FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.srf}
