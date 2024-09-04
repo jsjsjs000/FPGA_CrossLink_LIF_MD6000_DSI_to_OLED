@@ -1,5 +1,6 @@
 *.alt
 *.arearep
+*.areasrr
 *.asd
 *.bgn
 *.bit
@@ -8,6 +9,7 @@
 *.dir
 *.drc
 *.hrr
+*.htm
 *.html
 *.ini
 *.log
@@ -21,12 +23,20 @@
 *.mrp
 *.ncd
 *.ngd
+*.ngo
 *.p2t
 *.p3t
 *.pad
 *.par
 *.prf
 *.pt
+*.rpt
+*.srd
+*.srf
+*.srm
+*.srs
+*.srr
+*.srr.db
 *.sty
 *.synproj
 *.t2b
@@ -39,3 +49,6 @@
 .recovery
 xxx_lse_cp_file_list
 xxx_lse_sign_file
+synlog/*
+syntmp/*
+synwork/*
